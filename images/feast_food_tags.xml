@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Atlas>
+	<Texture filename="feast_food_tags.tex" />
+	<Elements>
+		<Element name="berries.tex" u1="0.001" u2="0.249" v2="0.999" v1="0.751" variant="" />
+		<Element name="carrot.tex" u1="0.251" u2="0.49509375" v2="0.999" v1="0.75490625" variant="" />
+		<Element name="cheese.tex" u1="0.001" u2="0.249" v2="0.749" v1="0.501" variant="" />
+		<Element name="flour.tex" u1="0.251" u2="0.49509375" v2="0.75290625" v1="0.5088125" variant="" />
+		<Element name="frogmeat.tex" u1="0.49709375" u2="0.74509375" v2="0.999" v1="0.751" variant="" />
+		<Element name="honey.tex" u1="0.49709375" u2="0.74509375" v2="0.749" v1="0.501" variant="" />
+		<Element name="mushrooms.tex" u1="0.74709375" u2="0.99509375" v2="0.999" v1="0.751" variant="" />
+		<Element name="mushrooms_blue.tex" u1="0.74709375" u2="0.9911875" v2="0.749" v1="0.50490625" variant="" />
+		<Element name="mushrooms_green.tex" u1="0.001" u2="0.24509375" v2="0.499" v1="0.25490625" variant="" />
+		<Element name="mushrooms_red.tex" u1="0.251" u2="0.49509375" v2="0.5068125" v1="0.26271875" variant="" />
+		<Element name="noodle.tex" u1="0.001" u2="0.249" v2="0.25290625" v1="0.00490625" variant="" />
+		<Element name="plantmeat.tex" u1="0.251" u2="0.499" v2="0.26071875" v1="0.01271875" variant="" />
+		<Element name="poultry.tex" u1="0.501" u2="0.749" v2="0.499" v1="0.251" variant="" />
+		<Element name="shellfish.tex" u1="0.501" u2="0.749" v2="0.249" v1="0.001" variant="" />
+		<Element name="stone.tex" u1="0.751" u2="0.99509375" v2="0.50290625" v1="0.2588125" variant="" />
+		<Element name="sugar.tex" u1="0.751" u2="0.98728125" v2="0.2568125" v1="0.02053125" variant="" />
+	</Elements>
+</Atlas>

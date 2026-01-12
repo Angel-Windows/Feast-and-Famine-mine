@@ -1,0 +1,2916 @@
+-- NOTE TO MOD AUTHORS:
+-- Copy the following strings to your mod characters if you'd like to add compatibility.
+--[[
+-- CHICKENS --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FAKE_TRADER                 = "" -- The Merm
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKEN_TRADER              = "" -- Upcoming Rooster
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKEN                     = "" 
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKENWAGON                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKENHOUSE                = ""
+-- NEW FOODS --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.MEALINGSTONE                = ""
+STRINGS.CHARACTERS.GENERIC.WHEAT                                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FLOUR                       = ""
+STRINGS.CHARACTERS.GENERIC.TURNIP                               = ""
+STRINGS.CHARACTERS.GENERIC.TURNIP_COOKED                        = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_CRYSTALS              = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SYRUP                       = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_MONSTER                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_MONSTER_COOKED          = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.WHEAT_SEEDS                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TURNIP_SEEDS                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_COMMON    = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_SEASONAL  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_AROMATIC  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_EXOTIC    = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_LUNAR     = ""
+-- CROCKPOT --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TRUNK_POTROAST              = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PIE_CANNIBAL                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CAKE_CARROT                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD                       = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_GARLIC                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_CHEESE                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_JAM                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOUP_CARROT                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOUP_MUSHROOM               = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOUP_STONE                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEWED_MEAT                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BERRY_CUTLET                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_CROWN                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_TURKISH               = ""
+-- BEEFALO MILK MOD --
+STRINGS.CHARACTERS.GENERIC.ANNOUNCE_KICK                        = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RAWMILK                     = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.COOKEDMILK                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHEESE                      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BERRYSHAKE                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CURD                        = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.AGED_CHEESE                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.WHITE_CHEESE                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.AGED_WHITE_CHEESE           = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOLDENVEIN_WHITE_CHEESE     = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISHYOGURT                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PIZZA                       = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHEESECAKE                  = ""
+-- UPDATE 1 --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISHBITE_DRIED              = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOMATO_ROCK_DRIED           = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_WET                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_DRY                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_FETUCCINI             = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MAC                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MEATBALL              = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MANICOTTI             = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PIGSKIN_LEATHER             = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREADBOX                    = ""
+-- UPDATE 2 --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STICK_PRETZELS              = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHEESE_GOAT                 = ""
+-- UPDATE 3 --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT_COOKED            = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROCKY_MEAT                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROCKY_MEAT_COOKED           = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TRUNK_WINTER_COOKED         = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LOBSTERDINNER               = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LOBSTERBISQUE               = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_ROCKY                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_ROCKY                 = ""
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CHUNK                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CHUNK_BLOOM             = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CHUNK                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CHUNK_BLOOM           = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CHUNK                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CHUNK_BLOOM            = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CAP_FAF1                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CAP_FAF1_COOKED         = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CAP_FAF2                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CAP_FAF1               = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CAP_FAF2               = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CAP_FAF1              = "" 
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CAP_FAF2              = ""
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GENERIC_CAP_DRIED           = "" 
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PENGULL_EGG                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PENGULL_EGG_COOKED          = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BEAR_MEAT                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BEAR_MEAT_COOKED            = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEER_MEAT                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEER_MEAT_COOKED            = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOAD_MEAT                   = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOAD_MEAT_COOKED            = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DRAGON_MEAT                 = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DRAGON_MEAT_COOKED          = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SQUID_MEAT                  = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SQUID_MEAT_COOKED           = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BIGBIRD_MEAT                = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BIGBIRD_MEAT_COOKED         = ""
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HAMBAT_MONSTER      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HAMBAT_PLANT      = ""
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_SWAMP      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_DESERT      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_RAINBOW      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_SALMON      = ""
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_KILLER      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_SPRING      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_SUMMER      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_JAR      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_POT      = ""
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_COOKED      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BAKLAVA      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_PIT      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_SAPLING      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_TREE      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+-- FUTURE UPDATES --
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRY      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRY_COOKED      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRY_FOOL      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRYBUSH      = ""
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            BARREN = "",
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+
+-- END --
+]]
+
+local STRINGS = GLOBAL.STRINGS
+
+-- CHICKEN SET PIECE --
+
+STRINGS.CHICK_TALK_PROVERB = { 
+    REFUSE =
+    {
+        REFUSE1 =  "A watched egg doesn't hatch... ba-gawk!",
+        REFUSE2 =  "Haste makes waste... ba-gawk!",
+        REFUSE3 =  "A bird does not sing because it has an answer.",
+        REFUSE4 =  "A bird in the hand is worth two in the bush.",
+        REFUSE5 =  "The early bird catches the worm.",
+        REFUSE6 =  "Birds of a feather flock together... ba-gawk!",
+        REFUSE7 = "The rooster utters one cry, the chicken another.",
+        REFUSE8 =  "A bird never flew on one wing.",
+        REFUSE9 =  "The rooster sees in his son a falcon... ba-gawk!",
+        REFUSE10 = "The hen flies not far unless the cock flies with her.",
+        REFUSE11 = "Live with vultures, become a vulture... ba-gawk!",
+        REFUSE12 = "Live with crows, become a crow... ba-gawk!",
+        REFUSE13 = "As proud as a peacock... ba-gawk!",
+        REFUSE14 = "The arrow strikes one bird down, but the flock remains.",          
+        REFUSE15 = "A bird never flew on one wing.",
+        REFUSE16 = "A fine cage won't feed the bird... ba-gawk!",
+        REFUSE17 = "Every bird loves to hear himself sing... ba-gawk!",
+        REFUSE18 = "A talkative bird will not build a nest.",
+        REFUSE19 = "It is not only fine feathers that make fine birds.",
+        REFUSE20 = "A new net won't catch an old bird... ba-gawk!",
+        REFUSE21 = "A stitch in time saves nine... ba-gawk!",
+        REFUSE22 = "Ignorance is bliss... ba-gawk!",
+        REFUSE23 = "Mustn't cry over spilled yolk... ba-gawk!",
+        REFUSE24 = "Those who live in glass coops shouldn't throw stones.",
+        REFUSE25 = "You can lead a chick to water, but you can't make her... ba-gawk!",
+        REFUSE26 = "A bird in the hand is worth two in the bush.",
+        REFUSE27 = "Fortune favours the bold... ba-gawk!",
+        REFUSE28 = "Well begun is half done... ba-gawk!",
+        REFUSE29 = "A little learning is a dangerous thing.",
+        REFUSE30 = "A rolling egg gathers no moss... ba-gawk!",
+        REFUSE31 = "It ain't over till the fat chicken sings.",
+        REFUSE32 = "It is better to be smarter than you appear... ba-gawk!",
+        REFUSE33 = "Good things come to those who wait.",
+        REFUSE34 = "A poor rooster blames his beak.",
+        REFUSE35 = "A chicken is a rooster's best friend... ba-gawk!",
+        REFUSE36 = "An apple a day keeps the vulture away.",
+        REFUSE37 = "If the feather fits... ba-gawk!",
+        REFUSE38 = "Honesty is the best policy... ba-gawk!",
+        REFUSE39 = "Slow and steady wins the race... ba-gawk!",
+        REFUSE40 = "Don't count your chickens before they hatch.",
+        REFUSE41 = "Practice makes perfect... ba-gawk!",
+        REFUSE42 = "A spoken word is not a chicken.",
+        REFUSE43 = "If it walks like a chicken... ba-gawk!.",
+        REFUSE44 = "What's good for the chicken is good for the coop.",
+        REFUSE45 = "The chicken that cries at night will not lay eggs in the morning.",
+        REFUSE46 = "The chicken does not catch flies... ba-gawk!",
+    },
+
+    GIFT =
+    {
+        GIFT1 =  "You take care now.",
+        GIFT2 =  "A fair trade... ba-gawk!",
+        GIFT3 =  "I think this should cover it.",
+        GIFT4 =  "Something for your troubles.",
+        GIFT5 =  "Try planting them together.",
+        GIFT6 =  "I'll put that to good use.",
+        GIFT7 =  "A little patience goes a long way.",
+        GIFT8 =  "Don't forget to water them!",
+    }
+}    
+
+STRINGS.CHICK_TALK_TRADE = {"Want seeds?", "Shiny treasures?"} 
+STRINGS.CHICK_GIVEUP = {"Harumph...", "Back to work."} 
+STRINGS.CHICK_BATTLECRY = {"Bwok-ba-gawk!", "Monster!", "Get off my land!"}
+STRINGS.CHICK_EGG_BATTLECRY = {"Thiefling! Thiefling!", "Give them back!", "My precious babies!"}
+STRINGS.CHICK_PANIC = {"Bwok-bwok!", "Ba-gawk!"} 
+STRINGS.CHICK_GO_HOME = {"Early to bed, early to rise.", "Bwok! Sun is going down.", "Bwok! It's getting dark."}
+STRINGS.FAKE_TRADER_TALK ={"SEEDS! SEEDS HERE!", "Good afternoon! Care to trade?", "I tip my hat to you.", "Always a pleasure.", "I've only the finest goods for sale."}
+
+--[[ -- OLD
+STRINGS.NAMES.FAKE_TRADER                               = "Wandering Trader"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FAKE_TRADER         = "Something tells me he's just passing through."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FAKE_TRADER          = "Not long and he'll be on his way again."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FAKE_TRADER        = "Is seed trader man."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FAKE_TRADER           = "He isn't long for this world."
+STRINGS.CHARACTERS.WX78.DESCRIBE.FAKE_TRADER            = "WORK IN PROGRESS: TRADER BUFFERING" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FAKE_TRADER    = "I doubt he'll be staying with us very long."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FAKE_TRADER          = "You can see the wanderlust in his eyes."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FAKE_TRADER         = "Hark! A vagrant."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FAKE_TRADER      = "Alas, doomed to be a bit player."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FAKE_TRADER          = "We want to see what he has." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FAKE_TRADER          = "At least it's a living."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FAKE_TRADER          = "Hither and thither the wanderer walks."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FAKE_TRADER        = "Baby trader!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FAKE_TRADER           = "I wonder what he has for sale."
+STRINGS.CHARACTERS.WURT.DESCRIBE.FAKE_TRADER            = "Mermfolk need strong \"eco-no-my\"."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.FAKE_TRADER            = "x"
+]]
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKEN_TRADER      = "I wonder what he has for sale."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHICKEN_TRADER       = "I wish he'd tone it down a little."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHICKEN_TRADER     = "Is big bird trader man."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CHICKEN_TRADER        = "Yet another neglectful parent."
+STRINGS.CHARACTERS.WX78.DESCRIBE.CHICKEN_TRADER         = "DO YOU FEAR ME CHICKEN MAN?" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHICKEN_TRADER = "A fellow agricultural enthusiast."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHICKEN_TRADER       = "I've got my eye on you."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHICKEN_TRADER      = "A trader most fowl."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHICKEN_TRADER   = "Friend or food?"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.CHICKEN_TRADER       = "We want to see what he has." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHICKEN_TRADER       = "At least it's a living."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHICKEN_TRADER       = "That chicken has chock-full pockets."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHICKEN_TRADER     = "Baby trader!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHICKEN_TRADER        = "He has a most discerning pallete."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKEN_TRADER         = "He better not hurt nice merm trader."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHICKEN_TRADER            = "x"
+
+
+STRINGS.NAMES.CHICKEN                               = "Chicken"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKEN         = "It's a little chicken."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHICKEN          = "It's an ugly chicken."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHICKEN        = "Little cluck bird."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CHICKEN           = "Hideous poultry."
+STRINGS.CHARACTERS.WX78.DESCRIBE.CHICKEN            = "ERROR: DOES NOT COMPUTE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHICKEN    = "A domesticated Gallus Gallus."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHICKEN          = "A bird's a bird."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHICKEN         = "Foul fowl."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHICKEN      = "Walking meat."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.CHICKEN          = "Haha! We love chickens!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHICKEN          = "Not the most industrious bird."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHICKEN          = "Hen's teeth and horsefeathers. Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHICKEN        = "Ba-gawk!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHICKEN           = "My delicious, delicious friend!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKEN            = "Silly bird, flort."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHICKEN            = "x"
+
+STRINGS.NAMES.CHICKENWAGON                              = "Wagon"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKENWAGON        = "I could use some stuff."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHICKENWAGON         = "There's a lot of stuff to burn in there."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHICKENWAGON       = "Wolfgang could lift it."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CHICKENWAGON          = "I, too, cart around my baggage."
+STRINGS.CHARACTERS.WX78.DESCRIBE.CHICKENWAGON           = "CONTAINER FOR GOODS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHICKENWAGON   = "Reminds me of my bookmobile days."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHICKENWAGON         = "What's for sale today?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHICKENWAGON        = "Foul fowl."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHICKENWAGON     = "'Tis full of goods."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.CHICKENWAGON         = "Do they have any toys?" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHICKENWAGON         = "Anything good in there?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHICKENWAGON         = "Anything fun inside?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHICKENWAGON       = "Rustle rustle ba-gawk!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHICKENWAGON          = "I'm hoping for some decent produce."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKENWAGON           = "Wicker-lady calls it a \"wah-gone\", florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHICKENWAGON            = "x"
+
+STRINGS.NAMES.CHICKENHOUSE                             = "Chicken Roost"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHICKENHOUSE        = "I bet it's full of eggs."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHICKENHOUSE         = "Odd, it won't catch fire."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHICKENHOUSE       = "Barn too sturdy to smash."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CHICKENHOUSE          = "The beginning and end of all things."
+STRINGS.CHARACTERS.WX78.DESCRIBE.CHICKENHOUSE           = "FEATHERED FORTRESS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHICKENHOUSE   = "A refuge for ruffled feathers."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHICKENHOUSE         = "Don't trust timber that won't burn."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHICKENHOUSE        = "Never trust free labour. It takes too long."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHICKENHOUSE     = "Props to the set dresser!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.CHICKENHOUSE         = "Seems like a cosy place to nap." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHICKENHOUSE         = "I could've built that in half the time!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHICKENHOUSE         = "Someone sold their soul to build this."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHICKENHOUSE       = "Big tweeter!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHICKENHOUSE          = "Imagine the size of that omelette."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKENHOUSE           = "Hmm... no pigfolk smells, flort!"     
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHICKENHOUSE            = "x"
+
+-- WARLY & GRINDING --
+
+STRINGS.TABS.FOODPROCESSING                             = "Milling"
+STRINGS.RECIPE_DESC.PORTABLEBLENDER_ITEM                = "Grind ingredients into tasty powders."
+STRINGS.NAMES.MEALINGSTONE                              = "Mealing Stone"
+STRINGS.RECIPE_DESC.MEALINGSTONE                        = "A rudimentary millstone."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.MEALINGSTONE        = "The daily grind."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.MEALINGSTONE         = "I can smash stuff down with it."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.MEALINGSTONE       = "We must grind grain for bread!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.MEALINGSTONE          = "I am ground down on the mealing stone of life."
+STRINGS.CHARACTERS.WX78.DESCRIBE.MEALINGSTONE           = "I AM GOOD AT CRUSHING" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.MEALINGSTONE   = "For mechanically powdering our ingredients."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.MEALINGSTONE         = "We just gotta grind and bear it."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.MEALINGSTONE        = "This looks like it requires hard labor."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.MEALINGSTONE     = "A weapon for wheat!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.MEALINGSTONE         = "We want to do the grinding!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.MEALINGSTONE         = "Ah! A job that could use some elbow grease!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.MEALINGSTONE         = "I do enjoy this mortal chore."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.MEALINGSTONE       = "Crushy rock"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.MEALINGSTONE          = "Maman Angeline had one just like this."     
+STRINGS.CHARACTERS.WURT.DESCRIBE.MEALINGSTONE           = "Make food go smashy, flort."     
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.MEALINGSTONE            = "x"
+
+STRINGS.NAMES.SPICE_SUGAR                           = "Sweet Honey Granules"
+
+STRINGS.NAMES.WHEAT                                 = "Wheat"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.WHEAT                = "It looks a bit grainy."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.WHEAT        = "How on earth do you eat this?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.WHEAT      = "Flour! Wolfgang will grind with bare hands!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.WHEAT         = "We can grind it down into flour."
+STRINGS.CHARACTERS.WX78.DESCRIBE.WHEAT          = "GRAIN DETECTED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.WHEAT  = "Fresh Triticum aestivum."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.WHEAT        = "Such a fancy shade of gold."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WHEAT       = "This would be more useful as flour."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.WHEAT    = "O, glorious wheat!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.WHEAT        = "It's no good by itself." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.WHEAT        = "I go against the grain whenever possible. Ha!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.WHEAT        = "The mortals grind it up with big rocks."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.WHEAT      = "Oh! Pretty seeds!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.WHEAT         = "I can almost smell the sourdough!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.WHEAT          = "Wheaties."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.WHEAT            = "x"
+
+STRINGS.NAMES.WHEATGRASS                                 = "Wheatgrass"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.WHEATGRASS =
+        {
+            BARREN = "It needs poop.",
+            WITHERED = "It's not going to grow back while it's so hot.",
+            BURNING = "That's burning fast!",
+            GENERIC = "That's where bread comes from?",
+            PICKED = "It was cut down in the prime of its life.",
+        } 
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.WHEATGRASS =
+        {
+            BARREN = "It needs poop.",
+            WITHERED = "Nice, dry, and ready to burn!",
+            BURNING = "Fire! Wooo!",
+            GENERIC = "It's a flammable tuft of wheatgrass.",
+            PICKED = "Can I burn it now?",
+        }                       
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.WHEATGRASS      = 
+        {
+            BARREN = "It needs poop.",
+            WITHERED = "Grass has been defeated by heat.",
+            BURNING = "Not good!",
+            GENERIC = "Is grass?",
+            PICKED = "The grass has been defeated!",
+        }
+STRINGS.CHARACTERS.WENDY.DESCRIBE.WHEATGRASS         = 
+        {
+            BARREN = "It needs poop.",
+            WITHERED = "It just couldn't take the heat.",
+            BURNING = "It smells funny.",
+            GENERIC = "That's some funny looking grass.",
+            PICKED = "It has been killed.",
+        }
+STRINGS.CHARACTERS.WX78.DESCRIBE.WHEATGRASS          = 
+        {
+            BARREN = "FERTILIZATION REQUIRED",
+            WITHERED = "NEEDS IMPROVED COOLING SYSTEM",
+            BURNING = "OOPS",
+            GENERIC = "IT LOOKS COMBUSTIBLE",
+            PICKED = "IT WILL RETURN SOON",
+        }
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.WHEATGRASS  = 
+        {
+            BARREN = "It needs poop.",
+            WITHERED = "It can't survive in this hot climate.",
+            BURNING = "Combustion!",
+            GENERIC = "A cluster graminoid stalks.",
+            PICKED = "I think it will grow back.",
+        }
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.WHEATGRASS        = 
+        {
+            BARREN = "I need to poop on it.",
+            WITHERED = "Maybe it'd thrive if it was cooler out?",
+            BURNING = "I hope that doesn't spread to the trees.",
+            GENERIC = "Looks like kindling.",
+            PICKED = "It's gone all nubbly.",
+        }
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WHEATGRASS       = 
+        {
+            BARREN = "Needs manure.",
+            WITHERED = "Another grain down the drain...",
+            BURNING = "Oops.",
+            GENERIC = "Tufty.",
+            PICKED = "Nothing to harvest.",
+        }
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.WHEATGRASS    = 
+        {
+            BARREN = "The life has gone from it.",
+            WITHERED = "The heat has defeated this plant.",
+            BURNING = "Loge looks upon you!",
+            GENERIC = "That could be useful.",
+            PICKED = "I eagerly await the next harvest.",
+        }
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.WHEATGRASS        = 
+        {
+            BARREN = "It could use some perking up.",
+            WITHERED = "The heat wave bested it.",
+            BURNING = "Fire, fire, fire!",
+            GENERIC = "Grass, next best thing to silk.",
+            PICKED = "Picked down to the stems.",
+        }
+STRINGS.CHARACTERS.WINONA.DESCRIBE.WHEATGRASS        = 
+        {
+            BARREN = "Needs a little boost.",
+            WITHERED = "It couldn't stand the heat.",
+            BURNING = "Smells toasty!",
+            GENERIC = "Charlie always went against the grain.",
+            PICKED = "It's on break.",
+        }
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.WHEATGRASS        = 
+        {
+            BARREN = "Salted earth, none will return.",
+            WITHERED = "Feeling down, are you?",
+            BURNING = "Whoops-a-doodle.",
+            GENERIC = "What's to gain from this grain?",
+            PICKED = "Gone, all gone.",
+        }
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.WHEATGRASS      = 
+        {
+            BARREN = "Needs poop",
+            WITHERED = "Too hot!",
+            BURNING = "Agghh!",
+            GENERIC = "Smells nice",
+            PICKED = "Nice trim!",
+        }
+STRINGS.CHARACTERS.WARLY.DESCRIBE.WHEATGRASS         = 
+        {
+            BARREN = "Could I get some fertilizer over here?",
+            WITHERED = "Too hot for you.",
+            BURNING = "I never burn anything in the kitchen.",
+            GENERIC = "A common ingredient for success around here.",
+            PICKED = "Plucked clean!",
+        }
+STRINGS.CHARACTERS.WURT.DESCRIBE.WHEATGRASS          = 
+        {
+            BARREN = "Need some poop.",
+            WITHERED = "It too hot out.",
+            BURNING = "Fire!!",
+            GENERIC = "Wheaties grass, florpt.",
+            PICKED = "Not grown back yet.",
+        }
+STRINGS.CHARACTERS.WALTER.DESCRIBE.WHEATGRASS        =
+        {
+            BARREN = "This wheat needs something to help it grow.",
+            WITHERED = "It's too hot out for anything to grow.",
+            BURNING = "Hey! Brush fires destroy forests!",
+            GENERIC = "Wonder if we'll find any weevils.",
+            PICKED = "Can't take anymore from it.",
+        }
+STRINGS.CHARACTERS.WANDA.DESCRIBE.WHEATGRASS         =
+        {
+            BARREN = "I could probably find something to help speed up its growth.",
+            WITHERED = "Nothing will grow in this heat.",
+            BURNING = "That's not good...",
+            GENERIC = "An agricultural timesink.",
+            PICKED = "And now it'll begin the painfully slow process of growing back.",
+        }
+
+
+STRINGS.NAMES.DUG_WHEATGRASS                             = "Wheatgrass Tuft"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DUG_WHEATGRASS       = "No pain no grain."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DUG_WHEATGRASS        = "What's the matter, got no dirt?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DUG_WHEATGRASS      = "He is cold and lonely."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DUG_WHEATGRASS         = "I like it dead, but it should probably be returned to the earth."
+STRINGS.CHARACTERS.WX78.DESCRIBE.DUG_WHEATGRASS          = "IT WOULD BE MORE USEFUL IN THE GROUND" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DUG_WHEATGRASS  = "It requires soil to grow."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DUG_WHEATGRASS        = "I should plant this."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DUG_WHEATGRASS       = "Do I look like a gardener?"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DUG_WHEATGRASS    = "I should like to see that returned to the earth goddess."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DUG_WHEATGRASS        = "Into the ground with you!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DUG_WHEATGRASS        = "Looks like some gardening's in order."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DUG_WHEATGRASS        = "Put it back in the dirt, before it gets hurt!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DUG_WHEATGRASS      = "Needs dirt"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DUG_WHEATGRASS         = "Should I bring it back to life?"
+STRINGS.CHARACTERS.WURT.DESCRIBE.DUG_WHEATGRASS          = "Where put this?"
+STRINGS.CHARACTERS.WALTER.DESCRIBE.DUG_WHEATGRASS        = "Now I can plant it closer to camp."
+STRINGS.CHARACTERS.WANDA.DESCRIBE.DUG_WHEATGRASS         = "I can think of a better place for it."
+
+STRINGS.NAMES.FLOUR                                 = "Flour"
+STRINGS.RECIPE_DESC.FLOUR                           = "Wheat, milled to perfection."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FLOUR       = "Ready for baking."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FLOUR        = "Can you just eat flour?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FLOUR      = "Is for dough and many good noodles."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FLOUR         = "Flour by any other name would smell as sweet."
+STRINGS.CHARACTERS.WX78.DESCRIBE.FLOUR          = "HA HA, THE WHEAT HAS BEEN CRUSHED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FLOUR  = "Ground Triticum aestivum grain."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FLOUR        = "Don't look like no flower to me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FLOUR       = "I suppose one could make baked goods with this."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FLOUR    = "The wheat hath fallen in battle."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FLOUR        = "If only I were back at the mill." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FLOUR        = "I ain't much of a baker."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FLOUR        = "Mortal food powder!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FLOUR      = "Dust for belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FLOUR         = "Oh the joys I will make with you!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.FLOUR          = "Smashed wheaties."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.FLOUR            = "x"
+
+STRINGS.NAMES.TURNIP                             = "Turnip"
+
+STRINGS.CHARACTERS.GENERIC.TURNIP                = "It's a raw turnip."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TURNIP        = "Haha gross, I hate turnips."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TURNIP      = "I will use in many dishes! Yes!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TURNIP         = "It's... a turnip."
+STRINGS.CHARACTERS.WX78.DESCRIBE.TURNIP          = "IT'S A DUMB TURNIP" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TURNIP  = "Edible root of Brassica rapa."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TURNIP        = "From the community garden."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TURNIP       = "It's a big, bulbous turnip."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TURNIP    = "I shall not consume it!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TURNIP        = "Wow! It's a turnip!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TURNIP        = "A fresh, ripe turnip."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TURNIP        = "That's a tiny turnip."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TURNIP      = "Cute little dirt friend"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TURNIP         = "Root vegetables are at the root of all good meals."
+STRINGS.CHARACTERS.WURT.DESCRIBE.TURNIP          = "Crunchy snack!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TURNIP            = "x"
+
+STRINGS.NAMES.TURNIP_COOKED                             = "Turnip Fritters"
+
+STRINGS.CHARACTERS.GENERIC.TURNIP_COOKED                = "Cooking is science in practice."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TURNIP_COOKED        = "Take that, turnip."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TURNIP_COOKED      = "Smell is very good."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TURNIP_COOKED         = "The turnip is now cooked."
+STRINGS.CHARACTERS.WX78.DESCRIBE.TURNIP_COOKED          = "IT IS COOKED EVENLY THROUGHOUT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TURNIP_COOKED  = "Fritters made from Brassica rapa."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TURNIP_COOKED        = "Cooked real nice."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TURNIP_COOKED       = "Hardly improves the taste."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TURNIP_COOKED    = "Ach! I shall not eat thee!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TURNIP_COOKED        = "We cooked the turnip." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TURNIP_COOKED        = "I'd rather not eat them on their own."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TURNIP_COOKED        = "Better not fritter these turnips away!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TURNIP_COOKED      = "Makes good belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TURNIP_COOKED         = "It will do in a pinch, but I can do better."
+STRINGS.CHARACTERS.WURT.DESCRIBE.TURNIP_COOKED          = "Tasty!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TURNIP_COOKED            = "x"
+
+STRINGS.NAMES.HONEY_CRYSTALS                      = "Crystallized Honey"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_CRYSTALS         = "Might as well toss it on the fire."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HONEY_CRYSTALS          = "Well that's dumb. Maybe we can melt it?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HONEY_CRYSTALS        = "Little sugar crystals."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HONEY_CRYSTALS           = "As tough as nails."
+STRINGS.CHARACTERS.WX78.DESCRIBE.HONEY_CRYSTALS            = "USELESS STICKINESS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HONEY_CRYSTALS    = "No longer food grade."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HONEY_CRYSTALS          = "That's a shame, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HONEY_CRYSTALS         = "Bittersweet."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HONEY_CRYSTALS      = "Alas, the nectar has hardened!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_CRYSTALS          = "Aw... It's no good anymore." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_CRYSTALS          = "It's no good now."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_CRYSTALS          = "Whoops-a-doodle!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_CRYSTALS        = "No no no!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_CRYSTALS           = "Finely aged honey, ready for processing."
+STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_CRYSTALS            = "No longer yummy, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.HONEY_CRYSTALS            = "x"
+
+STRINGS.NAMES.SYRUP                               = "Syrup"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SYRUP       = "Adds sweetness to the mixture."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.SYRUP        = "Mmmm..."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SYRUP      = "Yummy sugar goop!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.SYRUP         = "Not as sweet as Abigail."
+STRINGS.CHARACTERS.WX78.DESCRIBE.SYRUP          = "CONTAINS HIGH LEVELS OF STICKINESS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SYRUP  = "A high fructose sweetener."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.SYRUP        = "Not quite maple."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SYRUP       = "Cooking syrup. Of course."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SYRUP    = "Nectar of the gods."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.SYRUP        = "Sweet!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SYRUP        = "It's like honey in a bottle."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.SYRUP        = "For making sweet treats."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SYRUP      = "Makes the sweet stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.SYRUP         = "Highly processed but just as sweet."
+STRINGS.CHARACTERS.WURT.DESCRIBE.SYRUP          = "Magic potion for smiles!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.SYRUP            = "x"
+
+STRINGS.NAMES.EGG_MONSTER                         = "Monstrous Egg"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_MONSTER         = "I think I heard it growl at me..."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_MONSTER          = "That poor bird..."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_MONSTER        = "Little egg is scarey."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_MONSTER           = "It fills me with a sense of dread."
+STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_MONSTER            = "DECEARING EGG" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_MONSTER    = "Let's hope it stays unfertilized..."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_MONSTER          = "Birds were bad enough on their own..."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_MONSTER         = "Something sinister moves within."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_MONSTER      = "Dark eggy."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_MONSTER          = "We don't want this one to hatch." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_MONSTER          = "That egg needs a shave!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_MONSTER          = "I hear the pitter-patter of tiny feet!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.EGG_MONSTER        = "Uh oh Baby..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.EGG_MONSTER           = "I'm sure I have some fresher eggs somewhere..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.EGG_MONSTER            = "Is that a monster baby?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.EGG_MONSTER            = "x"
+
+STRINGS.NAMES.EGG_MONSTER_COOKED                  = "Seething Goop"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_MONSTER_COOKED      = "Did it... did it just move?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_MONSTER_COOKED       = "Smells worse than it looks."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_MONSTER_COOKED     = "Too much yolk."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_MONSTER_COOKED        = "Yet another abomination..."
+STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_MONSTER_COOKED         = "DECEARING EGUEEGEGEGE EGG" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_MONSTER_COOKED = "Thankfully we'll never know what might've hatched."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_MONSTER_COOKED       = "Do I have to... eat that?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_MONSTER_COOKED      = "I prefer my eggs... untainted."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_MONSTER_COOKED   = "Monster eggs are no joke!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_MONSTER_COOKED       = "Gloopy goop." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_MONSTER_COOKED       = "Should there be that many yolks?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_MONSTER_COOKED       = "I'd rather have another soul, thanks."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.EGG_MONSTER_COOKED     = "Smush"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.EGG_MONSTER_COOKED        = "What has my life come to..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.EGG_MONSTER_COOKED         = "Blegh!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.EGG_MONSTER_COOKED            = "x"
+
+-- SEEDS --
+
+STRINGS.NAMES.BARRENSEEDSPACKET_LUNAR             = "Lunar Seed Cache"
+STRINGS.NAMES.BARRENSEEDSPACKET_EXOTIC            = "Exotic Seed Pouch"
+STRINGS.NAMES.BARRENSEEDSPACKET_AROMATIC          = "Aromatic Seed Pouch"
+STRINGS.NAMES.BARRENSEEDSPACKET_SEASONAL          = "Seasonal Seed Packet"
+STRINGS.NAMES.BARRENSEEDSPACKET_COMMON            = "Common Seed Packet"
+
+-- GORGE STYLE SEED NAMES --
+
+STRINGS.NAMES.WHEAT_SEEDS                         = "Blue Seeds"
+STRINGS.NAMES.TURNIP_SEEDS                        = "Round Seeds"
+STRINGS.NAMES.SWEET_POTATO_SEEDS                  = "Earthy Seeds"
+STRINGS.NAMES.PINEANANAS_SEEDS                    = "Starry Seed Pods"
+STRINGS.NAMES.GARLIC_SEEDS                        = "Fragrant Seed Pods"
+
+STRINGS.NAMES.SEEDS                               = "Wild Seeds"
+
+STRINGS.NAMES.KNOWN_WHEAT_SEEDS                         = "Wheat Seeds"
+STRINGS.NAMES.KNOWN_TURNIP_SEEDS                        = "Turnip Seeds"
+STRINGS.NAMES.FARM_PLANT_WHEAT                          = "Wheat"
+STRINGS.NAMES.FARM_PLANT_TURNIP                         = "Turnip Plant"
+
+-- CHARACTER SEED QUOTES --
+
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SEEDS                      = "A Mendelian exercise in phenotype dominance."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.POMEGRANATE_SEEDS_PROXY          = "Seeds of Punica granatum, arils included."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGGPLANT_SEEDS             = "Ovaloid Solanum melongena seeds."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.WHEAT_SEEDS                = "Highly pigmented grain of Triticum aestivum."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TURNIP_SEEDS               = "Mutated seed of Brassica rapa."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ONION_SEEDS                = "Sharp seeds, of the Allium sativum variety."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GARLIC_SEEDS               = "The Allium cepa pods emits a rather pleasant aroma."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ASPARAGUS_SEEDS_PROXY            = "Twisted seeds of the Asparagaceae family."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_COMMON   = "An envelope of potential crops."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "A hodgepodge of future vegetables."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Enough seeds here to keep me busy."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_EXOTIC   = "There's quite a variety in here."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_LUNAR    = "I must enquire after his trade routes."
+
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SEEDS                          = "Mystery baby"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TURNIP_SEEDS                   = "Baby likes cold"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.WHEAT_SEEDS                    = "Grows the belly grass"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GARLIC_SEEDS                   = "Smelly baby"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.ONION_SEEDS                    = "Pointy baby"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.POTATO_SEEDS                   = "Grows the dirty belly stuff"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TOMATO_SEEDS                   = "Grows the red circles"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PEPPER_SEEDS                   = "Grows the belly fire"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_COMMON       = "Aw... Babies!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_SEASONAL     = "Mmmm... Tasty babies"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_AROMATIC     = "Spicy smelly babies!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_EXOTIC       = "Special babies!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_LUNAR        = "Moon babies!"
+
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CARROT_SEEDS                      = "It's a vegetable that's waiting to be."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TURNIP_SEEDS                      = "Cold, like the dirt."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GARLIC_SEEDS                      = "They smell very faint."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.ONION_SEEDS                       = "The life they contain is a mystery."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.POTATO_SEEDS                      = "Bury them deep."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TOMATO_SEEDS                      = "If they prick my finger will it bleed?."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.WHEAT_SEEDS                       = "Blue again. How boring."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PEPPER_SEEDS_PROXY                      = "Variety is the spice of life... I guess."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_COMMON          = "Planting seeds requires an optimism I don't possess."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_SEASONAL        = "A moderate amount of hopefulness."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_AROMATIC        = "I suspect they will all spoil."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_EXOTIC          = "So much potential for blight."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_LUNAR           = "Even the moon must fall."
+
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGGPLANT_SEEDS_PROXY                   = "Will these seeds make a plant or a baby bird?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TURNIP_SEEDS                     = "They seem to like the cold. I don't like them."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GARLIC_SEEDS                     = "A pod full of aroma."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.ONION_SEEDS                      = "It's just a bunch of seeds."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.POTATO_SEEDS                     = "Ugly little dirt berries."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TOMATO_SEEDS                     = "Prickly tomato seeds."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.WHEAT_SEEDS                      = "Blue isn't really my colour."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PEPPER_SEEDS_PROXY                     = "A healthy dose of spice."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_COMMON         = "Aw...I won't know what these are until I plant them."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_SEASONAL       = "There's different kinds of seeds in here."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_AROMATIC       = "It's got a bunch of seeds in it."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_EXOTIC         = "There's a lot of seeds in there."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_LUNAR          = "These seeds must be special."
+
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TURNIP_SEEDS                     = "Hibernation seeds."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GARLIC_SEEDS                     = "These seeds smell funny."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.ONION_SEEDS                      = "Looks like new crop seeds to me."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.POTATO_SEEDS                     = "A simple seed for a simple crop."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TOMATO_SEEDS                     = "Not the wisest snack."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.WHEAT_SEEDS                      = "Something ain't right with these seeds."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PEPPER_SEEDS                     = "I should plant this."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.ASPARAGUS_SEEDS                  = "Spring seeds, eh?"
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_COMMON         = "It's a start."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_SEASONAL       = "Hey, we got a whole garden in here."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_AROMATIC       = "Well, there's a few seeds in here anyway."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_EXOTIC         = "This will keep us busy for a while."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_LUNAR          = "I can feel it wriggling."
+
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SEEDS                        = "A battle of seedling dominance."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TURNIP_SEEDS                 = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GARLIC_SEEDS                 = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ONION_SEEDS                  = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.POTATO_SEEDS                 = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TOMATO_SEEDS                 = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.WHEAT_SEEDS                  = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PEPPER_SEEDS                 = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ASPARAGUS_SEEDS              = "Tiny nature bits."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_COMMON     = "A tiny sack of baby non-meats."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_SEASONAL   = "A hefty sack of baby non-meats."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_AROMATIC   = "A middling motley of baby non-meats."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_EXOTIC     = "A hefty motley of baby non-meats."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_LUNAR      = "Moon baby non-meats."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TURNIP_SEEDS                    = "It's a turnip seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GARLIC_SEEDS                    = "It's a garlic seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ONION_SEEDS                     = "It's an onion seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.POTATO_SEEDS                    = "It's a potato seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOMATO_SEEDS                    = "It's a tomato seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.WHEAT_SEEDS                     = "It's a wheat seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PEPPER_SEEDS                    = "It's a pepper seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ASPARAGUS_SEEDS                 = "It's an asparagus seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_COMMON        = "Sow what?"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_SEASONAL      = "Gone to seed."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_AROMATIC      = "A little seedy."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_EXOTIC        = "A mixed bag."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BARRENSEEDSPACKET_LUNAR         = "A handful of seeds."
+
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TURNIP_SEEDS                   = "Is winter seeds."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GARLIC_SEEDS                   = "Seeds smell nice."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ONION_SEEDS                    = "Is little tiny seeds for burying."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.POTATO_SEEDS                   = "Is little smush balls."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOMATO_SEEDS                   = "Ouch! Spiky seeds."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.WHEAT_SEEDS                    = "Why so blue, little seeds?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PEPPER_SEEDS_PROXY                   = "Little wrinkle berries."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ASPARAGUS_SEEDS                = "It grows up to make food."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_COMMON       = "Tiny paper."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_SEASONAL     = "Tiny paper is full of nature."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_AROMATIC     = "Tiny smelly paper."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_EXOTIC       = "Give your seeds to Wolfgang, tiny paper!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_LUNAR        = "Full of heavy seeds."
+
+STRINGS.CHARACTERS.WX78.DESCRIBE.TURNIP_SEEDS                       = "IT'S SOURCE CODE FOR WINTER SPHERES"
+STRINGS.CHARACTERS.WX78.DESCRIBE.GARLIC_SEEDS                       = "IT'S SOURCE CODE FOR EDIBLE WEDGES"
+STRINGS.CHARACTERS.WX78.DESCRIBE.ONION_SEEDS                        = "IT'S SOURCE CODE FOR LAYER SPHERES"
+STRINGS.CHARACTERS.WX78.DESCRIBE.POTATO_SEEDS                       = "IT'S SOURCE CODE FOR DIRT FRUIT"
+STRINGS.CHARACTERS.WX78.DESCRIBE.TOMATO_SEEDS                       = "IT'S SOURCE CODE FOR RED SPHERES"
+STRINGS.CHARACTERS.WX78.DESCRIBE.WHEAT_SEEDS                        = "IT'S SOURCE CODE FOR CALORIE GRASS"
+STRINGS.CHARACTERS.WX78.DESCRIBE.PEPPER_SEEDS                       = "IT'S SOURCE CODE FOR FIRE FRUIT"
+STRINGS.CHARACTERS.WX78.DESCRIBE.ASPARAGUS_SEEDS                    = "IT'S SOURCE CODE FOR POINTED GRASS"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_COMMON           = "UNIDENTIFIED LIFEPODS"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_SEASONAL         = "PLANTING A VARIETY OF LIFEPODS IS INEFFECIENT"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_AROMATIC         = "AN ABUNDANT AMOUNT OF LIFEPODS"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_EXOTIC           = "LIFEFORMS ARE NOT OF UNIFORM APPEARANCE"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_LUNAR            = "LITTLE LUNAR LIFEPODS"
+
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SEEDS                           = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WATERMELON_SEEDS                = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TURNIP_SEEDS                    = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GARLIC_SEEDS                    = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ONION_SEEDS                     = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.POTATO_SEEDS                    = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOMATO_SEEDS                    = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WHEAT_SEEDS                     = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PEPPER_SEEDS                    = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ASPARAGUS_SEEDS                 = "Such labor is beneath me."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_COMMON        = "Instruments of toil."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_SEASONAL      = "This adds a bit of variety to the garden."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_AROMATIC      = "A small investment in the future."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_EXOTIC        = "A cornucopia."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_LUNAR         = "Heavy with foreign magic."
+
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TURNIP_SEEDS                     = "We could grow something with these."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GARLIC_SEEDS                     = "We could grow something with these."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.ONION_SEEDS                      = "We could grow something with these."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.POTATO_SEEDS                     = "We could grow something with these."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_SEEDS                     = "We could grow something with these."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.WHEAT_SEEDS                      = "We could grow something with these."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_COMMON         = "These seeds are a good start."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_SEASONAL       = "Wow. There's a few different seeds in here."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_AROMATIC       = "Wow. A big mix of different food to plant."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_EXOTIC         = "We can grow a bunch of things from these seeds."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_LUNAR          = "We want to grow a moon tree!"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TURNIP_SEEDS                     = "Some turnip seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GARLIC_SEEDS                     = "Some garlic seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.ONION_SEEDS                      = "Some onion seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.POTATO_SEEDS                     = "Some potato seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TOMATO_SEEDS                     = "Some tomato seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.WHEAT_SEEDS                      = "Some wheat seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PEPPER_SEEDS                     = "Some pepper seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.ASPARAGUS_SEEDS                  = "Some asparagus seeds."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_COMMON         = "A good start."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_SEASONAL       = "I could start a small garden with this."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_AROMATIC       = "Better than a market."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_EXOTIC         = "A lotta variety in here."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_LUNAR          = "Better than a market."
+
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TURNIP_SEEDS                     = "Strange little seeds, indeed, indeed."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GARLIC_SEEDS                     = "Strange little seeds, indeed, indeed."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.ONION_SEEDS                      = "Strange little seeds, indeed, indeed."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.POTATO_SEEDS                     = "Grow a seed and you shall feed!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOMATO_SEEDS                     = "Grow a seed and you shall feed!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.WHEAT_SEEDS                      = "Grow a seed and you shall feed!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PEPPER_SEEDS                     = "Strange little seeds, indeed, indeed."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.ASPARAGUS_SEEDS                  = "Strange little seeds, indeed, indeed."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_COMMON         = "Plant them in a plot of land."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_SEASONAL       = "Plant them deep or else be damned."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_AROMATIC       = "Soil and toil, sow and grow."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_EXOTIC         = "Lay them under, lay them down."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_LUNAR          = "Oh? These are new."
+
+STRINGS.CHARACTERS.WARLY.DESCRIBE.POMEGRANATE_SEEDS_PROXY                 = "Delicious in salads."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TURNIP_SEEDS                      = "These should see me through the winter."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GARLIC_SEEDS                      = "Mmmm... the promise of allicin."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.ONION_SEEDS                       = "A pantry staple."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.POTATO_SEEDS                      = "Les petits glucides."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TOMATO_SEEDS                      = "Seedy seeds."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.WHEAT_SEEDS                       = "These will be worth waiting for."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PEPPER_SEEDS_PROXY                      = "An assorted mix of peppercorns"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.ASPARAGUS_SEEDS                   = "Fresh and grassy."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_COMMON          = "What fresh ingredients will grow from these?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_SEASONAL        = "Fresh seasonal produce awaits!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_AROMATIC        = "Something to get excited about."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_EXOTIC          = "I have some fruit recipes I want to try."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_LUNAR           = "Simply transformative."
+
+
+STRINGS.CHARACTERS.WURT.DESCRIBE.TURNIP_SEEDS                   = "Make more turnip!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.WHEAT_SEEDS                   = "Make more wheaties!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BARRENSEEDSPACKET_COMMON       = "Full of treasures?"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BARRENSEEDSPACKET_SEASONAL     = "Even more treasures."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BARRENSEEDSPACKET_AROMATIC     = "These ones hurt my tummy, flort!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BARRENSEEDSPACKET_EXOTIC       = "Mmmm... full of good smells."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BARRENSEEDSPACKET_LUNAR        = "Don't know these smells."
+
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TURNIP_SEEDS            = "x"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.WHEAT_SEEDS            = "x"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BARRENSEEDSPACKET_COMMON            = "x"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BARRENSEEDSPACKET_SEASONAL            = "x"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BARRENSEEDSPACKET_AROMATIC            = "x"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BARRENSEEDSPACKET_EXOTIC            = "x"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BARRENSEEDSPACKET_LUNAR            = "x"
+
+
+-- CROCKPOT DISHES --
+
+STRINGS.NAMES.TRUNK_POTROAST                      = "Mighty Pot Roast"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TRUNK_POTROAST      = "I'm the greatest hunter."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TRUNK_POTROAST       = "Life, improved with fire."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TRUNK_POTROAST     = "Meat! Wolfgang like."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TRUNK_POTROAST        = "An animal died for this food."
+STRINGS.CHARACTERS.WX78.DESCRIBE.TRUNK_POTROAST         = "DENSELY PACKED MEAT ENERGY" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TRUNK_POTROAST = "Protein rich."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TRUNK_POTROAST       = "Nothin' like a good hearty hunk of meat."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TRUNK_POTROAST      = "Another successful hunt."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TRUNK_POTROAST   = "MEAT! Prepare to be consumed!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TRUNK_POTROAST       = "We need a bigger mouth!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TRUNK_POTROAST       = "A hearty meal."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TRUNK_POTROAST       = "I don't see the appeal."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TRUNK_POTROAST     = "Big belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TRUNK_POTROAST        = "Basted in it's own juices."
+STRINGS.CHARACTERS.WURT.DESCRIBE.TRUNK_POTROAST         = "Nuh uh."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TRUNK_POTROAST            = "x"
+
+STRINGS.NAMES.PIE_CANNIBAL                        = "Lovely Meat Pie"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PIE_CANNIBAL      = "Mmmm... smells good."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PIE_CANNIBAL       = "I think I heard my stomach rumble..."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PIE_CANNIBAL     = "Just one bite..."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PIE_CANNIBAL        = "Alas, I knew them well..."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PIE_CANNIBAL         = "DELICIOUS MINION MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PIE_CANNIBAL = "One hopes this was worth all the trouble."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PIE_CANNIBAL       = "This'll be our secret, eh Lucy?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PIE_CANNIBAL      = "Reminds me of my darker days..."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PIE_CANNIBAL   = "Delicious forbidden meat!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PIE_CANNIBAL       = "Mmmm... I'm hungry." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PIE_CANNIBAL       = "More gristle than I expected."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PIE_CANNIBAL       = "Waste not, want not! Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PIE_CANNIBAL     = "Yum yum!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PIE_CANNIBAL        = "At least it's well seasoned..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PIE_CANNIBAL         = "Blegh!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PIE_CANNIBAL            = "x"
+
+STRINGS.NAMES.CAKE_CARROT                         = "Carrot Cake"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CAKE_CARROT      = "Delicious!"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.CAKE_CARROT       = "At least we have plenty of carrots."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CAKE_CARROT     = "Is tasty carrot snack."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CAKE_CARROT        = "It's heavy, like my heart."
+STRINGS.CHARACTERS.WX78.DESCRIBE.CAKE_CARROT         = "ORANGE POINTY CAKE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CAKE_CARROT = "A delicious emulsion-based cake."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.CAKE_CARROT       = "Definitely carrot flavoured."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CAKE_CARROT      = "An old favorite of mine."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CAKE_CARROT   = "Much too sweet!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.CAKE_CARROT       = "We like the frosting!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CAKE_CARROT       = "A robust dessert."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CAKE_CARROT       = "Mortals are strange."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CAKE_CARROT     = "For belly?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CAKE_CARROT        = "A classic for a reason."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CAKE_CARROT         = "Tasty tasty carrots."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CAKE_CARROT            = "x"
+
+-- BREADS --
+
+STRINGS.NAMES.BREADBOX             = "Breadbox"
+STRINGS.RECIPE_DESC.BREADBOX                           = "Keeps a single loaf fresh."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREADBOX      = "Am I a joke to you?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREADBOX       = "Would've been better as kindling."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREADBOX     = "Tiny little breadbox."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREADBOX        = "It's like a coffin for carbs."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BREADBOX         = "IT PROVIDES GLUTEN STABILITY" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREADBOX = "Ah yes, finally a sterile place to store our bread, thank you Toni."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREADBOX       = "Not the wisest use of wood, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREADBOX      = "Some foul magic stops it from spoiling."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREADBOX   = "It cannot contain my meats!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREADBOX       = "Keeps our toast nice and tasty!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREADBOX       = "Reminds me of this gal I knew. Think her name was Toni."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREADBOX       = "...why?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREADBOX     = "Belly box?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREADBOX        = "Une petite boîte à pain."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREADBOX         = "Why are insides not wet?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BREADBOX            = "x"
+
+STRINGS.NAMES.BREAD                               = "Bread"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD      = "It's all doughy."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD       = "So this is what all that wheat is for."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD     = "Is keeping Wolfgang going."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD        = "Prolongs my life so that I may suffer further."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD         = "GLUTEN BASED ENERGY" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD = "A starchy, gluten-filled treat."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD       = "A good old fashioned meal."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREAD      = "Nourishing."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREAD   = "Non-meat based food."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD       = "Yay! Bread!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD       = "Who doesn't like bread?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD       = "The mortals love this stuff."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD     = "Mmmm..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD        = "Think of the possibilities!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD         = "Big yum!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BREAD            = "x"
+
+STRINGS.NAMES.BREAD_GARLIC                               = "Garlic Bread"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_GARLIC      = "The secret ingredient is garlic."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD_GARLIC       = "It has a comforting heat to it."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD_GARLIC     = "Is a tasty bread snack."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD_GARLIC        = "At least it's not plain."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD_GARLIC         = "MY SECRET WEAPON: CARBOHYDRATES" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD_GARLIC = "Allium cepa at it's finest."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD_GARLIC       = "Lookin' mighty fancy."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREAD_GARLIC      = "Also keeps hunger at bay."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREAD_GARLIC   = "Hath thou no bacon?"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_GARLIC       = "Yummy! Stinky bread!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_GARLIC       = "Bet that tastes as good as it smells."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_GARLIC       = "Hissssss!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_GARLIC     = "Smelly belly loaf"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_GARLIC        = "My dearest allicin, how I've missed you."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_GARLIC         = "Why it smell so good?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BREAD_GARLIC            = "x"
+
+STRINGS.NAMES.BREAD_CHEESE                               = "Grilled Cheese"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_CHEESE      = "Who knew bread and cheese went so well together?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD_CHEESE       = "Fire, meet cheese."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD_CHEESE     = "Cheese makes little bread mighty."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD_CHEESE        = "Not even carbs can fill the void."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD_CHEESE         = "LACTOSE CONFINED BY GLUTEN SLABS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD_CHEESE = "What a delightful sandwich!"
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD_CHEESE       = "I could eat these forever."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREAD_CHEESE      = "A simple pleasure."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREAD_CHEESE   = "Finally! A sandwich that pleases me."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_CHEESE       = "Mom would make these when we were good." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_CHEESE       = "Can't go wrong with grilled cheese."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_CHEESE       = "Easy peasy, grilled and cheesey."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_CHEESE     = "Mmmm... cheesey"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_CHEESE        = "Béchamel with just a hint of nutmeg."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_CHEESE         = "Mmmm must show \"cheese\" to mermfolk."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BREAD_CHEESE            = "x"
+
+STRINGS.NAMES.BREAD_JAM                               = "Jammy Sandwich"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_JAM      = "Jam is definitely better on bread."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD_JAM       = "I prefer mine on toast."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD_JAM     = "Oozes like tasty sandwich."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD_JAM        = "Better than eating it with my hands, I suppose."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD_JAM         = "I HAVE IMPRISONED THE JAM" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD_JAM = "Not quite toast, but close enough."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD_JAM       = "Still no peanut butter, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREAD_JAM      = "The bread keeps it neat."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREAD_JAM   = "Foolishness! There is no meat here!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_JAM       = "Can someone cut our crusts off?" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_JAM       = "A solid lunch right there."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_JAM       = "At least it won't get in my fur again."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_JAM     = "Mmmm... sweet belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_JAM        = "One of life's simple pleasures."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_JAM         = "Bread keeps claws clean."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BREAD_JAM            = "x"
+
+-- MEATBALL BLOCKERS --
+
+STRINGS.NAMES.SOUP_CARROT                         = "Carrot Soup"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOUP_CARROT      = "It's all soupy."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.SOUP_CARROT       = "Soggy carrots."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SOUP_CARROT     = "Is like Wolfgang Mommy used to make."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.SOUP_CARROT        = "Oh joy. More carrots."
+STRINGS.CHARACTERS.WX78.DESCRIBE.SOUP_CARROT         = "THIS IS FINE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SOUP_CARROT = "A blend of Daucus carota."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.SOUP_CARROT       = "Can't go wrong with a good soup."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SOUP_CARROT      = "Rather pedestrian if you ask me."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SOUP_CARROT   = "Where is my meat?"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.SOUP_CARROT       = "Mom said we should always eat our vegetables." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SOUP_CARROT       = "Never turn your nose up at free food!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.SOUP_CARROT       = "Not much better than water."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SOUP_CARROT     = "Soup for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.SOUP_CARROT        = "I would kill for some cilantro."
+STRINGS.CHARACTERS.WURT.DESCRIBE.SOUP_CARROT         = "Carrot juices, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.SOUP_CARROT            = "x"
+
+STRINGS.NAMES.SOUP_MUSHROOM                       = "Cream of Mushroom Soup"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOUP_MUSHROOM      = "Soup's on!"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.SOUP_MUSHROOM       = "Not much of a meal."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SOUP_MUSHROOM     = "Nice mushy-room soup."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.SOUP_MUSHROOM        = "Mushrooms, without the fun."
+STRINGS.CHARACTERS.WX78.DESCRIBE.SOUP_MUSHROOM         = "I HOPED IT WOULD BE POISONOUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SOUP_MUSHROOM = "The toxins have been cooked out."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.SOUP_MUSHROOM       = "A mighty tasty soup."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SOUP_MUSHROOM      = "An utterly unexciting soup."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SOUP_MUSHROOM   = "Not meaty enough!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.SOUP_MUSHROOM       = "Nice and creamy!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SOUP_MUSHROOM       = "Definitely not poisonous. Right?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.SOUP_MUSHROOM       = "There's morel where that came from, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SOUP_MUSHROOM     = "Mushy soup"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.SOUP_MUSHROOM        = "A little bland for my liking."
+STRINGS.CHARACTERS.WURT.DESCRIBE.SOUP_MUSHROOM         = "Mushy mushrooms."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.SOUP_MUSHROOM            = "x"
+
+STRINGS.NAMES.SOUP_STONE                          = "Stone Soup"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOUP_STONE      = "I hope I don't chip a tooth."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.SOUP_STONE       = "I'd rather not."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SOUP_STONE     = "Little stone is full of flavour."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.SOUP_STONE        = "Hardly better than gruel."
+STRINGS.CHARACTERS.WX78.DESCRIBE.SOUP_STONE         = "HAHA WE MADE THE STONE CRY" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SOUP_STONE = "I'm not sure I want to know."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.SOUP_STONE       = "Desperate times, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SOUP_STONE      = "Oh how far I've fallen."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SOUP_STONE   = "I shall eat it naught!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.SOUP_STONE       = "Are we sure we want to eat it?" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SOUP_STONE       = "Beggars can't be choosers..."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.SOUP_STONE       = "Like getting soup from a stone, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SOUP_STONE     = "Stoney soup"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.SOUP_STONE        = "A twist on an old classic."
+STRINGS.CHARACTERS.WURT.DESCRIBE.SOUP_STONE         = "Rock soup from fairy stories."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.SOUP_STONE            = "x"
+
+STRINGS.NAMES.STEWED_MEAT                         = "Stewed Meat"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEWED_MEAT      = "This should tide me over."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.STEWED_MEAT       = "That's what you get for cooking with ice."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.STEWED_MEAT     = "Is stew full of sadness."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.STEWED_MEAT        = "Merely a broth. It's not sustenance for my soul."
+STRINGS.CHARACTERS.WX78.DESCRIBE.STEWED_MEAT         = "ENERGY WHICH CONTAINS LIQUID, MY ENEMY" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.STEWED_MEAT = "Broth is good for the digestion."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.STEWED_MEAT       = "A light broth to keep me going."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.STEWED_MEAT      = "Ahh... a nice broth."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.STEWED_MEAT   = "Merely a broth."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.STEWED_MEAT       = "Tastes like leftovers." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.STEWED_MEAT       = "At least it's something."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.STEWED_MEAT       = "Watered down goop."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.STEWED_MEAT     = "Tasty water"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.STEWED_MEAT        = "How I long for oxtail."
+STRINGS.CHARACTERS.WURT.DESCRIBE.STEWED_MEAT         = "Blurpgh."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.STEWED_MEAT            = "x"
+
+STRINGS.NAMES.BERRY_CUTLET                        = "Juicy Cutlet"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BERRY_CUTLET      = "It's mostly sauce."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BERRY_CUTLET       = "This will keep me going for a little longer."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BERRY_CUTLET     = "Disappointing."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BERRY_CUTLET        = "This will keep me alive a bit longer."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BERRY_CUTLET         = "PATHETIC MEAT SLAB" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BERRY_CUTLET = "The tannins in the berries make the meat extra tender."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BERRY_CUTLET       = "Not much meat, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BERRY_CUTLET      = "A lovely light snack."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BERRY_CUTLET   = "I needeth more!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BERRY_CUTLET       = "Just a little snack." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BERRY_CUTLET       = "At least it's tasty."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BERRY_CUTLET       = "No thank you, no siree!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BERRY_CUTLET     = "Juicy belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BERRY_CUTLET        = "Served with a fresh berry reduction."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BERRY_CUTLET         = "Why waste berries?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BERRY_CUTLET            = "x"
+
+-- JELLIES --
+
+STRINGS.NAMES.JELLY_CROWN                         = "Crown Jello"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_CROWN      = "Is that crown edible?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.JELLY_CROWN       = "Eat the rich!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.JELLY_CROWN     = "Is make Wolfgang big and strong!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.JELLY_CROWN        = "It cannot sweeten life."
+STRINGS.CHARACTERS.WX78.DESCRIBE.JELLY_CROWN         = "CONTAINS HIGH LEVELS OF FRUCTOSE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.JELLY_CROWN = "A royal delicacy, set with gelatine."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.JELLY_CROWN       = "Better than \"Crow Jello\", eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.JELLY_CROWN      = "Fit for a monarch."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.JELLY_CROWN   = "I fight for the crown!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.JELLY_CROWN       = "We bet this tastes great." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.JELLY_CROWN       = "Good for someone with a sweet tooth. Like me!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.JELLY_CROWN       = "For once, I'm tempted..."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.JELLY_CROWN     = "Belly filling stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.JELLY_CROWN        = "A dessert fit for a queen."
+STRINGS.CHARACTERS.WURT.DESCRIBE.JELLY_CROWN         = "Jello for King."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.JELLY_CROWN            = "x"
+
+STRINGS.NAMES.JELLY_TURKISH                       = "Turkish Delight"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_TURKISH      = "They make me feel sophisticated."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.JELLY_TURKISH       = "We were never allowed these at the orphanage."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.JELLY_TURKISH     = "Wolfgang save room for dessert."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.JELLY_TURKISH        = "These were Abigail's favorite."
+STRINGS.CHARACTERS.WX78.DESCRIBE.JELLY_TURKISH         = "CONTAINS HIGH LEVELS OF DELIGHT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.JELLY_TURKISH = "A special treat for a rainy day."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.JELLY_TURKISH       = "Looks good."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.JELLY_TURKISH      = "A refined treat."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.JELLY_TURKISH   = "I'll make an exception..."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.JELLY_TURKISH       = "Mmmm... we like them!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.JELLY_TURKISH       = "Ohh... a fancy dish."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.JELLY_TURKISH       = "If I must..."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.JELLY_TURKISH     = "Fancy belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.JELLY_TURKISH        = "A little piece of civilization."
+STRINGS.CHARACTERS.WURT.DESCRIBE.JELLY_TURKISH         = "Happy sweets, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.JELLY_TURKISH            = "x"
+
+-- BEEFALO MILK MOD --
+
+STRINGS.CHARACTERS.WINONA.ANNOUNCE_KICK     = "Yeow! Bit too familiar there bud?"
+STRINGS.CHARACTERS.WORTOX.ANNOUNCE_KICK     = "OWIE-HEE-HEE!"
+STRINGS.CHARACTERS.WORMWOOD.ANNOUNCE_KICK   = "Ouch! Bad Shaggy Buddy!"
+STRINGS.CHARACTERS.WARLY.ANNOUNCE_KICK      = "Ouch! I'll make sirloin of you yet!"
+STRINGS.CHARACTERS.WURT.ANNOUNCE_KICK       = "Glorp! Didn't mean it!"
+--STRINGS.CHARACTERS.WALTER.ANNOUNCE_KICK            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.RAWMILK    = "Stick it in the furnace."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.RAWMILK    = "I'll never understand these mortals."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RAWMILK  = "Not belly stuff?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.RAWMILK     = "Some pasteurisation will do you good."
+STRINGS.CHARACTERS.WURT.DESCRIBE.RAWMILK      = "Still smells like fuzzy."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.RAWMILK            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.COOKEDMILK    = "It does a body good."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.COOKEDMILK    = "Is it better in a bottle?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.COOKEDMILK  = "Mmmm... shaggy juice"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.COOKEDMILK     = "With a little more love this could be cheese."
+STRINGS.CHARACTERS.WURT.DESCRIBE.COOKEDMILK      = "Mmmm... warmies."    
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.COOKEDMILK            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHEESE    = "I could live off cheese alone."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHEESE    = "\"So good it's gouda.\""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHEESE  = "Shaggy cheese"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHEESE     = "Gouda, alpine if I'm not mistaken."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHEESE      = "Why it taste so good? Florpt."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHEESE            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BERRYSHAKE    = "It sure gets hot in the summer."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BERRYSHAKE    = "Berry-ly bearable."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BERRYSHAKE  = "Icy shaggy juice"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BERRYSHAKE     = "Ç'est belle, non?"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BERRYSHAKE      = "Nice and cool, flort."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BERRYSHAKE            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CURD    = "Don't knock it til ya try it."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CURD    = "Curd from a herd? How absurd!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CURD  = "Lumpy shaggy juice"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CURD     = "Just a little more love..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CURD      = "We want it lumpy?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CURD            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.AGED_CHEESE    = "I never was into the fancy stuff."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.AGED_CHEESE    = "I'm at a loss for words."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.AGED_CHEESE  = "Smelly shaggy cheese"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.AGED_CHEESE     = "Great flavour takes patience."
+STRINGS.CHARACTERS.WURT.DESCRIBE.AGED_CHEESE      = "This one taste even better!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.AGED_CHEESE            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.WHITE_CHEESE    = "Now to find a decent bagel..."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.WHITE_CHEESE    = "I still don't trust it."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.WHITE_CHEESE  = "Mmmm... lumpy"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.WHITE_CHEESE     = "The key to true creaminess."
+STRINGS.CHARACTERS.WURT.DESCRIBE.WHITE_CHEESE      = "(Sniff)"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.WHITE_CHEESE            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.AGED_WHITE_CHEESE    = "It's not too bad, once you've tried it."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.AGED_WHITE_CHEESE    = "Hasn't it gone rancid?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.AGED_WHITE_CHEESE  = "Smelly smells"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.AGED_WHITE_CHEESE     = "Not quite Roquefort but it'll do."
+STRINGS.CHARACTERS.WURT.DESCRIBE.AGED_WHITE_CHEESE      = "(Sniff sniff)"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.AGED_WHITE_CHEESE            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GOLDENVEIN_WHITE_CHEESE    = "Seems we've struck gold."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GOLDENVEIN_WHITE_CHEESE    = "Glimmering glitter! Hyuyu."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GOLDENVEIN_WHITE_CHEESE  = "Pretty belly stuff!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GOLDENVEIN_WHITE_CHEESE     = "What a delightful rarity!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.GOLDENVEIN_WHITE_CHEESE      = "(Sniff) Ooh shiny..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.GOLDENVEIN_WHITE_CHEESE            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISHYOGURT    = "Smells like fish."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISHYOGURT    = "About as sane as any mortal food."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISHYOGURT  = "Glub glub juice?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISHYOGURT     = "That's... an interesting fermentation technique."
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISHYOGURT      = "..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.FISHYOGURT            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PIZZA    = "This takes me back."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PIZZA    = "Does the shape improve the flavour?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PIZZA  = "Big round belly stuff!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PIZZA     = "Bienvenue à \"Flavortown\"."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PIZZA      = "Why you ruin it?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PIZZA            = "x"
+
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHEESECAKE    = "Now we're talking."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHEESECAKE    = "Well maybe just a nibble..."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHEESECAKE  = "Mmmmmmmm..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHEESECAKE     = "Such an exquisite flavour profile."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHEESECAKE      = "Mmmm cheese make best cake!"    
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHEESECAKE            = "x"
+
+-- DRYING RACK --
+
+STRINGS.NAMES.FISHBITE_DRIED        = "Small Fish Jerky"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISHBITE_DRIED      = "Drying made it fishier."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISHBITE_DRIED       = "The sun took the slipperiness away."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISHBITE_DRIED     = "Smell like fish, taste like fish."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FISHBITE_DRIED        = "Fish turned dry and fishy."
+STRINGS.CHARACTERS.WX78.DESCRIBE.FISHBITE_DRIED         = "HA HA HA HA HA" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISHBITE_DRIED = "Suprisingly edible saltfish."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISHBITE_DRIED       = "This should keep me going."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISHBITE_DRIED      = "I can't say it smells any better."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISHBITE_DRIED   = "Small sea meat provisions."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FISHBITE_DRIED       = "Still smells like fishies." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISHBITE_DRIED       = "A little bite of fish."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISHBITE_DRIED       = "I guess you can take the ocean out of the fish. Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISHBITE_DRIED     = "Dried up Glub"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISHBITE_DRIED        = "A suitable bonito flake substitute."
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISHBITE_DRIED         = "Glargh, who do this?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.FISHBITE_DRIED            = "x"
+
+STRINGS.NAMES.FISH_DRIED            = "Fish Jerky"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_DRIED      = "Concentrated fishiness."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISH_DRIED       = "Phew! Stinks like fish."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISH_DRIED     = "Smell like fish, taste like fish."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FISH_DRIED        = "The ocean has been taken from you."
+STRINGS.CHARACTERS.WX78.DESCRIBE.FISH_DRIED         = "NO MORE OCEAN FOR YOU" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISH_DRIED = "I should really watch my sodium..."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISH_DRIED       = "This should last a while."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISH_DRIED      = "Smells about as good as you'd think."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISH_DRIED   = "Sea meat provisions."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FISH_DRIED       = "Still tastes like fishies." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISH_DRIED       = "Lasts longer than fresh."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISH_DRIED       = "It can sea no more. Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISH_DRIED     = "Dried up Glub Glub"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISH_DRIED        = "Perfect for a rich seafood broth."
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISH_DRIED         = "Wuh-why?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.FISH_DRIED            = "x"
+
+STRINGS.NAMES.TOMATO_ROCK_DRIED     = "Sundried Toma Root"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOMATO_ROCK_DRIED      = "Science has concentrated the flavor."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TOMATO_ROCK_DRIED       = "Made from a different kind of fire."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOMATO_ROCK_DRIED     = "Is like red veggie leather."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TOMATO_ROCK_DRIED        = "The bloodiness darkens as it dries."
+STRINGS.CHARACTERS.WX78.DESCRIBE.TOMATO_ROCK_DRIED         = "DEHYDRATED VEGETATION SPHERES" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TOMATO_ROCK_DRIED = "Sundried Solanum lycopersicum, quite the restorative."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TOMATO_ROCK_DRIED       = "Sundried tomatoes for when I need 'em."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOMATO_ROCK_DRIED      = "It's a red, red sundried tomato."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TOMATO_ROCK_DRIED   = "A poor attempt at provisions!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_ROCK_DRIED       = "Yummy! Mum kept these in her pantry." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TOMATO_ROCK_DRIED       = "These should keep me stocked up."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOMATO_ROCK_DRIED       = "Hard like a rock and perfect for throwing!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TOMATO_ROCK_DRIED     = "Dried up red squishy"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TOMATO_ROCK_DRIED        = "A little punch of flavor when you need it."
+STRINGS.CHARACTERS.WURT.DESCRIBE.TOMATO_ROCK_DRIED         = "It stay tasty longer?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TOMATO_ROCK_DRIED            = "x"
+
+
+STRINGS.NAMES.PIGSKIN_LEATHER             = "Leather"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PIGSKIN_LEATHER      = "Tanning made it stronger."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PIGSKIN_LEATHER       = "I might need this for something."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PIGSKIN_LEATHER     = "Is from animal Wolfgang kill."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PIGSKIN_LEATHER        = "The result of many deaths."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PIGSKIN_LEATHER         = "MATERIAL MADE FROM DEAD THINGS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PIGSKIN_LEATHER = "A resilient material."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PIGSKIN_LEATHER       = "Nice hide."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PIGSKIN_LEATHER      = "Soft. Malleable."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PIGSKIN_LEATHER   = "Cloth made from the skins of my enemies."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PIGSKIN_LEATHER       = "It's pretty strong material." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PIGSKIN_LEATHER       = "Now that's a reliable material."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PIGSKIN_LEATHER       = "Leather for all kinds of weather. Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PIGSKIN_LEATHER     = "Oh"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PIGSKIN_LEATHER        = "I suppose it's important to use the whole animal."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PIGSKIN_LEATHER         = "Much better, florpt."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PIGSKIN_LEATHER            = "x"
+
+-- PASTA --
+
+STRINGS.NAMES.PASTA_WET             = "Pasta Dough"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_WET      = "We must dry it out with science first."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_WET       = "Stick it on the drying rack."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_WET     = "Make Wolfgang feel hungry."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_WET        = "This would be much better dried."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_WET         = "WARNING: DEHYDRATION REQUIRED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_WET = "It would do to let it dry out first."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_WET       = "Seems like a whole lot of effort."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_WET      = "Ugh, couldn't this be easier?"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_WET   = "It is too wet to add meat."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_WET       = "Hmmm... grandpa's noodles were a bit drier than this." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_WET       = "Sure, let's sling it on the rack and see what happens."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_WET       = "I wouldn't want to be a wet noodle."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_WET     = "Too wet for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_WET        = "Now to make the noodles..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_WET         = "Too swampy, flurp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_WET            = "x"
+
+STRINGS.NAMES.PASTA_DRY             = "Nest of Noodles"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_DRY      = "The path to flavor is paved with science."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_DRY       = "All it needs now is sauce."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_DRY     = "Is good for making meal for friends."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_DRY        = "Not much good by it's lonesome."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_DRY         = "THIS IS ACCEPTABLE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_DRY = "A pantry staple."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_DRY       = "Looks just about ready."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_DRY      = "That chef has a few worthwile tricks."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_DRY   = "It is ready for meat."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_DRY       = "Ready for the pot." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_DRY       = "Can't beat the fresh stuff."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_DRY       = "Did the bird fly away? Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_DRY     = "Dried up for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_DRY        = "Mon dieu! A glimpse of civilization."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_DRY         = "Fancy cook man says it ready."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_DRY            = "x"
+
+STRINGS.NAMES.PASTA_FETUCCINI             = "Fettuccine"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_FETUCCINI      = "It's pretty basic, but I like it."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_FETUCCINI       = "Honestly, it's a little bland."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_FETUCCINI     = "Nice and tasty."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_FETUCCINI        = "Tastes like something Wilson would make..."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_FETUCCINI         = "PASTA 1.0" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_FETUCCINI = "Perfectly plain fettucine."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_FETUCCINI       = "I never liked much seasoning anyway."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_FETUCCINI      = "Bland."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_FETUCCINI   = "These noodles cannot trick me!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_FETUCCINI       = "Mmmm... slimy noodles..." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_FETUCCINI       = "Nothin' to turn yer nose up at."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_FETUCCINI       = "Where does one noodle end and the next one begin?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_FETUCCINI     = "Tasty belly strings"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_FETUCCINI        = "A satisfying fettucine alfredo."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_FETUCCINI         = "Mmmm... fancy past-ah taste good."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_FETUCCINI            = "x"
+
+STRINGS.NAMES.PASTA_MAC             = "Mac and Cheese"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MAC      = "There's a lot of cheese in here."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MAC       = "Mind if I come back for seconds?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MAC     = "Hearty cheese noodles."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MAC        = "The perfect comfort food."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MAC         = "CHEESE HAS REACHED PEAK PERFORMANCE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_MAC = "Personally, I'd prefer a carbonara."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_MAC       = "I used to make mine out of a box."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MAC      = "A hearty meal for these old bones."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_MAC   = "Tastes meaty enough!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_MAC       = "Yum! Mum would make this on our birthday." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_MAC       = "Now that's some hearty grub!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_MAC       = "I think it's gone rancid."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_MAC     = "Mmmm... cheesey"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_MAC        = "I make mine with gruyère and paprika."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_MAC         = "Mmmm... fancy and cheesey, florpt."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_MAC            = "x"
+
+STRINGS.NAMES.PASTA_MEATBALL             = "Spaghetti and Meatball"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MEATBALL      = "All the flavor is in the sauce."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MEATBALL       = "I'm gonna need a nap after this."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MEATBALL     = "Noodles make Wolfgang stronger!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MEATBALL        = "Balled meat. Now with spaghetti."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MEATBALL         = "NUTRITIOUS SPHERES AND NOODLES" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_MEATBALL = "A precariously balanced meal."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_MEATBALL       = "All the meats and more!"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MEATBALL      = "An incredibly filling meal."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_MEATBALL   = "Meat on a throne of noodles!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_MEATBALL       = "Grandpa made this when we were sad." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_MEATBALL       = "Let's dig in!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_MEATBALL       = "Not even worth juggling."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_MEATBALL     = "Big belly stuff ball"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_MEATBALL        = "Un classique américain."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_MEATBALL         = "Glurgh... fancy past-ah ruined."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_MEATBALL            = "x"
+
+STRINGS.NAMES.PASTA_MANICOTTI             = "Manicotti"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MANICOTTI      = "Cheese is always better on the inside."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MANICOTTI       = "I hope it tastes as good as it looks."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MANICOTTI     = "Fancy cheese tubes taste good."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MANICOTTI        = "I too like to fill the void with cheese."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MANICOTTI         = "PIPES FULL OF CHEESE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_MANICOTTI = "Delightfully indulgent."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_MANICOTTI       = "Kinda fancy eh, Lucy?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MANICOTTI      = "That chef needs a raise!"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_MANICOTTI   = "I could swear there was meat in there."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_MANICOTTI       = "We wonder what's inside?" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_MANICOTTI       = "Better not get on my overalls."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_MANICOTTI       = "Delightful, really..."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_MANICOTTI     = "Happy belly tubes"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_MANICOTTI        = "Such a beautiful sight."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_MANICOTTI         = "Mmmm... this past-ah big fancy!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_MANICOTTI            = "x"
+
+-- OTHERS -- 
+
+STRINGS.NAMES.STICK_PRETZELS             = "Twiggy Treats"
+
+-- Some of these came from Chris14... and Hyper on the FaF Discord
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STICK_PRETZELS      = "High in fibre."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.STICK_PRETZELS       = "More kindling than a snack."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.STICK_PRETZELS     = "Tiny twigs make Wolfgang angry."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.STICK_PRETZELS        = "No need to salt the wound."
+STRINGS.CHARACTERS.WX78.DESCRIBE.STICK_PRETZELS         = "INSUFFICIENT SUSTENANCE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.STICK_PRETZELS = "A meal fit only for the beefalo."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.STICK_PRETZELS       = "I think Luce would like this more, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.STICK_PRETZELS      = "Not a significant source of nutrients."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.STICK_PRETZELS   = "Who forgot the meat?!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.STICK_PRETZELS       = "We think they look pretty." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.STICK_PRETZELS       = "Not the worst pretzels I've had."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.STICK_PRETZELS       = "Looks like any other mortal meal to me."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.STICK_PRETZELS     = "Friend...?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.STICK_PRETZELS        = "A culinary abomination."
+STRINGS.CHARACTERS.WURT.DESCRIBE.STICK_PRETZELS         = "Not for eating? Flort."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.STICK_PRETZELS            = "x"
+
+STRINGS.NAMES.CHEESE_GOAT            = "Goat Cheese"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHEESE_GOAT      = "Curdled by static electricity."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHEESE_GOAT       = "Smelly and fuzzy. Double yuck."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHEESE_GOAT     = "Is tasty cheese snack."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CHEESE_GOAT        = "Definitely curdled."
+STRINGS.CHARACTERS.WX78.DESCRIBE.CHEESE_GOAT         = "ELECTRIFIED CHEESE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHEESE_GOAT = "What a delightful bacterial advancement!"
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHEESE_GOAT       = "No mistakes about it. That's cheese!"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHEESE_GOAT      = "A dynamo of nutrient energy."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHEESE_GOAT   = "Powerful milk makes powerful cheese."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.CHEESE_GOAT       = "Grandpa would smear it on crackers." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHEESE_GOAT       = "I try to support local artisans."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHEESE_GOAT       = "Such an unpleasant practice."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHEESE_GOAT     = "Mmmmm..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.CHEESE_GOAT        = "A shocking Valençay pyramid."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHEESE_GOAT         = "Curly head make zappy cheese?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.CHEESE_GOAT            = "x"
+
+STRINGS.NAMES.EGG_PLANT                 = "Leafy Egg"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT      = "Would you hatch with leaves or feathers?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_PLANT       = "Not even fire can fix this."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_PLANT     = "Egg make Wolfgang head hurt."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_PLANT        = "Doomed to nothingness."
+STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_PLANT         = "YOU ARE PATHETIC, EGG" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_PLANT = "An unusual Mixotrophic egg."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_PLANT       = "Gross, but at least it's birdless."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_PLANT      = "I will not be taken for a fool, egg."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_PLANT   = "Be thou veggie or eggy?"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_PLANT       = "A soft shelled egg." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_PLANT       = "A veggie breakfast."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_PLANT       = "A foul facsimile fowl! Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.EGG_PLANT     = "Baby friend?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.EGG_PLANT        = "A precious vegetal oddity."
+STRINGS.CHARACTERS.WURT.DESCRIBE.EGG_PLANT         = "Hmm? Baby Leafy inside?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.EGG_PLANT            = "x"
+
+STRINGS.NAMES.EGG_PLANT_COOKED          = "Leafy Scramble"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT_COOKED      = "It smells kinda yeasty."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_PLANT_COOKED       = "It's more slime than egg."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_PLANT_COOKED     = "Is slimy protein shake."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_PLANT_COOKED        = "Better to end it now."
+STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_PLANT_COOKED         = "ALL LIFE HAS CEASED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_PLANT_COOKED = "Unpollinated, but not inedible."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_PLANT_COOKED       = "Yep, definitely no bird in there."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_PLANT_COOKED      = "Uncomfortably gelatinous."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_PLANT_COOKED   = "This may be pushing it..."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_PLANT_COOKED       = "It doesn't smell good." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_PLANT_COOKED       = "The shell seems chewy."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_PLANT_COOKED       = "Dribble, drabble, splat."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.EGG_PLANT_COOKED     = "Gooey for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.EGG_PLANT_COOKED        = "The water content was far too high."
+STRINGS.CHARACTERS.WURT.DESCRIBE.EGG_PLANT_COOKED         = "Nasty mushies, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.EGG_PLANT_COOKED            = "x"
+
+STRINGS.NAMES.TRUNK_WINTER_COOKED            = "Winter Trunk Steak"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TRUNK_WINTER_COOKED      = "I prefer mine well-done."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TRUNK_WINTER_COOKED       = "Roasty toasty."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TRUNK_WINTER_COOKED     = "Is cooked blue nose."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TRUNK_WINTER_COOKED        = "Feeling blue?"
+STRINGS.CHARACTERS.WX78.DESCRIBE.TRUNK_WINTER_COOKED         = "WINTERISED MEAT SLAB" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TRUNK_WINTER_COOKED = "A fatty proboscis steak."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TRUNK_WINTER_COOKED       = "This one had extra nose cheese..."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TRUNK_WINTER_COOKED      = "An unfortunately fatty cut."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TRUNK_WINTER_COOKED   = "A juicy reward for a winter's feast."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TRUNK_WINTER_COOKED       = "Can we eat it in one go?" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TRUNK_WINTER_COOKED       = "Singed the nosehairs right off."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TRUNK_WINTER_COOKED       = "Not by the hair on my chinny chin chin!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TRUNK_WINTER_COOKED     = "For belly?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TRUNK_WINTER_COOKED        = "Steak served bleu."
+STRINGS.CHARACTERS.WURT.DESCRIBE.TRUNK_WINTER_COOKED         = "Blegh!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TRUNK_WINTER_COOKED            = "x"
+
+-- ROCKY REDUX --
+
+STRINGS.NAMES.ROCKY_MEAT                 = "Rocky Meat"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROCKY_MEAT      = "It's mostly rock."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.ROCKY_MEAT       = "Needs more fire."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ROCKY_MEAT     = "Is mighty rock meat."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.ROCKY_MEAT        = "Its insides are as horrid as its outsides."
+STRINGS.CHARACTERS.WX78.DESCRIBE.ROCKY_MEAT         = "MEAT FROM THE ROCK CREATURE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ROCKY_MEAT = "Uncooked Nephropidae meat."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.ROCKY_MEAT       = "Looks like lobster is on the menu."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ROCKY_MEAT      = "Ah, how refined."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ROCKY_MEAT   = "How the mighty hath fallen."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.ROCKY_MEAT       = "Hope we're not allergic." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.ROCKY_MEAT       = "That sure is one meaty lookin' rock."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.ROCKY_MEAT       = "The humans like it, they do, they do!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.ROCKY_MEAT     = "Rock Pinchy belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.ROCKY_MEAT        = "We shall eat well tonight!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.ROCKY_MEAT         = "(Sniff) Mister Bubbles...?" -- Yes, this is a Bioshock reference 
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.ROCKY_MEAT            = "x"
+
+STRINGS.NAMES.ROCKY_MEAT_COOKED          = "Broiled Rocky Meat"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ROCKY_MEAT_COOKED      = "I can put a meal together in a pinch."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.ROCKY_MEAT_COOKED       = "I bet it's tasty."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ROCKY_MEAT_COOKED     = "Yummy, yummy rock meat."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.ROCKY_MEAT_COOKED        = "It's ready now."
+STRINGS.CHARACTERS.WX78.DESCRIBE.ROCKY_MEAT_COOKED         = "DELICIOUS ROCK MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ROCKY_MEAT_COOKED = "It no longer presents a threat of salmonellosis."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.ROCKY_MEAT_COOKED       = "I wouldn't mind a taste of that."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ROCKY_MEAT_COOKED      = "Perfect with a bit of butter."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ROCKY_MEAT_COOKED   = "Tis a delicacy!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.ROCKY_MEAT_COOKED       = "Such a pretty color!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.ROCKY_MEAT_COOKED       = "Not too shabby."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.ROCKY_MEAT_COOKED       = "They like it more like this, I hear!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.ROCKY_MEAT_COOKED     = "Yummm"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.ROCKY_MEAT_COOKED        = "I am haunted by dreams of beurre blanc..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.ROCKY_MEAT_COOKED         = "Glurph... can't look."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.ROCKY_MEAT_COOKED            = "x"
+
+--[[
+STRINGS.NAMES.LOBSTERDINNER             = "Lobster Dinner"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LOBSTERDINNER      = "If I eat it in the morning is it still dinner?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.LOBSTERDINNER       = "Yummmmmmm!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.LOBSTERDINNER     = "A meal fit for Wolfgang!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.LOBSTERDINNER        = "Its death will give me life."
+STRINGS.CHARACTERS.WX78.DESCRIBE.LOBSTERDINNER         = "RED IS THE COLOR OF FLAVOR" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.LOBSTERDINNER = "How decadent."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.LOBSTERDINNER       = "I'd prefer salmon."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.LOBSTERDINNER      = "And here I forgot my bib."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.LOBSTERDINNER   = "A culinary triumph!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.LOBSTERDINNER       = "We have to eat it with our eyes closed. Too many legs!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.LOBSTERDINNER       = "Now that's some high class eatin'!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.LOBSTERDINNER       = "Red like a soul but not nearly as nice."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.LOBSTERDINNER     = "Fancy belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.LOBSTERDINNER        = "Being stranded is no reason not to eat well!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.LOBSTERDINNER         = "Glorp! You invite snippy friends for dinner! Not eat them!"
+
+STRINGS.NAMES.LOBSTERBISQUE             = "Lobster Bisque"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LOBSTERBISQUE      = "Could use more salt, but that's none of my bisque-ness."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.LOBSTERBISQUE       = "I'm gonna eat this entire thing!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.LOBSTERBISQUE     = "Seems fancy."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.LOBSTERBISQUE        = "I would like a spoon."
+STRINGS.CHARACTERS.WX78.DESCRIBE.LOBSTERBISQUE         = "BODYFUEL" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.LOBSTERBISQUE = "I'd almost forgotten what real food tasted like."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.LOBSTERBISQUE       = "Looks pretty good for icy soup."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.LOBSTERBISQUE      = "Ah, I do enjoy the finer things."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.LOBSTERBISQUE   = "That's more like it."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.LOBSTERBISQUE       = "We want to pour it all over our tongues!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.LOBSTERBISQUE       = "Bit chilly but at least it tastes good."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.LOBSTERBISQUE       = "Tastes like damp rocks."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.LOBSTERBISQUE     = "Still snappy?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.LOBSTERBISQUE        = "I've truly outdone myself!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.LOBSTERBISQUE         = "(Sigh) Why do this?"
+]]
+
+STRINGS.NAMES.BREAD_ROCKY                = "Seafood Roll"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_ROCKY      = "I got a piece of shell in mine."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD_ROCKY       = "It has a sweet smokey flavor."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD_ROCKY     = "Wolfgang wants three."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD_ROCKY        = "I shall savor this fleeting moment."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD_ROCKY         = "SQUISHY ROCK MEAT IN GLUTEN CASING" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD_ROCKY = "A regional delicacy."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD_ROCKY       = "That's one fancy lookin' sandwich."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREAD_ROCKY      = "Fetch my lobster bib!"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREAD_ROCKY   = "Sea meats shielded by bread."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_ROCKY       = "We want to eat these forever." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_ROCKY       = "Reminds me of this gal from Maine."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_ROCKY       = "\"The rain in Maine stays mainly in the plain.\""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_ROCKY     = "Mmmmm..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_ROCKY        = "The cajun seasoning really shines through."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_ROCKY         = "This bread make me sad, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BREAD_ROCKY            = "x"
+
+STRINGS.NAMES.PASTA_ROCKY             = "Rocky Ravioli"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_ROCKY      = "It's what's on the inside that counts."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_ROCKY       = "All tucked up."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_ROCKY     = "Little fishy pillows."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_ROCKY        = "Tonight I'll dream of pasta."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_ROCKY         = "ITS ARMOR HAS BEEN REPLACED WITH PASTA" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_ROCKY = "Now this is true artistry."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_ROCKY       = "Think I can still eat it with my hands, eh Luce?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_ROCKY      = "Elegant seafood parcels."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_ROCKY   = "Delicious meat in pasta armor."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_ROCKY       = "We think it looks fancy." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_ROCKY       = "Now that's some well engineered pasta!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_ROCKY       = "What's the point? Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_ROCKY     = "Mmmmmmmm..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_ROCKY        = "One of Maman's favorites."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_ROCKY         = "Don't use past-ah like this!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.PASTA_ROCKY            = "x"
+
+-- MUSHROOM FOR IMPROVEMENT --
+
+STRINGS.NAMES.RED_CHUNK                               = "Red Treecap"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CHUNK      = "I think red means good..."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.RED_CHUNK       = "It's red... like fire!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.RED_CHUNK     = "Is pretty! I like!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.RED_CHUNK        = "We're cut from the same cloth."
+STRINGS.CHARACTERS.WX78.DESCRIBE.RED_CHUNK         = "POISONOUS TREE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.RED_CHUNK = "Red usually indicates poison."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.RED_CHUNK       = "Might be better to starve..."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.RED_CHUNK      = "I forget what this one does."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RED_CHUNK   = "Not fit for a feast."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.RED_CHUNK       = "It smells funny." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.RED_CHUNK       = "Yep. Big ol' poisonous mushroom."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.RED_CHUNK       = "Oh, no thank you."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RED_CHUNK     = "Yummy friend hat"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.RED_CHUNK        = "Could use cream and salt... And less poison."
+STRINGS.CHARACTERS.WURT.DESCRIBE.RED_CHUNK         = "These ones bad for you, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.RED_CHUNK            = "x"
+
+STRINGS.NAMES.RED_CHUNK_BLOOM                         = "Sporing Red Treecap"
+
+STRINGS.NAMES.RED_CHUNK_BLOOM_DEATH                     = "eating dodgy mushrooms"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CHUNK_BLOOM      = "Seems safe to eat... I think?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.RED_CHUNK_BLOOM       = "It's dangerous... like fire!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.RED_CHUNK_BLOOM     = "Fancy frilly mushy room."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.RED_CHUNK_BLOOM        = "There's something sinister about this one."
+STRINGS.CHARACTERS.WX78.DESCRIBE.RED_CHUNK_BLOOM         = "POTENTIALLY POISONOUS TREE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.RED_CHUNK_BLOOM = "Not the most appetizing smell."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.RED_CHUNK_BLOOM       = "Might be worth the risk..."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.RED_CHUNK_BLOOM      = "It has a rather sour aftertaste."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RED_CHUNK_BLOOM   = "Poison for my foes."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.RED_CHUNK_BLOOM       = "Yuck! It smells like grandpa's socks." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.RED_CHUNK_BLOOM       = "Max loves these, I swear!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.RED_CHUNK_BLOOM       = "My-oh-my! What a fun little game!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RED_CHUNK_BLOOM     = "Big yummy hat!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.RED_CHUNK_BLOOM        = "Wouldn't be my choice of last meal."
+STRINGS.CHARACTERS.WURT.DESCRIBE.RED_CHUNK_BLOOM         = "These ones bad for you, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.RED_CHUNK_BLOOM            = "x"
+
+STRINGS.NAMES.GREEN_CHUNK                             = "Green Treecap"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CHUNK      = "A nice soothing green color."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GREEN_CHUNK       = "Nah. Let's just burn it."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GREEN_CHUNK     = "Blech. Is green like weakling salad."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GREEN_CHUNK        = "Green is not a creative color."
+STRINGS.CHARACTERS.WX78.DESCRIBE.GREEN_CHUNK         = "GREEN TREE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GREEN_CHUNK = "Seems edible, though it may not be totally sane to consume it."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GREEN_CHUNK       = "I've eaten stranger things in the woods."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GREEN_CHUNK      = "I should eat it."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GREEN_CHUNK   = "Not worth the bark it grows on."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GREEN_CHUNK       = "Smells really earthy." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GREEN_CHUNK       = "Eat enough of these and I'll conk out!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GREEN_CHUNK       = "Rather green around the gills, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GREEN_CHUNK     = "Hurts head"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GREEN_CHUNK        = "Perhaps a mushroom fricassee is in order."
+STRINGS.CHARACTERS.WURT.DESCRIBE.GREEN_CHUNK         = "Has nice color, probably tasty."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.GREEN_CHUNK            = "x"
+
+STRINGS.NAMES.GREEN_CHUNK_BLOOM                       = "Sporing Green Treecap"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CHUNK_BLOOM      = "It's trying to make more of itself."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GREEN_CHUNK_BLOOM       = "Not even fire can save it."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GREEN_CHUNK_BLOOM     = "Fancy salad mushy room."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GREEN_CHUNK_BLOOM        = "A nightmare in fungal form."
+STRINGS.CHARACTERS.WX78.DESCRIBE.GREEN_CHUNK_BLOOM         = "PSYCHEDELIC TREE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GREEN_CHUNK_BLOOM = "A fungus with severe hallucinogenic properties."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GREEN_CHUNK_BLOOM       = "It's hard enough keeping my head on straight."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GREEN_CHUNK_BLOOM      = "Not for a lesser mind."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GREEN_CHUNK_BLOOM   = "Abysmal!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GREEN_CHUNK_BLOOM       = "It feels all damp and squishy." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GREEN_CHUNK_BLOOM       = "Whew! Even the smell gives me a headache."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GREEN_CHUNK_BLOOM       = "Nothing was ever accomplished with tears."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GREEN_CHUNK_BLOOM     = "Ow! Big head hurt"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GREEN_CHUNK_BLOOM        = "Perfectly ripe."
+STRINGS.CHARACTERS.WURT.DESCRIBE.GREEN_CHUNK_BLOOM         = "Has nice color, probably tasty."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.GREEN_CHUNK_BLOOM            = "x"
+
+STRINGS.NAMES.BLUE_CHUNK                              = "Blue Treecap"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CHUNK      = "It's a weird blue tree fungus."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BLUE_CHUNK       = "Might be better if I pinch my nose."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BLUE_CHUNK     = "Helps keep muscles strong."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BLUE_CHUNK        = "The tree didn't need it.."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BLUE_CHUNK         = "MEDICINAL TREE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BLUE_CHUNK = "This seems to have medicinal properties."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BLUE_CHUNK       = "That's definitely not meat."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BLUE_CHUNK      = "What could go wrong?"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BLUE_CHUNK   = "Battle is the only medicine I need!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BLUE_CHUNK       = "You'd have to be crazy..." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BLUE_CHUNK       = "Looks like a chunk of blue fungus."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BLUE_CHUNK       = "Mushroom medicine? How odd these humans are."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BLUE_CHUNK     = "Hurts head. Ow!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BLUE_CHUNK        = "What deliciousness shall you yield?"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BLUE_CHUNK         = "Good for belly, bad for head."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BLUE_CHUNK            = "x"
+
+STRINGS.NAMES.BLUE_CHUNK_BLOOM                        = "Sporing Blue Treecap"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CHUNK_BLOOM      = "It feels all powdery."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BLUE_CHUNK_BLOOM       = "It smells like two gym socks!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BLUE_CHUNK_BLOOM     = "Keep Wolfgang going all night."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BLUE_CHUNK_BLOOM        = "It will rot soon enough."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BLUE_CHUNK_BLOOM         = "UNSTABLE MEDICINAL TREE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BLUE_CHUNK_BLOOM = "A medicinal mycelium marvel."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BLUE_CHUNK_BLOOM       = "It definitely doesn't smell like meat."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BLUE_CHUNK_BLOOM      = "Only one way to find out."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BLUE_CHUNK_BLOOM   = "Blech! It's all blue and powdery."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BLUE_CHUNK_BLOOM       = "It tickles our throat." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BLUE_CHUNK_BLOOM       = "Phewy! That's some stinky medicine."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BLUE_CHUNK_BLOOM       = "Blue in bloom, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BLUE_CHUNK_BLOOM     = "Big ow!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BLUE_CHUNK_BLOOM        = "These don't stay fresh for long."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BLUE_CHUNK_BLOOM         = "Good for belly, bad for head."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BLUE_CHUNK_BLOOM            = "x"
+
+STRINGS.NAMES.RED_CAP                               = "Curly Red Cap"
+STRINGS.NAMES.BLUE_CAP                              = "Spotted Blue Cap"
+STRINGS.NAMES.GREEN_CAP                             = "Unblinking Green Cap" 
+
+STRINGS.NAMES.RED_CAP_FAF1                          = "Bleeding Red Cap" -- Bleeding Tooth Fungus: bad for health and sanity
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CAP_FAF1      = "I don't trust it."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.RED_CAP_FAF1       = "It's a bit wet for my liking."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.RED_CAP_FAF1     = "Oh! Is pretty and shiny!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.RED_CAP_FAF1        = "If you prick me do I not bleed?"
+STRINGS.CHARACTERS.WX78.DESCRIBE.RED_CAP_FAF1         = "LIQUIFYING FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.RED_CAP_FAF1 = "Surely that can't be edible."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.RED_CAP_FAF1       = "Seems kinda dangerous..."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.RED_CAP_FAF1      = "A nibble might help me remember."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RED_CAP_FAF1   = "I won't be tricked by fake blood!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.RED_CAP_FAF1       = "The oozy bits smell bad." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.RED_CAP_FAF1       = "Where'd Max get off to..."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.RED_CAP_FAF1       = "Blood but no soul."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RED_CAP_FAF1     = "Hurts head!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.RED_CAP_FAF1        = "Surely I can boil off the poison..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.RED_CAP_FAF1         = "These ones also bad for you, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.RED_CAP_FAF1            = "x"
+
+STRINGS.NAMES.RED_CAP_FAF1_COOKED                   = "Baked Blood Cap" -- Bleeding Tooth Fungus (cooked): same as cooked red cap
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CAP_FAF1_COOKED      = "It's different now..."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.RED_CAP_FAF1_COOKED       = "It's been transformed by fire!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.RED_CAP_FAF1_COOKED     = "Is not same."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.RED_CAP_FAF1_COOKED        = "All is malleable."
+STRINGS.CHARACTERS.WX78.DESCRIBE.RED_CAP_FAF1_COOKED         = "MODIFIED FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.RED_CAP_FAF1_COOKED = "Chemistry has altered it."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.RED_CAP_FAF1_COOKED       = "Not sure I'm all that hungry..."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.RED_CAP_FAF1_COOKED      = "Tastes pretty bitter."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RED_CAP_FAF1_COOKED   = "It is no blood sausage."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.RED_CAP_FAF1_COOKED       = "It smells better now." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.RED_CAP_FAF1_COOKED       = "Might have some poison left."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.RED_CAP_FAF1_COOKED       = "No better, no worse."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RED_CAP_FAF1_COOKED     = "Hurts head"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.RED_CAP_FAF1_COOKED        = "The poison lends a certain je ne sais quoi."
+STRINGS.CHARACTERS.WURT.DESCRIBE.RED_CAP_FAF1_COOKED         = "Bit better..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.RED_CAP_FAF1_COOKED            = "x"
+
+STRINGS.NAMES.RED_CAP_FAF2                          = "Enchanting Red Cap" -- : same hunger with mild sanity gain and -1 health
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.RED_CAP_FAF2      = "They can't all be poisonous... can they?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.RED_CAP_FAF2       = "It's red, like fire!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.RED_CAP_FAF2     = "Oh! Is pretty and shiny!"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.RED_CAP_FAF2        = "It smells faintly of apricots."
+STRINGS.CHARACTERS.WX78.DESCRIBE.RED_CAP_FAF2         = "ERROR: POISON LEVELS UNKNOWN" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.RED_CAP_FAF2 = "A member of the Cantharellaceae family."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.RED_CAP_FAF2       = "I think I recognize these."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.RED_CAP_FAF2      = "It has a certain allure."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.RED_CAP_FAF2   = "It won't pass my lips."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.RED_CAP_FAF2       = "It smells nice." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.RED_CAP_FAF2       = "Yep. Red mushroom."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.RED_CAP_FAF2       = "I am not so easily enchanted."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.RED_CAP_FAF2     = "Yummy friend hat"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.RED_CAP_FAF2        = "Mon dieu! Chanterelles!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.RED_CAP_FAF2         = "These ones not so bad for you, florp."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.RED_CAP_FAF2            = "x"
+
+STRINGS.NAMES.BLUE_CAP_FAF1                         = "Pitted Blue Cap" -- Morel Mushrooms: less healing, same sanity loss
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CAP_FAF1      = "It's all bumpy."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BLUE_CAP_FAF1       = "Still kinda whiffy."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BLUE_CAP_FAF1     = "Is good for tired muscles, I think."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BLUE_CAP_FAF1        = "Scarred, like my heart."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BLUE_CAP_FAF1         = "RIDGED FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BLUE_CAP_FAF1 = "A rather subdued medicinal fungus."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BLUE_CAP_FAF1       = "That ain't jerky."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BLUE_CAP_FAF1      = "I never cared much for ethics." -- Morels sound like morals ;)
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BLUE_CAP_FAF1   = "Hmm, another blue one."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BLUE_CAP_FAF1       = "All wrinkly like grandpa." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BLUE_CAP_FAF1       = "Yep. Blue mushroom."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BLUE_CAP_FAF1       = "It doesn't have a leg to stand on, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BLUE_CAP_FAF1     = "Hurts head"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BLUE_CAP_FAF1        = "Such a rare delicacy."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BLUE_CAP_FAF1         = "Where the juice go?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BLUE_CAP_FAF1            = "x"
+
+STRINGS.NAMES.BLUE_CAP_FAF2                         = "Shaggy Blue Cap" -- Shaggy Mane: same healing, higher sanity loss
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLUE_CAP_FAF2      = "It's extra gooey."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BLUE_CAP_FAF2       = "It smells like damp wood."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BLUE_CAP_FAF2     = "Is good for tired muscles, I think."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BLUE_CAP_FAF2        = "Even the mushrooms cry around here."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BLUE_CAP_FAF2         = "FIBROUS FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BLUE_CAP_FAF2 = "An efficacious medicine, though not all that pleasant."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BLUE_CAP_FAF2       = "Heh. We've got the same haircut."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BLUE_CAP_FAF2      = "Get a haircut!" --"you hippie"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BLUE_CAP_FAF2   = "Yet another blue one."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BLUE_CAP_FAF2       = "We like the color." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BLUE_CAP_FAF2       = "Yep. Blue mushroom."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BLUE_CAP_FAF2       = "An inky cap found in the inky black."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BLUE_CAP_FAF2     = "Hurts head. Ow!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BLUE_CAP_FAF2        = "This would make a mean stock."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BLUE_CAP_FAF2         = "Glargh, it even worse for head."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BLUE_CAP_FAF2            = "x"
+
+STRINGS.NAMES.GREEN_CAP_FAF1                        = "Green Oyster Caps" -- Oyster Mushroom: smaller sanity loss
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CAP_FAF1      = "Shhh... they might be listening." -- look vaguely like ears
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GREEN_CAP_FAF1       = "Better scorch them before they hear too much."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GREEN_CAP_FAF1     = "Is for salads. Blech."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GREEN_CAP_FAF1        = "We shouldn't talk too loud Abby..."
+STRINGS.CHARACTERS.WX78.DESCRIBE.GREEN_CAP_FAF1         = "ATTENTIVE FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GREEN_CAP_FAF1 = "I question my sanity just looking at them."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GREEN_CAP_FAF1       = "The woods can be a strange place."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GREEN_CAP_FAF1      = "You never know who might be listening."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GREEN_CAP_FAF1   = "Horrendous!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GREEN_CAP_FAF1       = "We think they're listening to us." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GREEN_CAP_FAF1       = "Yep. Green mushrooms."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GREEN_CAP_FAF1       = "Such impish ears! Hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GREEN_CAP_FAF1     = "Hurts head"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GREEN_CAP_FAF1        = "Perfect for a sauté!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.GREEN_CAP_FAF1         = "These not so scary..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.GREEN_CAP_FAF1            = "x"
+
+STRINGS.NAMES.GREEN_CAP_FAF2                        = "Spindly Green Caps" -- Skinny Mushrooms: same sanity as cooked
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GREEN_CAP_FAF2      = "Like peas in a pod... or mushrooms."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GREEN_CAP_FAF2       = "Next!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GREEN_CAP_FAF2     = "Is for salads. Blech."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GREEN_CAP_FAF2        = "These mushrooms hate being alone."
+STRINGS.CHARACTERS.WX78.DESCRIBE.GREEN_CAP_FAF2         = "ELONGATED FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GREEN_CAP_FAF2 = "Some Flammulina Velutipes to ease my nerves."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GREEN_CAP_FAF2       = "Safety in numbers, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GREEN_CAP_FAF2      = "Were these ones poisonous?"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GREEN_CAP_FAF2   = "Abhorent!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GREEN_CAP_FAF2       = "A little mushroom family." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GREEN_CAP_FAF2       = "Yep. Green mushrooms."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GREEN_CAP_FAF2       = "No more tricks for you, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GREEN_CAP_FAF2     = "Helps head"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GREEN_CAP_FAF2        = "A staple in Japanese cuisine."
+STRINGS.CHARACTERS.WURT.DESCRIBE.GREEN_CAP_FAF2         = "Best color, best mushroom."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.GREEN_CAP_FAF2            = "x"
+
+STRINGS.NAMES.GENERIC_CAP_DRIED                        = "Dried Mushroom" -- tbd
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GENERIC_CAP_DRIED      = "Not mushroom for improvement." -- Forgive me
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GENERIC_CAP_DRIED       = "Chewy fungus."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GENERIC_CAP_DRIED     = "Is chewy mushy room."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GENERIC_CAP_DRIED        = "Sadly lacking in poison."
+STRINGS.CHARACTERS.WX78.DESCRIBE.GENERIC_CAP_DRIED         = "DESICCATED FUNGUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GENERIC_CAP_DRIED = "All toxins have been rendered quite inert."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GENERIC_CAP_DRIED       = "Survival 101."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GENERIC_CAP_DRIED      = "Bit too chewy for my teeth."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GENERIC_CAP_DRIED   = "That is still not meat."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GENERIC_CAP_DRIED       = "Mmmm... tastes like mushrooms." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GENERIC_CAP_DRIED       = "These should last a while."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GENERIC_CAP_DRIED       = "What a miserable shrivelled mushroom."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GENERIC_CAP_DRIED     = "Mmmm..."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GENERIC_CAP_DRIED        = "They pack an umami punch."
+STRINGS.CHARACTERS.WURT.DESCRIBE.GENERIC_CAP_DRIED         = "Mmmm... shroomy snacks."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.GENERIC_CAP_DRIED            = "x"
+
+-- NICE TO MEAT YOU --
+
+--[[
+STRINGS.NAMES.EGG_PENGULL                               = "Pengull Egg" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PENGULL      = "A chilly little egg."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_PENGULL       = "It smells like winter's butt."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_PENGULL     = "All alone."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_PENGULL        = "It looks lonely."
+STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_PENGULL         = "NOTHING CAN PROTECT YOU, EGG" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_PENGULL = "It lacks the necessary insulation."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_PENGULL       = "That'll fry up real nice!"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_PENGULL      = "Like taking candy from a baby."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_PENGULL   = "It has been left unguarded."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_PENGULL       = "Poor little egg, we'll warm you up." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_PENGULL       = "Who'd leave a lil egg all by its lonesome?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_PENGULL       = "Let's play a game of hide and seek little egg."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.EGG_PENGULL     = "Baby woddle woddle"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.EGG_PENGULL        = "You shall be mine."
+STRINGS.CHARACTERS.WURT.DESCRIBE.EGG_PENGULL         = "Swimmy bird egg!"
+STRINGS.CHARACTERS.WALTER.DESCRIBE.EGG_PENGULL            = "x"
+
+STRINGS.NAMES.PENGULL_EGG_COOKED                        = "Cooked Pengull Egg" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PENGULL_EGG_COOKED      = "It was never going to hatch anyway..."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PENGULL_EGG_COOKED       = "I prefer my eggs hard-boiled."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PENGULL_EGG_COOKED     = "Make winter breakfast."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PENGULL_EGG_COOKED        = "It's not lonely anymore."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PENGULL_EGG_COOKED         = "PREPARE TO BE CONSUMED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PENGULL_EGG_COOKED = "Perfect with soldiers."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PENGULL_EGG_COOKED       = "It's for the best."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PENGULL_EGG_COOKED      = "That took the chill out."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PENGULL_EGG_COOKED   = "Borne of ice, cooked by flame."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PENGULL_EGG_COOKED       = "We warmed it up too much." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PENGULL_EGG_COOKED       = "Lookin' nice and yolky."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PENGULL_EGG_COOKED       = "A lost little egg with no soul in sight."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PENGULL_EGG_COOKED     = "Goes in belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PENGULL_EGG_COOKED        = "A wintery delicacy."
+STRINGS.CHARACTERS.WURT.DESCRIBE.PENGULL_EGG_COOKED         = "Glurgh..."
+STRINGS.CHARACTERS.WALTER.DESCRIBE.PENGULL_EGG_COOKED            = "x"
+]]
+
+STRINGS.NAMES.BEAR_MEAT                                 = "Smelly Bear Meat" -- Bearger, notoriously toxic meat
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BEAR_MEAT      = "Wickerbottom warned me against eating it raw."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BEAR_MEAT       = "In serious need of a good scorching."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BEAR_MEAT     = "Smelly fat meat."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BEAR_MEAT        = "It smells awful."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BEAR_MEAT         = "I HAVE NO NOSE AND I MUST SCREAM" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BEAR_MEAT = "Improper preparation can cause Trichinosis."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BEAR_MEAT       = "Not sure I can stomach it."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BEAR_MEAT      = "The smell alone turns my stomach."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BEAR_MEAT   = "Meat of the great beast."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BEAR_MEAT       = "Smells like grumpy bear." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BEAR_MEAT       = "Phewy! Might want to cook that first."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BEAR_MEAT       = "I will not eat you, oh no, oh no!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BEAR_MEAT     = "Smelly belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BEAR_MEAT        = "Not the easiest cut of meat."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BEAR_MEAT         = "Glurgh... smell real bad."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BEAR_MEAT            = "x"
+
+STRINGS.NAMES.BEAR_MEAT_COOKED                          = "Cooked Bear Meat"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BEAR_MEAT_COOKED      = "I'm just about ready for a nap."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BEAR_MEAT_COOKED       = "Can't shake the taste of bear."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BEAR_MEAT_COOKED     = "Make Wolfgang sleepy."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BEAR_MEAT_COOKED        = "It makes me feel lethargic."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BEAR_MEAT_COOKED         = "HIBERNATION MEAT FUEL" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BEAR_MEAT_COOKED = "It has been thoroughly cooked."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BEAR_MEAT_COOKED       = "Gotta survive somehow."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BEAR_MEAT_COOKED      = "I should watch my cholesterol."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BEAR_MEAT_COOKED   = "Berserker steak."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BEAR_MEAT_COOKED       = "It makes us feel sleepy." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BEAR_MEAT_COOKED       = "That sure is some greasy grub."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BEAR_MEAT_COOKED       = "I'll never get mortals and their meats."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BEAR_MEAT_COOKED     = "For cozy belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BEAR_MEAT_COOKED        = "Greasy and barely worth the effort."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BEAR_MEAT_COOKED         = "Yucky fuzzy meat." 
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BEAR_MEAT_COOKED            = "x"
+
+STRINGS.NAMES.DEER_MEAT                                 = "Venison" -- Deer and Deerclops
+STRINGS.NAMES.DEER_MEAT_AUTUMN                          = "Venison"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEER_MEAT      = "Looks like open season."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DEER_MEAT       = "Literally deer meat."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DEER_MEAT     = "Meat from deer."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DEER_MEAT        = "Dark and bloody meat."
+STRINGS.CHARACTERS.WX78.DESCRIBE.DEER_MEAT         = "YOU HAVE BEEN HUNTED, MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DEER_MEAT = "A piece of raw game."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DEER_MEAT       = "A woodsman's gotta eat."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DEER_MEAT      = "The game is afoot."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DEER_MEAT   = "The spoils of the hunt!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DEER_MEAT       = "Smells like deer." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DEER_MEAT       = "Ain't never had much of a taste for it."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DEER_MEAT       = "Not the game I had in mind, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DEER_MEAT     = "Stuff for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DEER_MEAT        = "I might even try a venison stir fry..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.DEER_MEAT         = "Glargh!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.DEER_MEAT            = "x"
+
+STRINGS.NAMES.DEER_MEAT_COOKED                          = "Venison Steak" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DEER_MEAT_COOKED      = "I like my steak well-done."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DEER_MEAT_COOKED       = "Ain't no mistaking it."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DEER_MEAT_COOKED     = "Taste like deer steak."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DEER_MEAT_COOKED        = "What a tragic end."
+STRINGS.CHARACTERS.WX78.DESCRIBE.DEER_MEAT_COOKED         = "DELICIOUS DEER MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DEER_MEAT_COOKED = "A slab of cooked venison."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DEER_MEAT_COOKED       = "It tastes good, I promise ya."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DEER_MEAT_COOKED      = "Hope it's not too rich for my stomach."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DEER_MEAT_COOKED   = "Tis a woodland feast."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DEER_MEAT_COOKED       = "Does this make us fancy?" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DEER_MEAT_COOKED       = "Won't turn down some fancy grub."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DEER_MEAT_COOKED       = "Looks like the game is over."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DEER_MEAT_COOKED     = "Big yum"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DEER_MEAT_COOKED        = "Woefully underseasoned."
+STRINGS.CHARACTERS.WURT.DESCRIBE.DEER_MEAT_COOKED         = "Glurgh, nuh-uh."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.DEER_MEAT_COOKED            = "x"
+
+STRINGS.NAMES.TOAD_MEAT                                 = "Toad Meat" -- Toadstool
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOAD_MEAT      = "It comes with a mushroom marinade."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TOAD_MEAT       = "Ew! You can taste the warts."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOAD_MEAT     = "Is frogman leg."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TOAD_MEAT        = "It won't be needing this anymore."
+STRINGS.CHARACTERS.WX78.DESCRIBE.TOAD_MEAT         = "COLOSSAL FROG FUEL" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TOAD_MEAT = "The bigger they are, the harder they fall."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TOAD_MEAT        = "Still smells like mushrooms."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOAD_MEAT      = "An abominable frog leg."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TOAD_MEAT   = "A mighty frog hopper."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOAD_MEAT       = "Wow! That's one big frog leg!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TOAD_MEAT       = "I've eaten worse."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOAD_MEAT       = "Hyuyu! I can stand on one leg, can you?"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TOAD_MEAT     = "Big ribbit leg"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TOAD_MEAT        = "Ooh la la!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.TOAD_MEAT         = "Poor toad, florp..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TOAD_MEAT            = "x"
+
+STRINGS.NAMES.TOAD_MEAT_COOKED                          = "Roast Toad" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOAD_MEAT_COOKED      = "Doesn't look like any chicken I've ever eaten."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.TOAD_MEAT_COOKED       = "Fire cleanses all."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOAD_MEAT_COOKED     = "Is taste like home."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TOAD_MEAT_COOKED        = "Tastes better than it looks."
+STRINGS.CHARACTERS.WX78.DESCRIBE.TOAD_MEAT_COOKED         = "TRY HOPPING NOW. HA HA" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TOAD_MEAT_COOKED = "Just close your eyes and think of chicken."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TOAD_MEAT_COOKED       = "It even tastes like mushrooms."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOAD_MEAT_COOKED      = "How the mighty have fallen."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TOAD_MEAT_COOKED   = "A chunk of musty protein."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOAD_MEAT_COOKED       = "Wonder if it will fit in a sandwich..." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.TOAD_MEAT_COOKED       = "Whole lotta eatin' on those legs."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOAD_MEAT_COOKED       = "I'm the only one hopping now, hyuyu!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TOAD_MEAT_COOKED     = "Big leg for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TOAD_MEAT_COOKED        = "Could do with a light batter."
+STRINGS.CHARACTERS.WURT.DESCRIBE.TOAD_MEAT_COOKED         = "Glurgh... feel sick."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.TOAD_MEAT_COOKED            = "x"
+
+STRINGS.NAMES.DRAGON_MEAT                                 = "Dragon Meat" -- Dragonfly
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DRAGON_MEAT      = "Some say it's a myth. I say it's dinner."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DRAGON_MEAT       = "Now you're talking!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DRAGON_MEAT     = "Is mighty dragon meat."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DRAGON_MEAT        = "Her death will sustain us."
+STRINGS.CHARACTERS.WX78.DESCRIBE.DRAGON_MEAT         = "FLY BEAST MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DRAGON_MEAT = "Meat of the mythical Diptera."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DRAGON_MEAT       = "Meat is meat, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DRAGON_MEAT      = "Fiery fly meat."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DRAGON_MEAT   = "The dragon hath been bested!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DRAGON_MEAT       = "That sure is some scaly meat." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DRAGON_MEAT       = "The scales ain't edible, right?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DRAGON_MEAT       = "Not myth, just meat."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DRAGON_MEAT     = "Patuey belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DRAGON_MEAT        = "Even dragonslayers need to eat."
+STRINGS.CHARACTERS.WURT.DESCRIBE.DRAGON_MEAT         = "Scaled-folk should be friends."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.DRAGON_MEAT            = "x"
+
+STRINGS.NAMES.DRAGON_MEAT_COOKED                          = "Seared Dragon Meat" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DRAGON_MEAT_COOKED      = "It keeps me warm."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DRAGON_MEAT_COOKED       = "Can I get seconds?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DRAGON_MEAT_COOKED     = "Keep Wolfgang warm."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DRAGON_MEAT_COOKED        = "Tastes like burning."
+STRINGS.CHARACTERS.WX78.DESCRIBE.DRAGON_MEAT_COOKED         = "LATENT HEAT DETECTED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DRAGON_MEAT_COOKED = "It retains heat remarkably well."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DRAGON_MEAT_COOKED       = "That's sure is some toasty grub, eh Luce?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DRAGON_MEAT_COOKED      = "It warms my cold heart."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DRAGON_MEAT_COOKED   = "It holds the heat of Muspelheim!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DRAGON_MEAT_COOKED       = "It makes our belly feel all cozy inside." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DRAGON_MEAT_COOKED       = "That'll warm ya right up."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DRAGON_MEAT_COOKED       = "This mortal food is such a drag."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DRAGON_MEAT_COOKED     = "Mmmm... warm belly stuff"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DRAGON_MEAT_COOKED        = "Would taste better in a dragon chili..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.DRAGON_MEAT_COOKED         = "(Sigh)"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.DRAGON_MEAT_COOKED            = "x"
+
+STRINGS.NAMES.SQUID_MEAT                                 = "Skittish Tentacle" -- Skittersquid
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SQUID_MEAT      = "It tastes like brine and ink."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.SQUID_MEAT       = "Ugh, it's covered in slime."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SQUID_MEAT     = "It is not good food."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.SQUID_MEAT        = "I don't want to touch it."
+STRINGS.CHARACTERS.WX78.DESCRIBE.SQUID_MEAT         = "DISGUSTING MEAT NOODLE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SQUID_MEAT = "The tentacle of Luminesca Cephalopoda."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.SQUID_MEAT       = "Squirmy piece of meat, eh?"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SQUID_MEAT      = "I don't want to know where it's been."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SQUID_MEAT   = "Odd meat from the murky depths."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.SQUID_MEAT       = "Yum! Nice and slimy." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SQUID_MEAT       = "Hooboy! Might wanna give that one a miss."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.SQUID_MEAT       = "A slippery squid flipper."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SQUID_MEAT     = "Bright Eye Glub Glub stick"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.SQUID_MEAT        = "Squid sashimi!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.SQUID_MEAT         = "Nooo! Poor squiddies!"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.SQUID_MEAT            = "x"
+
+STRINGS.NAMES.SQUID_MEAT_COOKED                          = "Calamari" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.SQUID_MEAT_COOKED      = "It's pretty rubbery."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.SQUID_MEAT_COOKED       = "Wouldn't be my first choice."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SQUID_MEAT_COOKED     = "Taste like rubber."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.SQUID_MEAT_COOKED        = "Still tastes like squid."
+STRINGS.CHARACTERS.WX78.DESCRIBE.SQUID_MEAT_COOKED         = "RINGS OF DISGUSTING MEAT ENERGY" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SQUID_MEAT_COOKED = "It would appear almost fit for consumption."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.SQUID_MEAT_COOKED       = "Bit too exotic for my tastes."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SQUID_MEAT_COOKED      = "A touch less slimy."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SQUID_MEAT_COOKED   = "Murky meat ringlets."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.SQUID_MEAT_COOKED       = "The shape is the best bit." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SQUID_MEAT_COOKED       = "Ain't much better cooked."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.SQUID_MEAT_COOKED       = "Ring a Ring o' Rosie..."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SQUID_MEAT_COOKED     = "Glub Glub belly stuff?"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.SQUID_MEAT_COOKED        = "Could use a sprinkling of sea salt and a garlic-lemon dip..."
+STRINGS.CHARACTERS.WURT.DESCRIBE.SQUID_MEAT_COOKED         = "Why you do this?"
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.SQUID_MEAT_COOKED            = "x"
+
+STRINGS.NAMES.BIGBIRD_MEAT                                 = "Jumbo Drumstick" -- Tallbirds, Moose-Goose and Malbatross
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BIGBIRD_MEAT      = "It's a big bird leg."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BIGBIRD_MEAT       = "I wonder what they eat."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BIGBIRD_MEAT     = "Make legs very strong."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BIGBIRD_MEAT        = "That sure was one awfully large bird."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BIGBIRD_MEAT         = "GIANT BIRD MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BIGBIRD_MEAT = "A poultry leg of prodigious size."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BIGBIRD_MEAT       = "The only good bird is a dead one."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BIGBIRD_MEAT      = "Think I'll need a bigger pot."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BIGBIRD_MEAT   = "Leg of a great beastie."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BIGBIRD_MEAT       = "Might need a bigger drum." 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BIGBIRD_MEAT       = "That's one fine lookin' drumstick."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BIGBIRD_MEAT       = "Nobody tell the Baba Yaga!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BIGBIRD_MEAT     = "Big Tweeter stick"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BIGBIRD_MEAT        = "Mon dieu! So much dark meat!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.BIGBIRD_MEAT         = "Gluurph..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BIGBIRD_MEAT            = "x"
+
+STRINGS.NAMES.BIGBIRD_MEAT_COOKED                          = "Roast Jumbo Drumstick" 
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BIGBIRD_MEAT_COOKED      = "I always overcook them."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BIGBIRD_MEAT_COOKED       = "The secret is getting a good sear."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BIGBIRD_MEAT_COOKED     = "Bone make taste better."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BIGBIRD_MEAT_COOKED        = "Almost big enough to share."
+STRINGS.CHARACTERS.WX78.DESCRIBE.BIGBIRD_MEAT_COOKED         = "A FEAST OF BIRD MEAT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BIGBIRD_MEAT_COOKED = "A suprisingly tender cut of meat."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BIGBIRD_MEAT_COOKED       = "Safer on my plate than flying about."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BIGBIRD_MEAT_COOKED      = "Save the dark meat for me."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BIGBIRD_MEAT_COOKED   = "Delicious meat!"
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BIGBIRD_MEAT_COOKED       = "Wow! That's some big finger food!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BIGBIRD_MEAT_COOKED       = "My mouth is waterin' already."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BIGBIRD_MEAT_COOKED       = "This might make Granny mad..."
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BIGBIRD_MEAT_COOKED     = "Big stick for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BIGBIRD_MEAT_COOKED        = "Basted in its own bird juices."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BIGBIRD_MEAT_COOKED         = "Poor big birdie..."
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.BIGBIRD_MEAT_COOKED            = "x"
+
+--[[
+-- NEW HAMBATS --
+
+
+STRINGS.NAMES.HAMBAT_MONSTER             = "Monster Bat"
+--STRINGS.RECIPE_DESC.HAMBAT_MONSTER                = ""
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HAMBAT_MONSTER      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HAMBAT_MONSTER       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HAMBAT_MONSTER     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HAMBAT_MONSTER        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.HAMBAT_MONSTER         = "ALL SHALL SUFFER" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HAMBAT_MONSTER = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HAMBAT_MONSTER       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HAMBAT_MONSTER      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HAMBAT_MONSTER   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HAMBAT_MONSTER       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HAMBAT_MONSTER       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HAMBAT_MONSTER       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HAMBAT_MONSTER     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HAMBAT_MONSTER        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HAMBAT_MONSTER         = ""
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.HAMBAT_MONSTER            = "x"
+
+STRINGS.NAMES.HAMBAT_PLANT             = "Leafy Bat"
+--STRINGS.RECIPE_DESC.HAMBAT_PLANT                = ""
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HAMBAT_PLANT      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HAMBAT_PLANT       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HAMBAT_PLANT     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HAMBAT_PLANT        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.HAMBAT_PLANT         = "A DISGUSTINGLY ORGANIC WEAPON" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HAMBAT_PLANT = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HAMBAT_PLANT       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HAMBAT_PLANT      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HAMBAT_PLANT   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HAMBAT_PLANT       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HAMBAT_PLANT       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HAMBAT_PLANT       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HAMBAT_PLANT     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HAMBAT_PLANT        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HAMBAT_PLANT         = ""
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.HAMBAT_PLANT            = "x"
+
+-- PLENTY O FISH --
+
+STRINGS.NAMES.FISH                  = "Blue Snapper"
+STRINGS.NAMES.PONDFISH              = "Blue Snapper"
+
+STRINGS.NAMES.FISH_SWAMP             = "Murkwomper"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_SWAMP      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISH_SWAMP       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISH_SWAMP     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FISH_SWAMP        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.FISH_SWAMP         = "IT TASTES LIKE MUD" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISH_SWAMP = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISH_SWAMP       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISH_SWAMP      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISH_SWAMP   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FISH_SWAMP       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISH_SWAMP       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISH_SWAMP       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISH_SWAMP     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISH_SWAMP        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISH_SWAMP         = ""
+--STRINGS.CHARACTERS.WALTER.DESCRIBE.FISH_SWAMP            = "x"
+
+STRINGS.NAMES.FISH_DESERT             = "Sandy Swimmer" -- might need something better
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_DESERT      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISH_DESERT       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISH_DESERT     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FISH_DESERT        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.FISH_DESERT         = "MAY CONTAIN TRACES OF SAND" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISH_DESERT = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISH_DESERT       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISH_DESERT      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISH_DESERT   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FISH_DESERT       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISH_DESERT       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISH_DESERT       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISH_DESERT     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISH_DESERT        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISH_DESERT         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.FISH_DESERT            = "x"
+
+STRINGS.NAMES.FISH_RAINBOW             = "Rainbow Trout"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_RAINBOW      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISH_RAINBOW       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISH_RAINBOW     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FISH_RAINBOW        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.FISH_RAINBOW         = "POLYCHROMATIC FISH" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISH_RAINBOW = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISH_RAINBOW       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISH_RAINBOW      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISH_RAINBOW   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FISH_RAINBOW       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISH_RAINBOW       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISH_RAINBOW       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISH_RAINBOW     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISH_RAINBOW        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISH_RAINBOW         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.FISH_RAINBOW            = "x"
+
+STRINGS.NAMES.FISH_SALMON             = "Salmon"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.FISH_SALMON      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISH_SALMON       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISH_SALMON     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FISH_SALMON        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.FISH_SALMON         = "FLOOPY WATER CREATURE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISH_SALMON = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISH_SALMON       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISH_SALMON      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISH_SALMON   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.FISH_SALMON       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.FISH_SALMON       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISH_SALMON       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISH_SALMON     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.FISH_SALMON        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.FISH_SALMON         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.FISH_SALMON            = "x"
+]]
+
+-- OH HONEY! --
+
+
+STRINGS.NAMES.HONEY             = "Raw Honey"
+
+STRINGS.NAMES.HONEY_KILLER             = "Manukillah Honey"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_KILLER      = "It makes my mouth numb."
+--[[STRINGS.CHARACTERS.WILLOW.DESCRIBE.HONEY_KILLER       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HONEY_KILLER     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HONEY_KILLER        = ""]]
+STRINGS.CHARACTERS.WX78.DESCRIBE.HONEY_KILLER         = "STICKY AND ANGRY" 
+--[[STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HONEY_KILLER = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HONEY_KILLER       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HONEY_KILLER      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HONEY_KILLER   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_KILLER       = ""]] 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_KILLER       = "Zesty!"
+--[[STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_KILLER       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_KILLER     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_KILLER        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_KILLER         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.HONEY_KILLER            = "x"]]
+--[[
+STRINGS.NAMES.HONEY_WINTER             = "Tundra Honey"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_SPRING      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HONEY_SPRING       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HONEY_SPRING     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HONEY_SPRING        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.HONEY_SPRING         = "" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HONEY_SPRING = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HONEY_SPRING       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HONEY_SPRING      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HONEY_SPRING   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_SPRING       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_SPRING       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_SPRING       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_SPRING     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_SPRING        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_SPRING         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.HONEY_SPRING            = "x"
+]]
+STRINGS.NAMES.HONEY_FLORAL             = "Summer Blossom Honey"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_FLORAL      = "I sure hope those petals are edible."
+--[[STRINGS.CHARACTERS.WILLOW.DESCRIBE.HONEY_FLORAL       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HONEY_FLORAL     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HONEY_FLORAL        = ""]]
+STRINGS.CHARACTERS.WX78.DESCRIBE.HONEY_FLORAL         = "I ENJOY STEALING FROM NATURE" 
+--[[STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HONEY_FLORAL = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HONEY_FLORAL       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HONEY_FLORAL      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HONEY_FLORAL   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_FLORAL       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_FLORAL       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_FLORAL       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_FLORAL     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_FLORAL        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_FLORAL         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.HONEY_FLORAL            = "x"]]
+
+STRINGS.NAMES.HONEY_JAR                = "Jar of Honey"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_JAR      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HONEY_JAR       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HONEY_JAR     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HONEY_JAR        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.HONEY_JAR         = "HERMETICALLY SEALED HONEY STORAGE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HONEY_JAR = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HONEY_JAR       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HONEY_JAR      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HONEY_JAR   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_JAR       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_JAR       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_JAR       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_JAR     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_JAR        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_JAR         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.HONEY_JAR            = "x"
+
+--[[
+STRINGS.NAMES.HONEY_POT                = "Honey Pot"
+STRINGS.RECIPE_DESC.HONEY_POT                = "A home for your honey."
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.HONEY_POT      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HONEY_POT       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HONEY_POT     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.HONEY_POT        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.HONEY_POT         = "A HONEY CONTAINMENT UNIT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HONEY_POT = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.HONEY_POT       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HONEY_POT      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HONEY_POT   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_POT       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_POT       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_POT       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_POT     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_POT        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_POT         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.HONEY_POT            = "x"
+
+
+-- A DATE BY THE OASIS --
+
+
+STRINGS.NAMES.DATE                = "Dates"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DATE       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DATE     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DATE        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.DATE         = "CONDENSED SUGAR FRUIT" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DATE = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DATE       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DATE      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DATE   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DATE       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DATE       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DATE       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DATE     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DATE        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.DATE         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.DATE            = "x"
+
+STRINGS.NAMES.DATE_COOKED                = "Roast Dates"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_COOKED      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DATE_COOKED       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DATE_COOKED     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DATE_COOKED        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.DATE_COOKED         = "FIRE HAS MADE IT MORE NUTRITIOUS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DATE_COOKED = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DATE_COOKED       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DATE_COOKED      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DATE_COOKED   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DATE_COOKED       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DATE_COOKED       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DATE_COOKED       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DATE_COOKED     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DATE_COOKED        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.DATE_COOKED         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.DATE_COOKED            = "x"
+
+STRINGS.NAMES.BAKLAVA                = "Baklava"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BAKLAVA      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BAKLAVA       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BAKLAVA     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BAKLAVA        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.BAKLAVA         = "SWEETENED PASTRY DIAMONDS" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BAKLAVA = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BAKLAVA       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BAKLAVA      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BAKLAVA   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BAKLAVA       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BAKLAVA       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BAKLAVA       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BAKLAVA     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BAKLAVA        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.BAKLAVA         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.BAKLAVA            = "x"
+
+STRINGS.NAMES.DATE_PIT                = "Date Pit"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_PIT      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DATE_PIT       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DATE_PIT     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DATE_PIT        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.DATE_PIT         = "IT CONTAINS AN ENTIRE TREE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DATE_PIT = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DATE_PIT       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DATE_PIT      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DATE_PIT   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DATE_PIT       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DATE_PIT       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DATE_PIT       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DATE_PIT     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DATE_PIT        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.DATE_PIT         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.DATE_PIT            = "x"
+
+STRINGS.NAMES.PALMTREE_SAPLING            = "Coconut Palm Sapling"
+STRINGS.NAMES.DATE_SAPLING                = "Date Palm Sapling"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_SAPLING      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DATE_SAPLING       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DATE_SAPLING     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DATE_SAPLING        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.DATE_SAPLING         = "FEAR ME TINY TREE" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DATE_SAPLING = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DATE_SAPLING       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DATE_SAPLING      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DATE_SAPLING   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DATE_SAPLING       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DATE_SAPLING       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DATE_SAPLING       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DATE_SAPLING     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DATE_SAPLING        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.DATE_SAPLING         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.DATE_SAPLING            = "x"
+
+STRINGS.NAMES.PALMTREE                 = "Coconut Palm Tree"
+STRINGS.NAMES.DATE_TREE                = "Date Palm Tree"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }               
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WX78.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "SOON THERE WILL BE NOTHING LEFT",
+            BURNT = "ORGANIC INFERIORITY",
+            CHOPPED = "DEACTIVATED",
+            GENERIC = "THIS TREE THINKS ITS SPECIAL",
+        }
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WURT.DESCRIBE.DATE_TREE =
+        {
+            BURNING = "",
+            BURNT = "",
+            CHOPPED = "",
+            GENERIC = "",
+        }
+STRINGS.CHARACTERS.WALTER.DESCRIBE.X            = "x"
+
+
+-- GOOSEBERRY FOOL --
+
+
+STRINGS.NAMES.GOOSEBERRY1                = "Gooseberries"
+STRINGS.NAMES.GOOSEBERRY2                = "Mooseberries"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRY      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GOOSEBERRY       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GOOSEBERRY     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GOOSEBERRY        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.GOOSEBERRY         = "WARNING: SOURNESS DETECTED" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GOOSEBERRY = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GOOSEBERRY       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GOOSEBERRY      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GOOSEBERRY   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GOOSEBERRY       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GOOSEBERRY       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GOOSEBERRY       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GOOSEBERRY     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GOOSEBERRY        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.GOOSEBERRY         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.GOOSEBERRY            = "x"
+
+STRINGS.NAMES.GOOSEBERRY_COOKED1                = "Cooked Gooseberries"
+STRINGS.NAMES.GOOSEBERRY_COOKED2                = "Cooked Mooseberries"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRY_COOKED      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GOOSEBERRY_COOKED       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GOOSEBERRY_COOKED     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GOOSEBERRY_COOKED        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.GOOSEBERRY_COOKED         = "SOUR FRUIT MUSH" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GOOSEBERRY_COOKED = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GOOSEBERRY_COOKED       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GOOSEBERRY_COOKED      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GOOSEBERRY_COOKED   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GOOSEBERRY_COOKED       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GOOSEBERRY_COOKED       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GOOSEBERRY_COOKED       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GOOSEBERRY_COOKED     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GOOSEBERRY_COOKED        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.GOOSEBERRY_COOKED         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.GOOSEBERRY_COOKED            = "x"
+
+STRINGS.NAMES.GOOSEBERRY_FOOL1                = "Gooseberry Fool"
+STRINGS.NAMES.GOOSEBERRY_FOOL2                = "Mooseberry Fool"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRY_FOOL      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GOOSEBERRY_FOOL       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GOOSEBERRY_FOOL     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GOOSEBERRY_FOOL        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.GOOSEBERRY_FOOL         = "NUTRITIOUS GOOP" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GOOSEBERRY_FOOL = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GOOSEBERRY_FOOL       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GOOSEBERRY_FOOL      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GOOSEBERRY_FOOL   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GOOSEBERRY_FOOL       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GOOSEBERRY_FOOL       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GOOSEBERRY_FOOL       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GOOSEBERRY_FOOL     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GOOSEBERRY_FOOL        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.GOOSEBERRY_FOOL         = ""
+STRINGS.CHARACTERS.WALTER.DESCRIBE.GOOSEBERRY_FOOL            = "x"
+
+STRINGS.NAMES.GOOSEBERRYBUSH1                         = "Gooseberry Bush"
+STRINGS.NAMES.GOOSEBERRYBUSH2                         = "Mooseberry Bush"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WENDY.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WX78.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "HARD REBOOT REQUIRED",
+            GENERIC = "CALORIES PROTECTED BY SPIKY FIREWALL",
+            PICKED = "DEFRAGMENTING BERRIES",
+            BURNING = "ORGANICS ARE NOT FIREPROOF",
+        }
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WINONA.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WARLY.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WURT.DESCRIBE.GOOSEBERRYBUSH =
+        {
+            WITHERED = "",
+            GENERIC = "",
+            PICKED = "",
+            BURNING = "",
+        }
+STRINGS.CHARACTERS.WALTER.DESCRIBE.X            = "x"
+]]
+
+STRINGS.NAMES.PUMPKIN_WILD             = "Pumpkin"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.PUMPKIN_WILD      = "It's as big as my head!"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PUMPKIN_WILD       = "I wonder what would happen if I applied fire."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PUMPKIN_WILD     = "Is big as head of weakling man! Not Wolfgang head."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PUMPKIN_WILD        = "It's as big as the hole where my heart once was."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PUMPKIN_WILD         = "DEBUG CODE: TYKV35#" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PUMPKIN_WILD = "Cucurbita pepo."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.PUMPKIN_WILD       = "I don't like to eat things that grow on the ground."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PUMPKIN_WILD      = "Hallowe'en was always my favorite."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PUMPKIN_WILD   = "It might make a good bludgeon, at least."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PUMPKIN_WILD       = "That's a huge pumpkin!" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PUMPKIN_WILD       = "Hey there, pumpkin."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PUMPKIN_WILD       = "How nice and how spooky!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PUMPKIN_WILD     = "Good for belly"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.PUMPKIN_WILD        = "I'm the pumpking of the world!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.PUMPKIN_WILD         = "Lumpy and good, florp!"
+STRINGS.CHARACTERS.WALTER.DESCRIBE.PUMPKIN_WILD       = "Is it Fall already?"
+
+-- NIGHTLIGHT TWEAKS --
+--[[
+STRINGS.CHARACTERS.GENERIC.ANNOUNCE_NIGHTLIGHT_FAF      = {"I feel something pulling at my mind...", "I have to keep it together.", "How long have I been out here?"}
+STRINGS.CHARACTERS.WILLOW.ANNOUNCE_NIGHTLIGHT_FAF       = {"The fire... it consumes everything.", "Brighter! Hotter!", "Burn it all down..."}
+STRINGS.CHARACTERS.WOLFGANG.ANNOUNCE_NIGHTLIGHT_FAF     = "Wolfgang feel confuse..."
+STRINGS.CHARACTERS.WENDY.ANNOUNCE_NIGHTLIGHT_FAF        = {"Feels like someone just walked over my grave.", "Abby... did you say something?", "Nevermind, must've been the wind."}
+STRINGS.CHARACTERS.WX78.ANNOUNCE_NIGHTLIGHT_FAF         = "DREAM ENGINE... FRAGMENTING" 
+STRINGS.CHARACTERS.WICKERBOTTOM.ANNOUNCE_NIGHTLIGHT_FAF = {"I feel... memories slipping away...", "Where did that cat get off to...", "I swear I had it a minute ago..."}
+STRINGS.CHARACTERS.WOODIE.ANNOUNCE_NIGHTLIGHT_FAF       = {"Lucy! Where's Lucy? My mind...", "I'm so tired...", "Maybe I should rest my eyes a moment..."}
+STRINGS.CHARACTERS.WAXWELL.ANNOUNCE_NIGHTLIGHT_FAF      = {"I sense foul magic at play.", "Something dark lurks on the corner of my mind...", "Charlie... I'm sorry..."}
+STRINGS.CHARACTERS.WATHGRITHR.ANNOUNCE_NIGHTLIGHT_FAF   = {"Show yourself spectre!", "Secrets... whispered on the wind.", "The darkness seeps in..."}
+STRINGS.CHARACTERS.WEBBER.ANNOUNCE_NIGHTLIGHT_FAF       = {"Mum had the nicest smile.", "Grandpa...", "Why haven't they found us yet?", "Dad?"} 
+STRINGS.CHARACTERS.WINONA.ANNOUNCE_NIGHTLIGHT_FAF       = {"Might need to take a breather.", "Ain't too fond of being used as fuel."}
+STRINGS.CHARACTERS.WORTOX.ANNOUNCE_NIGHTLIGHT_FAF       = {"My mind... plays tricks on me.", "The darkness creeps in closer."}
+STRINGS.CHARACTERS.WORMWOOD.ANNOUNCE_NIGHTLIGHT_FAF     = "What happening?"
+STRINGS.CHARACTERS.WARLY.ANNOUNCE_NIGHTLIGHT_FAF        = {"Maman... hold on Maman.", "Eggs, butter... flour...", "Darn! I knew I had it..."}
+STRINGS.CHARACTERS.WURT.ANNOUNCE_NIGHTLIGHT_FAF         = "Gluurrr... glorph... GLORRPP..."
+]]
+
+--[[
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.X      = ""
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.X       = ""
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.X     = ""
+STRINGS.CHARACTERS.WENDY.DESCRIBE.X        = ""
+STRINGS.CHARACTERS.WX78.DESCRIBE.X         = "" 
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.X = ""
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.X       = ""
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.X      = ""
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.X   = ""
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.X       = "" 
+STRINGS.CHARACTERS.WINONA.DESCRIBE.X       = ""
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.X       = ""
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.X     = ""
+STRINGS.CHARACTERS.WARLY.DESCRIBE.X        = ""
+STRINGS.CHARACTERS.WURT.DESCRIBE.X         = ""
+]]

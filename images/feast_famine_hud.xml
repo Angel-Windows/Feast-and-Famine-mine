@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Atlas>
+	<Texture filename="feast_famine_hud.tex" />
+	<Elements>
+		<Element name="bread_slot.tex" u1="0.001" u2="0.5224375" v2="0.999" v1="0.4775625" variant="" />
+	</Elements>
+</Atlas>
