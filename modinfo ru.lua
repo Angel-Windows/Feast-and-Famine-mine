@@ -23,14 +23,14 @@ server_filter_tags =
 configuration_options =
 {
     {
-        name    = "Языки",
-        label   = "Language",
+        name    = "config_Language",
+        label   = "Язык",
         hover   = "",
         options =
         {
-            {description = "English", data = "english"},
+            {description = "Английский", data = "english"},
             {description = "中文", data = "chinese"},
-            {description = "Russian", data = "russian"},
+            {description = "Русский", data = "russ"},
         },
         default = "english",
     },
@@ -38,36 +38,36 @@ configuration_options =
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
     {
         name = "Title",
-        label = "Birdcage Tweaks фывафыва",
+        label = "Настройки клеток для птиц",
         options = {{description = "", data = ""},},
         default = "",
     },
     {
         name    = "config_MonsterEggs",
-        label   = "Monstrous Eggs фывафыв",
-        hover   = "Feeding Monster Meat to a bird will give you Monstrous Eggs.",
+        label   = "Монструозные яйца",
+        hover   = "Кормление птицы мясом монстров даст Монструозные яйца.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_LeafyEggs",
-        label   = "Leafy Eggs",
-        hover   = "Feeding Leafy Meat to a bird will give you Leafy Eggs.",
+        label   = "Листовые яйца",
+        hover   = "Кормление птицы листовым мясом даст Листовые яйца.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name = "config_SeedMin",
-        label = "Minimum Seeds",
-        hover   = "The guaranteed number of crop seeds received from feeding a bird.",
+        label = "Минимум семян",
+        hover   = "Гарантированное количество семян, получаемых от кормления птицы.",
         options = 
         {
             {description = "0", data = 0},
@@ -79,14 +79,14 @@ configuration_options =
     },
     {
         name = "config_SeedPlus",
-        label = "Maximum Seeds",
-        hover   = "The maximum number of seeds (relative to minimum seeds).",
+        label = "Максимум семян",
+        hover   = "Максимальное количество семян (относительно минимального).",
         options = 
         {
-            {description = "Min Seeds +0", data = 0},
-            {description = "Min Seeds +1", data = 1},
-            {description = "Min Seeds +2", data = 2},
-            {description = "Min Seeds +3", data = 3},
+            {description = "Мин. семян +0", data = 0},
+            {description = "Мин. семян +1", data = 1},
+            {description = "Мин. семян +2", data = 2},
+            {description = "Мин. семян +3", data = 3},
         },
         default = 0,
     },
@@ -94,31 +94,31 @@ configuration_options =
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
     {
         name = "Title",
-        label = "Honey Crystals",
+        label = "Медовые кристаллы",
         options = {{description = "", data = ""},},
         default = "",
     },
 
     {
         name    = "config_HoneyCrystals",
-        label   = "Honey Crystals",
-        hover   = "Honey will crystallize when placed in the fridge or exposed to the cold.",
+        label   = "Медовые кристаллы",
+        hover   = "Мед будет кристаллизоваться при хранении в холодильнике или на холоде.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
 
     {
         name    = "config_HoneyFridge",
-        label   = "Fridgable Honey",
-        hover   = "Honey can be placed in the Icebox.",
+        label   = "Хранимый в холодильнике мед",
+        hover   = "Мед можно помещать в холодильник.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
@@ -126,111 +126,98 @@ configuration_options =
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
     {
         name = "Title",
-        label = "Crockblockers",
+        label = "Супы из кастрюль",
         options = {{description = "", data = ""},},
         default = "",
     },
 
     {
         name    = "config_CarrotSoup",
-        label   = "Carrot Soup",
-        hover   = "Make awful soup with Carrots!",
+        label   = "Морковный суп",
+        hover   = "Приготовьте ужасный суп из моркови!",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
 
     {
         name    = "config_MushroomSoup",
-        label   = "Mushroom Soup",
-        hover   = "Make terrible soup from Mushrooms!",
+        label   = "Грибной суп",
+        hover   = "Приготовьте отвратительный суп из грибов!",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
 
     {
         name    = "config_StoneSoup",
-        label   = "Stone Soup",
-        hover   = "Why not chip a tooth on a bowl of Stone Fruit Soup?",
+        label   = "Каменный суп",
+        hover   = "Почему бы не сломать зуб о тарелку каменного супа?",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
-        
         default = true,
     },
     {
         name    = "config_StewedMeat",
-        label   = "Stewed Meat",
-        hover   = "Who cooks Meatballs with Ice anyway?",
+        label   = "Тушёное мясо",
+        hover   = "Кто вообще готовит фрикадельки со льдом?",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
 
-        {
-        name    = "config_JuicyCutlet",
-        label   = "Juicy Cutletqqqqq",
-        hover   = "This Berry Cutlet looks pretty but won't fill you up!",
-        options =
-        {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
-        },
-        default = true,
-    },
---[[
     {
-        name    = "config_TwiggyTreats",
-        label   = "Twiggy Treats",
-        hover   = "Good for Beefalo, not for you! Save those Twigs for kindling.",
+        name    = "config_JuicyCutlet",
+        label   = "Сочная котлета",
+        hover   = "Эта ягодная котлета выглядит красиво, но почти не насыщает!",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
-]]
+
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
     {
         name = "Title",
-        label = "Pigskin Leather",
+        label = "Кожаные изделия из свинины",
         options = {{description = "", data = ""},},
         default = "",
     },
 
     {
         name    = "config_FootballLeather",
-        label   = "Leather",
-        hover   = "Pigskin rots. Football Helmets will require Leather made from dried Pigskin.",
+        label   = "Кожа",
+        hover   = "Свинина гниёт. Шлемы для футбола потребуют кожу из высушенной свинины.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
 
     {
         name    = "config_OtherLeather",
-        label   = "More Leather",
-        hover   = "Leather replaces Pigskin in most crafting recipes.",
+        label   = "Дополнительная кожа",
+        hover   = "Кожа заменяет свинину в большинстве рецептов крафта.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
@@ -238,139 +225,30 @@ configuration_options =
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
     {
         name = "Title",
-        label = "Balance Changes",
+        label = "Изменения баланса",
         options = {{description = "", data = ""},},
         default = "",
     },
 
     {
         name    = "config_StoneFruit",
-        label   = "Stone Fruit Tweaks",
-        hover   = "Tweaks Stone Fruit to give more rocks than food when mined.",
+        label   = "Изменения каменных фруктов",
+        hover   = "Каменные фрукты теперь дают больше камней, чем еды при добыче.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_Nightlight",
-        label   = "Nightlight Tweaks",
-        hover   = "Nightlights will now help protect from wildfires during summer...",
+        label   = "Настройки ночников",
+        hover   = "Ночники теперь помогают защищать от лесных пожаров летом...",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
-        },
-        default = true,
-    },
-
-        {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
-    {
-        name = "Title",
-        label = "Seed Reskins",
-        options = {{description = "", data = ""},},
-        default = "",
-    },
-    --[[{
-        name    = "config_seedsall",
-        label   = "Master Toggle",
-        hover   = "Reskins all seeds with the Feast and Famine versions.",
-        options =
-        {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
-        },
-        default = false,
-    },]]
-    {
-        name    = "config_seedscorn",
-        label   = "Corn Seeds",
-        options =
-        {
-            {description = "Popped Seeds",            data = true},
-            {description = "Clustered Seeds",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedsdragonfruit",
-        label   = "Dragonfruit Seeds",
-        options =
-        {
-            {description = "Precious Beans",            data = true},
-            {description = "Bulbous Seeds",           data = false},
-        },
-        default = false,
-    },
-    {
-        name    = "config_seedsdurian",
-        label   = "Durian Seeds",
-        options =
-        {
-            {description = "Smelly Seed Pods",            data = true},
-            {description = "Brittle Seed Pods",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedseggplant",
-        label   = "Eggplant Seeds",
-        options =
-        {
-            {description = "Polished Seeds",            data = true},
-            {description = "Swirly Seeds",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedspomegranate",
-        label   = "Pomegranate Seeds",
-        options =
-        {
-            {description = "Squishy Seeds",            data = true},
-            {description = "Windblown Seeds",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedspumpkin",
-        label   = "Pumpkin Seeds",
-        options =
-        {
-            {description = "Wrapped Seeds",            data = true},
-            {description = "Sharp Seeds",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedswatermelon",
-        label   = "Watermelon Seeds",
-        options =
-        {
-            {description = "Curved Seeds",            data = true},
-            {description = "Square Seeds",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedsasparagus",
-        label   = "Asparagus Seeds",
-        options =
-        {
-            {description = "Spiral Seeds",            data = true},
-            {description = "Tubular Seeds",           data = false},
-        },
-        default = true,
-    },
-    {
-        name    = "config_seedspepper",
-        label   = "Pepper Seeds",
-        options =
-        {
-            {description = "Shrivelled Seeds",            data = true},
-            {description = "Lumpy Seeds",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
@@ -378,180 +256,279 @@ configuration_options =
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
     {
         name = "Title",
-        label = "Meat Variety",
+        label = "Внешний вид семян",
+        options = {{description = "", data = ""},},
+        default = "",
+    },
+
+    {
+        name    = "config_seedscorn",
+        label   = "Семена кукурузы",
+        options =
+        {
+            {description = "Попкорн", data = true},
+            {description = "Кластерные семена", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedsdragonfruit",
+        label   = "Семена драконьего фрукта",
+        options =
+        {
+            {description = "Ценные бобы", data = true},
+            {description = "Луковичные семена", data = false},
+        },
+        default = false,
+    },
+    {
+        name    = "config_seedsdurian",
+        label   = "Семена дуриана",
+        options =
+        {
+            {description = "Вонючие семенные коробочки", data = true},
+            {description = "Хрупкие семенные коробочки", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedseggplant",
+        label   = "Семена баклажана",
+        options =
+        {
+            {description = "Полированные семена", data = true},
+            {description = "Завитковые семена", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedspomegranate",
+        label   = "Семена граната",
+        options =
+        {
+            {description = "Мягкие семена", data = true},
+            {description = "Ветряные семена", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedspumpkin",
+        label   = "Семена тыквы",
+        options =
+        {
+            {description = "Завёрнутые семена", data = true},
+            {description = "Острые семена", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedswatermelon",
+        label   = "Семена арбуза",
+        options =
+        {
+            {description = "Изогнутые семена", data = true},
+            {description = "Квадратные семена", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedsasparagus",
+        label   = "Семена спаржи",
+        options =
+        {
+            {description = "Спиральные семена", data = true},
+            {description = "Трубчатые семена", data = false},
+        },
+        default = true,
+    },
+    {
+        name    = "config_seedspepper",
+        label   = "Семена перца",
+        options =
+        {
+            {description = "Сморщенные семена", data = true},
+            {description = "Комковатые семена", data = false},
+        },
+        default = true,
+    },
+
+    {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
+    {
+        name = "Title",
+        label = "Разнообразие мяса",
         options = {{description = "", data = ""},},
         default = "",
     },
     {
         name    = "config_MoreMeat",
-        label   = "Master Toggle",
-        hover   = "Adds in a variety of new meat drops and mob-specific meat skins. This won't override any changes that other mods make to mob drops.",
+        label   = "Главный переключатель",
+        hover   = "Добавляет разнообразные виды мяса и особые шкурки для мобов. Не заменяет изменения других модов на дроп мобов.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_SQUID",
-        label   = "Squid Meat",
+        label   = "Мясо кальмара",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_BEAR",
-        label   = "Smelly Bear Meat",
+        label   = "Вонючее медвежье мясо",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_DEER",
-        label   = "Venison (Deer Meat)",
+        label   = "Оленина",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_ROCKY",
-        label   = "Rocky Meat",
-        hover   = "Added to both Rock Lobsters and the Crab King.",
+        label   = "Каменное мясо",
+        hover   = "Добавлено как в Rock Lobsters, так и Crab King.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_DRAGON",
-        label   = "Dragon Meat",
+        label   = "Мясо дракона",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_TOAD",
-        label   = "Toad Meat",
-        hover   = "Compatible with Uncompromising Mode.",
+        label   = "Мясо жабы",
+        hover   = "Совместимо с Режимом без компромиссов.",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_BIGBIRD",
-        label   = "Jumbo Drumsticks",
+        label   = "Большие ножки",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_MOOSE",
-        label   = "Moose/Goose Meat Reskin",
+        label   = "Мясо лося/гусака",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_MALB",
-        label   = "Malbatross Meat Reskin",
+        label   = "Мясо Малбатроса",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_ANTLION",
-        label   = "Antlion Meat Reskin",
+        label   = "Мясо Муравьиных львов",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_BEEF",
-        label   = "Beefalo Meat Reskin",
+        label   = "Мясо Бифало",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_CAT",
-        label   = "Catcoon Meat Reskin",
+        label   = "Мясо Коткуна",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_GOAT",
-        label   = "Goat Meat Reskin",
+        label   = "Мясо козы",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_BUNNYMANMEAT",
-        label   = "Bunnyman Meat Reskin",
+        label   = "Мясо кролика",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_GUARDIAN",
-        label   = "Guardian Meat Reskin",
+        label   = "Мясо Стража",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
     {
         name    = "config_FAF_KOALA",
-        label   = "Koalephant Meat Reskin",
+        label   = "Мясо Коалефанта",
         options =
         {
-            {description = "Enable",            data = true},
-            {description = "Disable",           data = false},
+            {description = "Включить", data = true},
+            {description = "Выключить", data = false},
         },
         default = true,
     },
