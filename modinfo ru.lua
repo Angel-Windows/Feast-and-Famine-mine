@@ -1,7 +1,7 @@
-name = "  Feast and Famine Fixed ывафыва"
+name = "Feast and Famine Ru"
 author = "Tosh, Fuffles & Friends"
-version = "1.10" 
-description = "Feast your eyes! \n\nA collection of content and gameplay tweaks, designed to make playing with your food oh-so enjoyable. \n\n• Alternative seeds \n• Wild wheat \n• Monster eggs \n• Resource variants \n• Chickens! \n• Pasta and Fish Jerky \n\n...and so much more to come."
+version = "1.13" 
+description = "Насладитесь зрелищем!! \n\nСмотрите во все глаза! \n\nКоллекция контентных и геймплейных изменений, созданных для того, чтобы играть с едой было ещё приятнее. \n\n• Альтернативные семена \n• Дикая пшеница \n• Яйца монстров \n• Варианты ресурсов \n• Куры! \n• Паста и вяленая рыба \n\n…и ещё много всего впереди."
 forumthread = ""
 api_version = 10
 priority = -346

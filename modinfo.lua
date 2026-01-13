@@ -1,7 +1,8 @@
-name = "  Feast and Famine Fixed"
-author = "Tosh, Fuffles & Friends"
-version = "1.10" 
-description = "Feast your eyes! \n\nA collection of content and gameplay tweaks, designed to make playing with your food oh-so enjoyable. \n\n• Alternative seeds \n• Wild wheat \n• Monster eggs \n• Resource variants \n• Chickens! \n• Pasta and Fish Jerky \n\n...and so much more to come."
+name = "Feast and Famine Ru"
+author = "Big mom"
+version = "1.14" 
+description = "Насладитесь зрелищем!! \n\nСмотрите во все глаза! \n\nКоллекция контентных и геймплейных изменений, созданных для того, чтобы играть с едой было ещё приятнее. \n\n• Альтернативные семена \n• Дикая пшеница \n• Яйца монстров \n• Варианты ресурсов \n• Куры! \n• Паста и вяленая рыба \n\n…и ещё много всего впереди."
+
 forumthread = ""
 api_version = 10
 priority = -346
@@ -32,7 +33,7 @@ configuration_options =
             {description = "中文", data = "chinese"},
             {description = "Русский", data = "russ"},
         },
-        default = "english",
+        default = "russ",
     },
 
     {name = "Title", label = "", options = {{description = "", data = ""},}, default = "",},
@@ -44,8 +45,8 @@ configuration_options =
     },
     {
         name    = "config_MonsterEggs",
-        label   = "Монструозные яйца",
-        hover   = "Кормление птицы мясом монстров даст Монструозные яйца.",
+        label   = "Монстр яйца",
+        hover   = "Кормление птицы мясом монстров даст Монстр яйца. А если Выключить то даст обычное мясо",
         options =
         {
             {description = "Включить", data = true},
@@ -56,7 +57,7 @@ configuration_options =
     {
         name    = "config_LeafyEggs",
         label   = "Листовые яйца",
-        hover   = "Кормление птицы листовым мясом даст Листовые яйца.",
+        hover   = "Кормление птицы листовым мясом даст Листовые яйца. А если Выключить то даст обычное мясо",
         options =
         {
             {description = "Включить", data = true},

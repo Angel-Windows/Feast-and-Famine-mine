@@ -1,6 +1,6 @@
-name = "Feast and Famine Fixed"
+name = "Feast and Famine Ru"
 author = "Smurf"
-version = "1.10"
+version = "1.13"
 description = "Feast your eyes! \n\nA collection of content and gameplay tweaks, designed to make playing with your food oh-so enjoyable. \n\n• Fancy seeds \n• Seasonal crops \n• Monster eggs \n• Much ado about honey \n• Chickens! \n• Pasta and Fish Jerky \n\n...and so much more to come."
 forumthread = ""
 api_version = 10
