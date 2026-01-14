@@ -5,9 +5,7 @@ GLOBAL.SetupGemCoreEnv()
 STRINGS = GLOBAL.STRINGS
 local language = GetModConfigData("config_Language")
 
-if language == "russian" then
-    require("strings/ru")
-end
+
 PrefabFiles = {}
 
 Assets = {Asset("ANIM", "anim/merm_trader1_build.zip"), Asset("ANIM", "anim/quagmire_mermcart.zip"),
@@ -66,6 +64,9 @@ local LEGION = GLOBAL.KnownModIndex:IsModEnabled("workshop-1392778117")
 local ISLAND = GLOBAL.KnownModIndex:IsModEnabled("workshop-1467214795")
 local MILK = GLOBAL.KnownModIndex:IsModEnabled("workshop-436654027")
 
+if GetModConfigData("config_Language") then
+    GLOBAL.TUNING.FAFLANGUAGE = language
+end
 if GetModConfigData("config_FootballLeather") then
     GLOBAL.TUNING.FOOTBALLLEATHER = true
 end
@@ -351,6 +352,11 @@ end
 
 AddNaughtinessFor("chicken", 4)
 AddNaughtinessFor("chicken_trader", 2)
+-- AddPrefabPostInit("chicken_trader", function(inst)
+--     if inst.components.edible then
+--         inst.components.edible.naughtyvalue = 2
+--     end
+-- end)
 
 if not ISLAND then -- Checks for Island Adventures to prevent doubling up on edible naughtiness
     local _OnEaten

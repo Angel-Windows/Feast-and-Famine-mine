@@ -136,7 +136,18 @@ STRINGS.CHICK_TALK_PROVERB = {
         GIFT7 = "Терпение далеко ведёт.",
         GIFT8 = "Не забудь их поливать!"
     }
-
+}
+STRINGS.CHICK_NAMES = {
+    "Реджинальд", "Рассет", "Биг Ред", "Роберт", "Ремингтон",
+    "Роман", "Райкер", "Ричард", "Росс", "Ронан", "Ромео", "Рэймонд",
+    "Рубен", "Рассел", "Роланд", "Родриго", "Радборн", "Рэдклифф",
+    "Раффлз", "Раян", "Райан", "Рамби", "Рарклорд", "Роббстар",
+    "Родригес", "Роули", "Роулет", "Рэддл", "Риз", "Рикки", "Рокко",
+    "Родео", "Ролло", "Роско", "Ровер", "Роуэн", "Джерри", "Ролинг",
+    "Рэдфорд", "Рэгдейл", "Рампкин", "Рамзи", "Ратборн", "Редферн",
+    "Ричардсон", "Ригби", "Робертсон", "Розингтон", "Радкиндс",
+    "Рамфорд", "Рорно", "О Ревуар", "Робби Робсон Робенски II.",
+    "Рафаэль Роберт Р. Ронгфри III.", "Рой", "Рефанссон"
 }
 
 STRINGS.CHICK_TALK_TRADE = {"Хочешь семян?", "Сверкающие сокровища?"}
@@ -449,6 +460,26 @@ STRINGS.NAMES.POMEGRANATE_SEEDS = "Влажные семена"
 STRINGS.NAMES.DURIAN_SEEDS = "Вонючие семена"
 STRINGS.NAMES.PINEANANAS_SEEDS = "Звёздчатые семена"
 STRINGS.NAMES.SEEDS = "Дикие семена"
+
+STRINGS.NAMES.DUG_WHEATGRASS = "Куст пшеницы"
+
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.DUG_WHEATGRASS = "Без труда — не будет зерна."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.DUG_WHEATGRASS = "Что, без земли не можешь?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.DUG_WHEATGRASS = "Ему холодно и одиноко."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.DUG_WHEATGRASS = "Мне нравится, что оно мёртвое, но, пожалуй, его стоит вернуть земле."
+STRINGS.CHARACTERS.WX78.DESCRIBE.DUG_WHEATGRASS = "В ЗЕМЛЕ ОНО БЫЛО БЫ ПОЛЕЗНЕЕ"
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.DUG_WHEATGRASS = "Для роста ему необходима почва."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.DUG_WHEATGRASS = "Надо бы это посадить."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.DUG_WHEATGRASS = "Я похож на садовника?"
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.DUG_WHEATGRASS = "Его следует вернуть богине земли."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.DUG_WHEATGRASS = "В землю тебя!"
+STRINGS.CHARACTERS.WINONA.DESCRIBE.DUG_WHEATGRASS = "Похоже, пора заняться садоводством."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.DUG_WHEATGRASS = "Верни в грязь, пока не стало хуже!"
+STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.DUG_WHEATGRASS = "Нужна земля"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.DUG_WHEATGRASS = "Может, стоит вернуть его к жизни?"
+STRINGS.CHARACTERS.WURT.DESCRIBE.DUG_WHEATGRASS = "Куда это деть?"
+STRINGS.CHARACTERS.WALTER.DESCRIBE.DUG_WHEATGRASS = "Теперь можно посадить ближе к лагерю."
+STRINGS.CHARACTERS.WANDA.DESCRIBE.DUG_WHEATGRASS = "Я знаю для него место получше."
 
 -- CHARACTER SEED QUOTES --
 

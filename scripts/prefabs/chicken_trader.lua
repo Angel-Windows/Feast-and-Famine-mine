@@ -1,3 +1,14 @@
+local GLOBAL = _G
+local ConfigLanguage = GLOBAL.TUNING.FAFLANGUAGE
+local STRINGS_CUSTOM = GLOBAL.STRINGS
+
+if ConfigLanguage == "russ" then
+    local russian_strings = require "language.ru.chick_translations"
+    for k, v in pairs(russian_strings) do
+        STRINGS_CUSTOM[k] = v
+    end
+end
+
 local assets = {Asset("ANIM", "anim/rooster_farmer_build.zip"), Asset("ANIM", "anim/perd.zip"),
                 Asset("SOUNDPACKAGE", "sound/chickenfamily.fev"), Asset("SOUND", "sound/chickenfamily.fsb")}
 
@@ -10,26 +21,21 @@ SetSharedLootTable('rooster', {{'drumstick', 1.0}, {'drumstick', .75}, {'strawha
 local MAX_TARGET_SHARES = 5
 local SHARE_TARGET_DIST = 30
 
-local rnames = {"Reginald", "Russet", "Big Red", "Robert", "Remington", "Roman", "Ryker", "Richard", "Ross", "Ronan",
-                "Romeo", "Raymond", "Ruben", "Russell", "Roland", "Rodrigo", "Radbourne", "Radcliffe", "Ruffles",
-                "Rayan", "Ryan", "Rumby", "Rarklord", "Robbstar", "Rodriguez", "Rowley", "Rowlet", "Raddle", "Reese",
-                "Ricky", "Rocco", "Rodeo", "Rollo", "Roscoe", "Rover", "Rowan", "Jerry", "Rawling", "Radford",
-                "Ragdale", "Rampkin", "Ramsey", "Rathborne", "Redfern", "Richardson", "Rigby", "Robertson", "Rosington",
-                "Rudkins", "Rumford", "Rorno", "Au Revior", "Robbie Robson Robenski II.",
-                "Raphael Robert R. Rongfrey III.", "Roy", "Refansson"}
+local rnames = STRINGS.CHICK_NAMES
 
 local function OnWake(inst)
     inst.SoundEmitter:KillSound("roostersleep")
 end
 
 local function ShouldAcceptItem(inst, item)
-    if item.components.edible and item.components.edible.foodtype == FOODTYPE.MEAT then
-        return false
-    end
-    if item:HasTag("spicedfood") then
-        return false
-    end
     if item:HasTag("molebait") or item:HasTag("preparedfood") then
+        return true
+    end
+
+    if item.components.edible and item.components.edible.foodtype == FOODTYPE.MEAT then
+        return true
+    end
+    if item.prefab == "goldnugget" then
         return true
     end
     return false
@@ -41,14 +47,20 @@ local BARRENSEEDTYPES = {"exotic", "aromatic", "seasonal", "common"}
 local function OnGetItemFromPlayer(inst, giver, item)
     inst.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostertalkshort")
     inst.components.talker:Say(STRINGS.CHICK_TALK_PROVERB.GIFT["GIFT" .. math.random(1, 8)])
-    local tradeproduct = "seeds"
-    for i, v in ipairs(BARRENSEEDTYPES) do
-        if item:HasTag(v .. "trade") then
-            tradeproduct = "barrenseedspacket_" .. v
-            break
+    local tradeproduct
+    if item.prefab == "goldnugget" then
+        tradeproduct = "dug_wheatgrass"
+    elseif item.components.edible and item.components.edible.foodtype == FOODTYPE.MEAT then
+        tradeproduct = "humanmeat"
+    elseif item:HasTag("molebait") or item:HasTag("preparedfood") then
+        tradeproduct = "seeds"
+        for i, v in ipairs(BARRENSEEDTYPES) do
+            if item:HasTag(v .. "trade") then
+                tradeproduct = "barrenseedspacket_" .. v
+                break
+            end
         end
     end
-
     item:Remove()
     giver.components.inventory:GiveItem(SpawnPrefab(tradeproduct), nil, inst:GetPosition())
     inst.sg:GoToState("dropitem")
@@ -59,7 +71,8 @@ local function OnRefuseItem(inst, item)
     SpawnPrefab("slide_puff").Transform:SetPosition(inst.Transform:GetWorldPosition())
     inst.sg:GoToState("refuse")
     -- inst.components.talker:Say(STRINGS.CHICK_TALK_PROVERB.REFUSE["REFUSE" .. math.random(1, 46)])
-    inst.components.talker:Say("No thank you!")
+    inst.components.talker:Say(STRINGS.CHICK_TALK_PROVERB.REFUSE["REFUSE" .. math.random(1, 45)])
+
 end
 
 local function OnChat(inst)
