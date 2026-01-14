@@ -1,7 +1,4 @@
-local assets =
-{
-    Asset("ANIM", "anim/crystalised_honey.zip"),
-}
+local assets = {Asset("ANIM", "anim/crystalised_honey.zip")}
 
 local function fn()
     local inst = CreateEntity()
@@ -15,7 +12,7 @@ local function fn()
     inst.AnimState:SetBuild("crystalised_honey")
     inst.AnimState:SetBank("crystalised_honey")
     inst.AnimState:PlayAnimation("idle")
-    
+
     inst:AddTag("icebox_valid")
     inst:AddTag("honeyed")
 
@@ -32,10 +29,10 @@ local function fn()
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.imagename = "honey_crystals"   
+    inst.components.inventoryitem.imagename = "honey_crystals"
 
     inst:AddComponent("stackable")
-   
+
     MakeHauntableLaunch(inst)
 
     return inst

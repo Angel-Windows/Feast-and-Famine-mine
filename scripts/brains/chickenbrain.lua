@@ -15,44 +15,39 @@ local ChickenBrain = Class(Brain, function(self, inst)
 end)
 
 local function EatFoodAction(inst)
-    local target = FindEntity(inst, SEE_BAIT_DIST,
-        function(item)
-            return inst.components.eater:CanEat(item) and
-            item.components.bait and
-            not item:HasTag("planted") and
-            not (item.components.inventoryitem and
-                item.components.inventoryitem:IsHeld())
-        end)
+    local target = FindEntity(inst, SEE_BAIT_DIST, function(item)
+        return inst.components.eater:CanEat(item) and item.components.bait and not item:HasTag("planted") and
+                   not (item.components.inventoryitem and item.components.inventoryitem:IsHeld())
+    end)
     if target then
         local act = BufferedAction(inst, target, ACTIONS.EAT)
-        act.validfn = function() return not (target.components.inventoryitem and target.components.inventoryitem:IsHeld()) end
+        act.validfn = function()
+            return not (target.components.inventoryitem and target.components.inventoryitem:IsHeld())
+        end
         return act
     end
 end
 
-local RUN_AWAY_PARAMS =
-{
-    tags = { "_combat", "_health" },
-    notags = { "chickenfamily", "playerghost", "INLIMBO" },
+local RUN_AWAY_PARAMS = {
+    tags = {"_combat", "_health"},
+    notags = {"chickenfamily", "playerghost", "INLIMBO"},
     fn = function(guy)
-        return not guy.components.health:IsDead()
-            and (guy.components.combat.target ~= nil and
-                guy.components.combat.target:HasTag("chickenfamily"))
-    end,
+        return not guy.components.health:IsDead() and
+                   (guy.components.combat.target ~= nil and guy.components.combat.target:HasTag("chickenfamily"))
+    end
 }
 
 function ChickenBrain:OnStart()
-    local root = PriorityNode(
-    {
-        WhileNode(function() return self.inst.components.health.takingfiredamage end, "OnFire", Panic(self.inst)),
-        WhileNode(function() return self.inst.components.health:GetPercent() < .95 end, "LowHealth",
-                    RunAway(self.inst, "scarytoprey", SEE_PLAYER_DIST, STOP_RUN_DIST)),
-        RunAway(self.inst, RUN_AWAY_PARAMS, SEE_PLAYER_DIST, STOP_RUN_DIST),
-        RunAway(self.inst, "OnFire", SEE_PLAYER_DIST, STOP_RUN_DIST),
-        DoAction(self.inst, EatFoodAction),
-        Leash(self.inst, function() return self.inst.components.knownlocations:GetLocation("home") end, MAX_LEASH_DIST, MAX_WANDER_DIST),
-        Wander(self.inst, nil, MAX_WANDER_DIST)
-    }, 0.25)
+    local root = PriorityNode({WhileNode(function()
+        return self.inst.components.health.takingfiredamage
+    end, "OnFire", Panic(self.inst)), WhileNode(function()
+        return self.inst.components.health:GetPercent() < .95
+    end, "LowHealth", RunAway(self.inst, "scarytoprey", SEE_PLAYER_DIST, STOP_RUN_DIST)),
+                               RunAway(self.inst, RUN_AWAY_PARAMS, SEE_PLAYER_DIST, STOP_RUN_DIST),
+                               RunAway(self.inst, "OnFire", SEE_PLAYER_DIST, STOP_RUN_DIST),
+                               DoAction(self.inst, EatFoodAction), Leash(self.inst, function()
+        return self.inst.components.knownlocations:GetLocation("home")
+    end, MAX_LEASH_DIST, MAX_WANDER_DIST), Wander(self.inst, nil, MAX_WANDER_DIST)}, 0.25)
 
     self.bt = BT(self.inst, root)
 end

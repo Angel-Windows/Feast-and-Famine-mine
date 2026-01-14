@@ -1,8 +1,6 @@
 local function OnTick(inst, target)
-    if target.components.health ~= nil and
-        not target.components.health:IsDead() and
-        not target:HasTag("playerghost") then
-        target.components.hunger:DoDelta(TUNING.JELLYBEAN_TICK_RATE*2, nil, "jelly_crown")
+    if target.components.health ~= nil and not target.components.health:IsDead() and not target:HasTag("playerghost") then
+        target.components.hunger:DoDelta(TUNING.JELLYBEAN_TICK_RATE * 2, nil, "jelly_crown")
     else
         inst.components.debuff:Stop()
     end
@@ -10,8 +8,8 @@ end
 
 local function OnAttached(inst, target)
     inst.entity:SetParent(target.entity)
-    inst.Transform:SetPosition(0, 0, 0) --in case of loading
-    inst.task = inst:DoPeriodicTask(TUNING.JELLYBEAN_TICK_RATE*2, OnTick, nil, target)
+    inst.Transform:SetPosition(0, 0, 0) -- in case of loading
+    inst.task = inst:DoPeriodicTask(TUNING.JELLYBEAN_TICK_RATE * 2, OnTick, nil, target)
     inst:ListenForEvent("death", function()
         inst.components.debuff:Stop()
     end, target)
@@ -25,7 +23,7 @@ end
 
 local function OnExtended(inst, target)
     inst.components.timer:StopTimer("regenover")
-    inst.components.timer:StartTimer("regenover", TUNING.JELLYBEAN_DURATION*2)
+    inst.components.timer:StartTimer("regenover", TUNING.JELLYBEAN_DURATION * 2)
     inst.task:Cancel()
     inst.task = inst:DoPeriodicTask(TUNING.JELLYBEAN_TICK_RATE, OnTick, nil, target)
 end
@@ -34,7 +32,7 @@ local function fn()
     local inst = CreateEntity()
 
     if not TheWorld.ismastersim then
-        --Not meant for client!
+        -- Not meant for client!
         inst:DoTaskInTime(0, inst.Remove)
 
         return inst
@@ -43,7 +41,7 @@ local function fn()
     inst.entity:AddTransform()
 
     --[[Non-networked entity]]
-    --inst.entity:SetCanSleep(false)
+    -- inst.entity:SetCanSleep(false)
     inst.entity:Hide()
     inst.persists = false
 

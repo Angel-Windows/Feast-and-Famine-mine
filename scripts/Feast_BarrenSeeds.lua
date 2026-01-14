@@ -1,13 +1,7 @@
-local barrenbirdythings = {
-    --"barrenseeds_new", -- this will remove the seeds but not the crops
-    "feast_crops",
-    "turnip_cooked",      
-    "barrenseedspacket",
-    "pumpkin_wild",
-    "wheatgrass",
-}
+local barrenbirdythings = { -- "barrenseeds_new", -- this will remove the seeds but not the crops
+"feast_crops", "turnip_cooked", "barrenseedspacket", "pumpkin_wild", "wheatgrass"}
 
-for k,v in pairs(barrenbirdythings) do
+for k, v in pairs(barrenbirdythings) do
     table.insert(PrefabFiles, v)
 end
 
@@ -39,61 +33,61 @@ local function commonproduct(inst)
         return samerarityveggies[math.random(#samerarityveggies)] or "carrot"
     end    
 end 
-]] 
+]]
 
 local function BarrenSeedsInit(inst)
     inst.AnimState:SetBank("seeds_feast")
     inst.AnimState:SetBuild("seeds_feast")
     inst.AnimState:PlayAnimation("seed_rnd")
-    --inst.Transform:SetScale(.7, .7, .7)
-    --if inst.components.plantable and TUNING.SEASONALSEEDS ~= nil then
-        --inst.components.plantable.product = commonproduct
-    --end
+    -- inst.Transform:SetScale(.7, .7, .7)
+    -- if inst.components.plantable and TUNING.SEASONALSEEDS ~= nil then
+    -- inst.components.plantable.product = commonproduct
+    -- end
     if inst.components.inventoryitem then
-    inst.components.inventoryitem.imagename = "seeds"   
+        inst.components.inventoryitem.imagename = "seeds"
     end
-end 
+end
 
 local function SweetpotatoSeedsInit(inst)
     inst.AnimState:SetBank("seeds_feast")
     inst.AnimState:SetBuild("seeds_feast")
     inst.AnimState:PlayAnimation("seed8")
-    --inst.Transform:SetScale(.7, .7, .7)
+    -- inst.Transform:SetScale(.7, .7, .7)
     if inst.components.inventoryitem then
-    inst.components.inventoryitem.imagename = "seed8"   
+        inst.components.inventoryitem.imagename = "seed8"
     end
     if inst.components.edible then
-    inst.components.edible.sanityvalue = -TUNING.SANITY_TINY
-    end  
+        inst.components.edible.sanityvalue = -TUNING.SANITY_TINY
+    end
 end
 
 local function CornSeedsInit(inst)
     if inst.components.cookable then
-    inst.components.cookable.product = "corn_cooked"   
+        inst.components.cookable.product = "corn_cooked"
     end
-end    
+end
 
 local function DurianSeedsInit(inst)
     if inst.components.edible then
-    inst.components.edible.sanityvalue = -TUNING.SANITY_TINY
-    end  
+        inst.components.edible.sanityvalue = -TUNING.SANITY_TINY
+    end
 end
 
 local function PineappleSeedsInit(inst)
     inst.AnimState:SetBank("seeds_feast")
     inst.AnimState:SetBuild("seeds_feast")
     inst.AnimState:PlayAnimation("seed11")
-    --inst.Transform:SetScale(.8, .8, .8)
+    -- inst.Transform:SetScale(.8, .8, .8)
     if inst.components.inventoryitem then
-    inst.components.inventoryitem.atlasname = nil -- Clears the atlas name set by Legion as we want to use the default atlas instead 
-    inst.components.inventoryitem.imagename = "seed11" 
+        inst.components.inventoryitem.atlasname = nil -- Clears the atlas name set by Legion as we want to use the default atlas instead 
+        inst.components.inventoryitem.imagename = "seed11"
     end
 end
 
 local function WurtSeedsInit(inst)
     if inst.components.foodaffinity then
-    inst.components.foodaffinity:AddPrefabAffinity  ("durian_seeds", 2 )
-    inst.components.foodaffinity:AddPrefabAffinity  ("tomato_rock_dried", 2)
+        inst.components.foodaffinity:AddPrefabAffinity("durian_seeds", 2)
+        inst.components.foodaffinity:AddPrefabAffinity("tomato_rock_dried", 2)
     end
 end
 
@@ -103,7 +97,7 @@ local function CornReskinInit(inst)
     inst.AnimState:PlayAnimation("seed1")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "corn_seeds_proxy"
-    end 
+    end
 end
 
 local function CornReskinSeedlingInit(inst)
@@ -116,7 +110,7 @@ local function DragonfruitReskinInit(inst)
     inst.AnimState:PlayAnimation("seed6")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "dragonfruit_seeds_proxy"
-    end 
+    end
 end
 
 local function DragonfruitReskinSeedlingInit(inst)
@@ -129,7 +123,7 @@ local function DurianReskinInit(inst)
     inst.AnimState:PlayAnimation("seed5")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "Durian_seeds_proxy"
-    end 
+    end
 end
 
 local function DurianReskinSeedlingInit(inst)
@@ -142,7 +136,7 @@ local function EggplantReskinInit(inst)
     inst.AnimState:PlayAnimation("seed4")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "eggplant_seeds_proxy"
-    end 
+    end
 end
 
 local function EggplantReskinSeedlingInit(inst)
@@ -155,7 +149,7 @@ local function PomegranateReskinInit(inst)
     inst.AnimState:PlayAnimation("seed7")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "pomegranate_seeds_proxy"
-    end 
+    end
 end
 
 local function PomegranateReskinSeedlingInit(inst)
@@ -168,7 +162,7 @@ local function PumpkinReskinInit(inst)
     inst.AnimState:PlayAnimation("seed2")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "pumpkin_seeds_proxy"
-    end 
+    end
 end
 
 local function PumpkinReskinSeedlingInit(inst)
@@ -181,7 +175,7 @@ local function WatermelonReskinInit(inst)
     inst.AnimState:PlayAnimation("seed3")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "watermelon_seeds_proxy"
-    end 
+    end
 end
 
 local function WatermelonReskinSeedlingInit(inst)
@@ -194,7 +188,7 @@ local function AsparagusReskinInit(inst)
     inst.AnimState:PlayAnimation("seed9")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "asparagus_seeds_proxy"
-    end 
+    end
 end
 
 local function AsparagusReskinSeedlingInit(inst)
@@ -207,7 +201,7 @@ local function PepperReskinInit(inst)
     inst.AnimState:PlayAnimation("seed10")
     if inst.components.inventoryitem then
         inst.components.inventoryitem.imagename = "pepper_seeds_proxy"
-    end 
+    end
 end
 
 local function PepperReskinSeedlingInit(inst)
@@ -216,52 +210,52 @@ end
 
 AddPrefabPostInit("seeds", BarrenSeedsInit)
 AddPrefabPostInit("corn_seeds", CornSeedsInit)
-AddPrefabPostInit("durian_seeds", DurianSeedsInit) 
+AddPrefabPostInit("durian_seeds", DurianSeedsInit)
 AddPrefabPostInit("wurt", WurtSeedsInit)
 
 if GLOBAL.TUNING.FAFSEEDSCORN ~= nil then
     AddPrefabPostInit("corn_seeds", CornReskinInit)
-    AddPrefabPostInit("farm_plant_corn", CornReskinSeedlingInit)  
+    AddPrefabPostInit("farm_plant_corn", CornReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSDRAGONFRUIT ~= nil then
     AddPrefabPostInit("dragonfruit_seeds", DragonfruitReskinInit)
-    AddPrefabPostInit("farm_plant_dragonfruit", DragonfruitReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_dragonfruit", DragonfruitReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSDURIAN ~= nil then
     AddPrefabPostInit("durian_seeds", DurianReskinInit)
-    AddPrefabPostInit("farm_plant_durian", DurianReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_durian", DurianReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSEGGPLANT ~= nil then
     AddPrefabPostInit("eggplant_seeds", EggplantReskinInit)
-    AddPrefabPostInit("farm_plant_eggplant", EggplantReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_eggplant", EggplantReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSPOMEGRANATE ~= nil then
-    AddPrefabPostInit("pomegranate_seeds", PomegranateReskinInit) 
-    AddPrefabPostInit("farm_plant_pomegranate", PomegranateReskinSeedlingInit) 
+    AddPrefabPostInit("pomegranate_seeds", PomegranateReskinInit)
+    AddPrefabPostInit("farm_plant_pomegranate", PomegranateReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSPUMPKIN ~= nil then
     AddPrefabPostInit("pumpkin_seeds", PumpkinReskinInit)
-    AddPrefabPostInit("farm_plant_pumpkin", PumpkinReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_pumpkin", PumpkinReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSWATERMELON ~= nil then
     AddPrefabPostInit("watermelon_seeds", WatermelonReskinInit)
-    AddPrefabPostInit("farm_plant_watermelon", WatermelonReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_watermelon", WatermelonReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSASPARAGUS ~= nil then
     AddPrefabPostInit("asparagus_seeds", AsparagusReskinInit)
-    AddPrefabPostInit("farm_plant_asparagus", AsparagusReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_asparagus", AsparagusReskinSeedlingInit)
 end
 
 if GLOBAL.TUNING.FAFSEEDSPEPPER ~= nil then
     AddPrefabPostInit("pepper_seeds", PepperReskinInit)
-    AddPrefabPostInit("farm_plant_pepper", PepperReskinSeedlingInit)   
+    AddPrefabPostInit("farm_plant_pepper", PepperReskinSeedlingInit)
 end
 
 if GLOBAL.KnownModIndex:IsModEnabled("workshop-1467214795") then
@@ -276,8 +270,9 @@ end
 
 TUNING = GLOBAL.TUNING
 GLOBAL.require "prefabs/veggies"
- 
-local function MakeVegStats(seedweight, hunger, health, perish_time, sanity, cooked_hunger, cooked_health, cooked_perish_time, cooked_sanity)
+
+local function MakeVegStats(seedweight, hunger, health, perish_time, sanity, cooked_hunger, cooked_health,
+    cooked_perish_time, cooked_sanity)
     return {
         health = health,
         hunger = hunger,
@@ -288,7 +283,7 @@ local function MakeVegStats(seedweight, hunger, health, perish_time, sanity, coo
         cooked_perishtime = cooked_perish_time,
         sanity = sanity,
         cooked_sanity = cooked_sanity
-     }
+    }
 end
 
 local COMMON = 3
@@ -296,20 +291,20 @@ local UNCOMMON = 1
 local AROMATIC = .75
 local RARE = .5
 
-local FEASTVEGGIES =
-{
-    pepper = MakeVegStats(AROMATIC, TUNING.CALORIES_TINY, -TUNING.HEALING_MED, TUNING.PERISH_SLOW, -TUNING.SANITY_MED, 
-                                    TUNING.CALORIES_TINY, -TUNING.HEALING_SMALL, TUNING.PERISH_SLOW, -TUNING.SANITY_SMALL),
+local FEASTVEGGIES = {
+    pepper = MakeVegStats(AROMATIC, TUNING.CALORIES_TINY, -TUNING.HEALING_MED, TUNING.PERISH_SLOW, -TUNING.SANITY_MED,
+        TUNING.CALORIES_TINY, -TUNING.HEALING_SMALL, TUNING.PERISH_SLOW, -TUNING.SANITY_SMALL),
 
-    onion = MakeVegStats(AROMATIC, TUNING.CALORIES_TINY, 0, TUNING.PERISH_SLOW, -TUNING.SANITY_SMALL, 
-                                   TUNING.CALORIES_TINY, TUNING.HEALING_TINY, TUNING.PERISH_MED, -TUNING.SANITY_TINY),
+    onion = MakeVegStats(AROMATIC, TUNING.CALORIES_TINY, 0, TUNING.PERISH_SLOW, -TUNING.SANITY_SMALL,
+        TUNING.CALORIES_TINY, TUNING.HEALING_TINY, TUNING.PERISH_MED, -TUNING.SANITY_TINY),
 
-    garlic = MakeVegStats(AROMATIC, TUNING.CALORIES_TINY, 0, TUNING.PERISH_SLOW, -TUNING.SANITY_SMALL, 
-                                   TUNING.CALORIES_TINY, TUNING.HEALING_TINY, TUNING.PERISH_MED, -TUNING.SANITY_TINY),
+    garlic = MakeVegStats(AROMATIC, TUNING.CALORIES_TINY, 0, TUNING.PERISH_SLOW, -TUNING.SANITY_SMALL,
+        TUNING.CALORIES_TINY, TUNING.HEALING_TINY, TUNING.PERISH_MED, -TUNING.SANITY_TINY),
 
-    wheat = MakeVegStats(0 --[[COMMON]], 0, 0, TUNING.PERISH_MED, 0, 0, 0, 0, 0),
+    wheat = MakeVegStats(0 --[[COMMON]] , 0, 0, TUNING.PERISH_MED, 0, 0, 0, 0, 0),
 
-    turnip = MakeVegStats(0 --[[UNCOMMON]], TUNING.CALORIES_MED, 0, TUNING.PERISH_SLOW, 0, TUNING.CALORIES_MED, 0, TUNING.PERISH_FAST, 0)
+    turnip = MakeVegStats(0 --[[UNCOMMON]] , TUNING.CALORIES_MED, 0, TUNING.PERISH_SLOW, 0, TUNING.CALORIES_MED, 0,
+        TUNING.PERISH_FAST, 0)
 }
 
 AddSimPostInit(function(inst)
@@ -319,16 +314,17 @@ AddSimPostInit(function(inst)
 end)
 
 if not GLOBAL.rawget(GLOBAL, "CROPS_DATA_LEGION") then
- --TODO: make watermelon not wither in summer
+    -- TODO: make watermelon not wither in summer
 
     AddComponentPostInit("crop", function(Crop)
         function Crop:DoGrow(dt, nowither)
-            if not self.inst:HasTag("withered") then 
+            if not self.inst:HasTag("withered") then
                 local shouldgrow = nowither or not GLOBAL.TheWorld.state.isnight
                 if not shouldgrow then
                     local x, y, z = self.inst.Transform:GetWorldPosition()
                     local DAYLIGHT_SEARCH_RANGE = 30
-                    for i, v in ipairs(GLOBAL.TheSim:FindEntities(x, 0, z, DAYLIGHT_SEARCH_RANGE, { "daylight", "lightsource" })) do
+                    for i, v in ipairs(GLOBAL.TheSim:FindEntities(x, 0, z, DAYLIGHT_SEARCH_RANGE,
+                        {"daylight", "lightsource"})) do
                         local lightrad = v.Light:GetCalculatedRadius() * .7
                         if v:GetDistanceSqToPoint(x, y, z) < lightrad * lightrad then
                             shouldgrow = true
@@ -337,17 +333,18 @@ if not GLOBAL.rawget(GLOBAL, "CROPS_DATA_LEGION") then
                     end
                 end
                 if shouldgrow then
-                    local temp_rate =
-                        (self.product_prefab == "turnip" and 1) or
-                        (GLOBAL.TheWorld.state.temperature < GLOBAL.TUNING.MIN_CROP_GROW_TEMP and 0) or
-                        (GLOBAL.TheWorld.state.israining and 1 + GLOBAL.TUNING.CROP_RAIN_BONUS * GLOBAL.TheWorld.state.precipitationrate) or
-                        (GLOBAL.TheWorld.state.isspring and 1 + GLOBAL.TUNING.SPRING_GROWTH_MODIFIER / 3) or
-                        1
+                    local temp_rate = (self.product_prefab == "turnip" and 1) or
+                                          (GLOBAL.TheWorld.state.temperature < GLOBAL.TUNING.MIN_CROP_GROW_TEMP and 0) or
+                                          (GLOBAL.TheWorld.state.israining and 1 + GLOBAL.TUNING.CROP_RAIN_BONUS *
+                                              GLOBAL.TheWorld.state.precipitationrate) or
+                                          (GLOBAL.TheWorld.state.isspring and 1 + GLOBAL.TUNING.SPRING_GROWTH_MODIFIER /
+                                              3) or 1
                     self.growthpercent = math.clamp(self.growthpercent + dt * self.rate * temp_rate, 0, 1)
                     self.cantgrowtime = 0
                 else
                     self.cantgrowtime = self.cantgrowtime + dt
-                    if self.cantgrowtime > GLOBAL.TUNING.CROP_DARK_WITHER_TIME and self.inst.components.witherable ~= nil then
+                    if self.cantgrowtime > GLOBAL.TUNING.CROP_DARK_WITHER_TIME and self.inst.components.witherable ~=
+                        nil then
                         self.inst.components.witherable:ForceWither()
                         if self.inst:HasTag("withered") then
                             return
@@ -368,7 +365,7 @@ if not GLOBAL.rawget(GLOBAL, "CROPS_DATA_LEGION") then
             end
         end
     end)
-end    
+end
 
 --[[ -- Leaving this here in case Legion reintroduces it's crop system
 if GLOBAL.rawget(GLOBAL, "CROPS_DATA_LEGION") then 
@@ -452,7 +449,6 @@ if GLOBAL.rawget(GLOBAL, "CROPS_DATA_LEGION") then
         end)       
     end
 end]]
-
 
 --[[ -- need wheat crop assets before we can add this back in. May skip turnips
 local PLANT_DEFS = require("prefabs/farm_plant_defs").PLANT_DEFS

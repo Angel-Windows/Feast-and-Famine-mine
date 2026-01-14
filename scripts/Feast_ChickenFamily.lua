@@ -1,13 +1,7 @@
-local chickenfamilythings = { 
-	"chicken_trader",
-	--"fake_trader",
-    "chicken",
-    "chickenwagon",
-    "chickenhouse",
-    "retrofitchicken",
-}
+local chickenfamilythings = {"chicken_trader", -- "fake_trader",
+"chicken", "chickenwagon", "chickenhouse", "retrofitchicken"}
 
-for k,v in pairs(chickenfamilythings) do
+for k, v in pairs(chickenfamilythings) do
     table.insert(PrefabFiles, v)
 end
 
@@ -22,7 +16,7 @@ AddPrefabPostInit("forest", function(inst)
             local reallowestid = nil
             local count = 0
             local ISLAND = GLOBAL.KnownModIndex:IsModEnabled("workshop-1467214795")
-            --if ISLAND then anchorroom = "MeadowBees" else anchorroom = "beefalo" end -- TODO: find a gaurunteed IA room
+            -- if ISLAND then anchorroom = "MeadowBees" else anchorroom = "beefalo" end -- TODO: find a gaurunteed IA room
             local anchorroom = "beefalo"
 
             for i, node in ipairs(GLOBAL.TheWorld.topology.nodes) do
@@ -44,12 +38,12 @@ AddPrefabPostInit("forest", function(inst)
                 found = reallowest
                 foundid = reallowestid
             end
-            
+
             if found == nil then
                 print("This code failed, we all failed. How could we fail?")
                 return
             end
-            
+
             GLOBAL.SpawnPrefab("retrofitchicken").Transform:SetPosition(found.cent[1], 0, found.cent[2])
         end
     end)

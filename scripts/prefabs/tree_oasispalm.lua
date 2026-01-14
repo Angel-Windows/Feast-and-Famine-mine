@@ -1,71 +1,58 @@
-local assets =
-{
-    Asset("ANIM", "anim/tree_oasispalm_small.zip"),
-    Asset("ANIM", "anim/tree_oasispalm_build.zip"),
+local assets = {Asset("ANIM", "anim/tree_oasispalm_small.zip"), Asset("ANIM", "anim/tree_oasispalm_build.zip"),
 
-    Asset("SOUND", "sound/forest.fsb"),
-    --Asset("MINIMAP_IMAGE", "evergreen_lumpy"),
-    --Asset("MINIMAP_IMAGE", "evergreen_burnt"),
-    --Asset("MINIMAP_IMAGE", "evergreen_stump"),
+                Asset("SOUND", "sound/forest.fsb") -- Asset("MINIMAP_IMAGE", "evergreen_lumpy"),
+-- Asset("MINIMAP_IMAGE", "evergreen_burnt"),
+-- Asset("MINIMAP_IMAGE", "evergreen_stump"),
 }
 
-local prefabs =
-{
-    "log",
-    "date",
-    "charcoal",
-    "pine_needles_chop",
-    "small_puff",
-}
+local prefabs = {"log", "date", "charcoal", "pine_needles_chop", "small_puff"}
 
-local builds =
-{
+local builds = {
     date = {
-        file="tree_oasispalm_build",
+        file = "tree_oasispalm_build",
         file_bank = "datepalm",
-        prefab_name="date_tree",
-        regrowth_product="date_sapling",
-        regrowth_tuning=TUNING.EVERGREEN_REGROWTH,
-        grow_times=TUNING.EVERGREEN_GROW_TIME,
+        prefab_name = "date_tree",
+        regrowth_product = "date_sapling",
+        regrowth_tuning = TUNING.EVERGREEN_REGROWTH,
+        grow_times = TUNING.EVERGREEN_GROW_TIME,
         normal_loot = {"log", "log"},
         short_loot = {"log"},
         tall_loot = {"log", "log", "log"},
-        chop_camshake_delay=0.4,
-    },
+        chop_camshake_delay = 0.4
+    }
 }
 
 local function makeanims(stage)
     return {
-        idle="idle_"..stage,
-        sway1="sway1_"..stage,
-        sway2="sway2_"..stage,
-        chop="chop_"..stage,
-        fallleft="fallleft_"..stage,
-        fallright="fallright_"..stage,
-        stump="stump_"..stage,
-        burning="burning_loop_"..stage,
-        burnt="burnt_"..stage,
-        chop_burnt="chop_burnt_"..stage,
-        idle_chop_burnt="idle_chop_burnt_"..stage,
+        idle = "idle_" .. stage,
+        sway1 = "sway1_" .. stage,
+        sway2 = "sway2_" .. stage,
+        chop = "chop_" .. stage,
+        fallleft = "fallleft_" .. stage,
+        fallright = "fallright_" .. stage,
+        stump = "stump_" .. stage,
+        burning = "burning_loop_" .. stage,
+        burnt = "burnt_" .. stage,
+        chop_burnt = "chop_burnt_" .. stage,
+        idle_chop_burnt = "idle_chop_burnt_" .. stage
     }
 end
 
 local short_anims = makeanims("short")
 local tall_anims = makeanims("tall")
 local normal_anims = makeanims("normal")
-local old_anims =
-{
-    idle="idle_old",
-    sway1="idle_old",
-    sway2="idle_old",
-    chop="chop_old",
-    fallleft="chop_old",
-    fallright="chop_old",
-    stump="stump_old",
-    burning="idle_olds",
-    burnt="burnt_tall",
-    chop_burnt="chop_burnt_tall",
-    idle_chop_burnt="idle_chop_burnt_tall",
+local old_anims = {
+    idle = "idle_old",
+    sway1 = "idle_old",
+    sway2 = "idle_old",
+    chop = "chop_old",
+    fallleft = "chop_old",
+    fallright = "chop_old",
+    stump = "stump_old",
+    burning = "idle_olds",
+    burnt = "burnt_tall",
+    chop_burnt = "chop_burnt_tall",
+    idle_chop_burnt = "idle_chop_burnt_tall"
 }
 
 local function dig_up_stump(inst, chopper)
@@ -122,10 +109,11 @@ local function OnBurnt(inst, immediate)
     inst.AnimState:SetRayTestOnBB(true)
     inst:AddTag("burnt")
 
-    --inst.MiniMapEntity:SetIcon(inst.build == "twiggy" and "twiggy_burnt.png" or "evergreen_burnt.png")
+    -- inst.MiniMapEntity:SetIcon(inst.build == "twiggy" and "twiggy_burnt.png" or "evergreen_burnt.png")
 
     if inst.components.timer ~= nil and not inst.components.timer:TimerExists("decay") then
-        inst.components.timer:StartTimer("decay", GetRandomWithVariance(GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME, GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME*0.5))
+        inst.components.timer:StartTimer("decay", GetRandomWithVariance(GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME,
+            GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME * 0.5))
     end
 end
 
@@ -217,22 +205,19 @@ local function GrowOld(inst)
 end
 
 local function inspect_tree(inst)
-    return (inst:HasTag("burnt") and "BURNT")
-        or (inst:HasTag("stump") and "CHOPPED")
-        or nil
+    return (inst:HasTag("burnt") and "BURNT") or (inst:HasTag("stump") and "CHOPPED") or nil
 end
 
 local growth_stages = {}
 for build, data in pairs(builds) do
-    growth_stages[build] =
-    {
-        {
-            name = "short",
-            time = function(inst) return GetRandomWithVariance(data.grow_times[1].base, data.grow_times[1].random) end,
-            fn = SetShort,
-            growfn = GrowShort,
-        },
-       --[[ {
+    growth_stages[build] = {{
+        name = "short",
+        time = function(inst)
+            return GetRandomWithVariance(data.grow_times[1].base, data.grow_times[1].random)
+        end,
+        fn = SetShort,
+        growfn = GrowShort
+    } --[[ {
             name = "normal",
             time = function(inst) return GetRandomWithVariance(data.grow_times[2].base, data.grow_times[2].random) end,
             fn = SetNormal,
@@ -248,8 +233,7 @@ for build, data in pairs(builds) do
             name = "old",
             time = function(inst) return GetRandomWithVariance(data.grow_times[4].base, data.grow_times[4].random) end,
             fn = SetOld,
-        },]]
-    }
+        },]] }
 end
 
 local function GetGrowthStages(inst)
@@ -258,25 +242,21 @@ end
 
 local function chop_tree(inst, chopper, chopsleft, numchops)
     if not (chopper ~= nil and chopper:HasTag("playerghost")) then
-        inst.SoundEmitter:PlaySound(
-            chopper ~= nil and chopper:HasTag("beaver") and
-            "dontstarve/characters/woodie/beaver_chop_tree" or
-            "dontstarve/wilson/use_axe_tree"
-        )
+        inst.SoundEmitter:PlaySound(chopper ~= nil and chopper:HasTag("beaver") and
+                                        "dontstarve/characters/woodie/beaver_chop_tree" or
+                                        "dontstarve/wilson/use_axe_tree")
     end
 
     inst.AnimState:PlayAnimation(inst.anims.chop)
     inst.AnimState:PushAnimation(inst.anims.sway1, true)
 
     local x, y, z = inst.Transform:GetWorldPosition()
-    SpawnPrefab("pine_needles_chop").Transform:SetPosition(x, y + math.random() * 2, z)   
+    SpawnPrefab("pine_needles_chop").Transform:SetPosition(x, y + math.random() * 2, z)
 end
 
 local function chop_down_tree_shake(inst)
     ShakeAllCameras(CAMERASHAKE.FULL, .25, .03,
-        inst.components.growable ~= nil and
-        inst.components.growable.stage > 2 and .5 or .25,
-        inst, 6)
+        inst.components.growable ~= nil and inst.components.growable.stage > 2 and .5 or .25, inst, 6)
 end
 
 local function make_stump(inst)
@@ -296,7 +276,7 @@ local function make_stump(inst)
         inst.components.growable:StopGrowing()
     end
 
-    --inst.MiniMapEntity:SetIcon(inst.build == "twiggy" and "twiggy_stump.png" or "evergreen_stump.png")
+    -- inst.MiniMapEntity:SetIcon(inst.build == "twiggy" and "twiggy_stump.png" or "evergreen_stump.png")
 
     inst:AddComponent("workable")
     inst.components.workable:SetWorkAction(ACTIONS.DIG)
@@ -304,7 +284,8 @@ local function make_stump(inst)
     inst.components.workable:SetWorkLeft(1)
 
     if inst.components.timer and not inst.components.timer:TimerExists("decay") then
-        inst.components.timer:StartTimer("decay", GetRandomWithVariance(GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME, GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME*0.5))
+        inst.components.timer:StartTimer("decay", GetRandomWithVariance(GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME,
+            GetBuild(inst).regrowth_tuning.DEAD_DECAY_TIME * 0.5))
     end
 end
 
@@ -434,11 +415,10 @@ local function OnEntityWake(inst)
     end
 end
 
-local REMOVABLE =
-{
+local REMOVABLE = {
     ["log"] = true,
     ["date"] = true,
-    ["charcoal"] = true,
+    ["charcoal"] = true
 }
 
 local function OnTimerDone(inst, data)
@@ -448,7 +428,7 @@ local function OnTimerDone(inst, data)
             -- before we disappear, clean up any crap left on the ground
             -- too many objects is as bad for server health as too few!
             local leftone = false
-            for i, v in ipairs(TheSim:FindEntities(x, y, z, 6, { "_inventoryitem" }, { "INLIMBO", "fire" })) do
+            for i, v in ipairs(TheSim:FindEntities(x, y, z, 6, {"_inventoryitem"}, {"INLIMBO", "fire"})) do
                 if REMOVABLE[v.prefab] then
                     if leftone then
                         v:Remove()
@@ -485,7 +465,7 @@ local function tree(name, build, stage, data)
 
         MakeObstaclePhysics(inst, .25)
 
-        --inst.MiniMapEntity:SetIcon(build == "sparse" and "evergreen_lumpy.png" or "evergreen.png")
+        -- inst.MiniMapEntity:SetIcon(build == "sparse" and "evergreen_lumpy.png" or "evergreen.png")
 
         inst:AddTag("shelter")
 
@@ -537,7 +517,7 @@ local function tree(name, build, stage, data)
         ---------------------
         inst:AddComponent("growable")
         inst.components.growable.stages = GetGrowthStages(inst)
-        inst.components.growable:SetStage(1) --stage == 0 and math.random(1, 3) or stage)
+        inst.components.growable:SetStage(1) -- stage == 0 and math.random(1, 3) or stage)
         inst.components.growable.loopstages = true
         inst.components.growable.springgrowth = true
         inst.components.growable:StartGrowing()
@@ -545,11 +525,11 @@ local function tree(name, build, stage, data)
         inst.growfromseed = handler_growfromseed
 
         ---------------------        
-        --inst:AddComponent("plantregrowth")
-        --inst.components.plantregrowth:SetRegrowthRate(GetBuild(inst).regrowth_tuning.OFFSPRING_TIME)
-        --inst.components.plantregrowth:SetProduct(GetBuild(inst).regrowth_product)
-        --inst.components.plantregrowth:SetSearchTag(GetBuild(inst).prefab_name)
-        --inst.components.plantregrowth:GetSpawnPoint(nil, 60, "oasislake")
+        -- inst:AddComponent("plantregrowth")
+        -- inst.components.plantregrowth:SetRegrowthRate(GetBuild(inst).regrowth_tuning.OFFSPRING_TIME)
+        -- inst.components.plantregrowth:SetProduct(GetBuild(inst).regrowth_product)
+        -- inst.components.plantregrowth:SetSearchTag(GetBuild(inst).prefab_name)
+        -- inst.components.plantregrowth:GetSpawnPoint(nil, 60, "oasislake")
 
         ---------------------
         inst:AddComponent("timer")
@@ -584,7 +564,7 @@ local function tree(name, build, stage, data)
             inst.components.workable:SetOnFinishCallback(dig_up_stump)
             inst.components.workable:SetWorkLeft(1)
             inst.AnimState:PlayAnimation(inst.anims.stump)
-            --inst.MiniMapEntity:SetIcon(build == "twiggy" and "twiggy_stump.png" or "evergreen_stump.png")
+            -- inst.MiniMapEntity:SetIcon(build == "twiggy" and "twiggy_stump.png" or "evergreen_stump.png")
         else
             inst.AnimState:SetTime(math.random() * 2)
             if data == "burnt" then
@@ -601,8 +581,7 @@ local function tree(name, build, stage, data)
     return Prefab(name, fn, assets, prefabs)
 end
 
-return  tree("date_tree", "date", 0),
-        --tree("date_tree_normal", "date", 2),
-        --tree("date_tree_tall", "date", 3),
-        tree("date_tree_short", "date", 1)
+return tree("date_tree", "date", 0), -- tree("date_tree_normal", "date", 2),
+-- tree("date_tree_tall", "date", 3),
+tree("date_tree_short", "date", 1)
 

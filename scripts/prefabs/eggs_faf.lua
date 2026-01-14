@@ -1,37 +1,14 @@
-local assets =
-{
-    Asset("ANIM", "anim/bird_eggs_faf.zip"),
-    Asset("ANIM", "anim/penguin_egg.zip"),
-}
+local assets = {Asset("ANIM", "anim/bird_eggs_faf.zip"), Asset("ANIM", "anim/penguin_egg.zip")}
 
-local monster_prefabs =
-{
-    "egg_monster_cooked",
-    "rottenegg",
-}
+local monster_prefabs = {"egg_monster_cooked", "rottenegg"}
 
-local cooked_monster_prefabs =
-{
-    "spoiled_food",
-}
+local cooked_monster_prefabs = {"spoiled_food"}
 
-local plant_prefabs =
-{
-    "egg_plant_cooked",
-    "spoiled_food",
-}
+local plant_prefabs = {"egg_plant_cooked", "spoiled_food"}
 
-local cooked_plant_prefabs =
-{
-    "spoiled_food",
-}
+local cooked_plant_prefabs = {"spoiled_food"}
 
-local penguin_prefabs =
-{
-    "bird_egg",
-    "egg_cooked",
-    "rottenegg",
-}
+local penguin_prefabs = {"bird_egg", "egg_cooked", "rottenegg"}
 
 local function commonmonsterfn(anim, cookable)
     local inst = CreateEntity()
@@ -50,7 +27,7 @@ local function commonmonsterfn(anim, cookable)
     inst:AddTag("monstermeat")
 
     if cookable then
-        --cookable (from cookable component) added to pristine state for optimization
+        -- cookable (from cookable component) added to pristine state for optimization
         inst:AddTag("cookable")
     end
 
@@ -99,14 +76,14 @@ local function defaultmonsterfn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "egg_monster"   
+    inst.components.inventoryitem.imagename = "egg_monster"
 
     inst.components.edible.healthvalue = -TUNING.HEALING_SMALL
     inst.components.edible.sanityvalue = -TUNING.SANITY_SMALL
     inst.components.edible.hungervalue = TUNING.CALORIES_TINY
     inst.components.perishable:SetPerishTime(TUNING.PERISH_FAST)
 
-	inst.components.tradable.rocktribute = 1
+    inst.components.tradable.rocktribute = 1
 
     inst.components.floater:SetScale({0.55, 0.5, 0.55})
     inst.components.floater:SetVerticalOffset(0.05)
@@ -121,7 +98,7 @@ local function cookedmonsterfn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "egg_monster_cooked"   
+    inst.components.inventoryitem.imagename = "egg_monster_cooked"
 
     inst.components.edible.healthvalue = -TUNING.HEALING_TINY
     inst.components.edible.sanityvalue = -TUNING.SANITY_SMALL
@@ -151,7 +128,7 @@ local function commonplantfn(anim, cookable)
     inst:AddTag("catfood")
 
     if cookable then
-        --cookable (from cookable component) added to pristine state for optimization
+        -- cookable (from cookable component) added to pristine state for optimization
         inst:AddTag("cookable")
     end
 
@@ -200,7 +177,7 @@ local function defaultplantfn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "egg_plant"   
+    inst.components.inventoryitem.imagename = "egg_plant"
 
     inst.components.edible.hungervalue = TUNING.CALORIES_TINY
     inst.components.perishable:SetPerishTime(TUNING.PERISH_FAST)
@@ -218,7 +195,7 @@ local function cookedplantfn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "egg_plant_cooked"   
+    inst.components.inventoryitem.imagename = "egg_plant_cooked"
 
     inst.components.edible.hungervalue = TUNING.CALORIES_SMALL
     inst.components.perishable:SetPerishTime(TUNING.PERISH_FAST)
@@ -244,7 +221,7 @@ local function defaultpengfn2(swapprefab)
         newinst.animoverride = "idle"
         newinst.animbankoverride = "penguin_egg"
         newinst.animbuildoverride = "penguin_egg"
-        --newinst.displaynamefn = "Pengull Egg"
+        -- newinst.displaynamefn = "Pengull Egg"
 
         inst:Remove()
 
@@ -252,7 +229,7 @@ local function defaultpengfn2(swapprefab)
     end
     return fn
 end
- 
+
 return Prefab("egg_pengull", defaultpengfn2("bird_egg"), assets, penguin_prefabs),
     Prefab("egg_monster", defaultmonsterfn, assets, monster_prefabs),
     Prefab("egg_monster_cooked", cookedmonsterfn, assets, cooked_monster_prefabs),

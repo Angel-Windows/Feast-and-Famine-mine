@@ -58,7 +58,7 @@ if not TROPEX then
             table.insert(level.ordered_story_setpieces, "chickenfamily")
         end)
     end
-end]] 
+end]]
 
 --[[
 if #ModManager.mods > 1 then
@@ -74,9 +74,11 @@ else
     Layouts["Oasis"] = require("map/static_layouts/oasispalm")
 end]]
 
-
-AddRoomPreInit("BGDeciduous", function(room) room.contents.countprefabs.pumpkin_wild = 0 + math.random(3) end)
-GLOBAL.terrain.filter.pumpkin_wild = {GLOBAL.GROUND.ROAD, GLOBAL.GROUND.WOODFLOOR, GLOBAL.GROUND.CARPET, GLOBAL.GROUND.CHECKER, GLOBAL.GROUND.ROCKY, GLOBAL.GROUND.MARSH}
+AddRoomPreInit("BGDeciduous", function(room)
+    room.contents.countprefabs.pumpkin_wild = 0 + math.random(3)
+end)
+GLOBAL.terrain.filter.pumpkin_wild = {GLOBAL.GROUND.ROAD, GLOBAL.GROUND.WOODFLOOR, GLOBAL.GROUND.CARPET,
+                                      GLOBAL.GROUND.CHECKER, GLOBAL.GROUND.ROCKY, GLOBAL.GROUND.MARSH}
 
 --[[
 AddRoomPreInit("BGSavanna", function(room) room.contents.distributeprefabs.wheatgrass = 0.01 end)

@@ -1,8 +1,4 @@
-local assets =
-{
-    Asset("ANIM", "anim/crystalised_honey.zip"),
-    Asset("ANIM", "anim/honeys.zip"),
-}
+local assets = {Asset("ANIM", "anim/crystalised_honey.zip"), Asset("ANIM", "anim/honeys.zip")}
 
 local function crystalfn()
     local inst = CreateEntity()
@@ -16,7 +12,7 @@ local function crystalfn()
     inst.AnimState:SetBuild("crystalised_honey")
     inst.AnimState:SetBank("crystalised_honey")
     inst.AnimState:PlayAnimation("idle")
-    
+
     inst:AddTag("icebox_valid")
     inst:AddTag("honeyed")
 
@@ -33,10 +29,10 @@ local function crystalfn()
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.imagename = "honey_crystals"   
+    inst.components.inventoryitem.imagename = "honey_crystals"
 
     inst:AddComponent("stackable")
-   
+
     MakeHauntableLaunch(inst)
 
     return inst
@@ -69,7 +65,7 @@ local function floralfn()
     inst:AddComponent("edible")
     inst.components.edible.healthvalue = 0
     inst.components.edible.hungervalue = TUNING.CALORIES_TINY
-    inst.components.edible.sanityvalue = TUNING.SANITY_TINY 
+    inst.components.edible.sanityvalue = TUNING.SANITY_TINY
 
     inst:AddComponent("stackable")
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_SMALLITEM
@@ -162,7 +158,7 @@ local function killerfn()
     inst:AddComponent("edible")
     inst.components.edible.healthvalue = TUNING.HEALING_MEDSMALL
     inst.components.edible.hungervalue = TUNING.CALORIES_TINY
-    inst.components.edible.sanityvalue = -TUNING.SANITY_SUPERTINY 
+    inst.components.edible.sanityvalue = -TUNING.SANITY_SUPERTINY
 
     inst:AddComponent("stackable")
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_SMALLITEM
@@ -183,7 +179,5 @@ local function killerfn()
     return inst
 end
 
-return Prefab("honey_crystals", crystalfn, assets),
-    Prefab("honey_floral", floralfn, assets),
-    Prefab("honey_winter", winterfn, assets),
-    Prefab("honey_killer", killerfn, assets)
+return Prefab("honey_crystals", crystalfn, assets), Prefab("honey_floral", floralfn, assets),
+    Prefab("honey_winter", winterfn, assets), Prefab("honey_killer", killerfn, assets)

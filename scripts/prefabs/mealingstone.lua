@@ -1,14 +1,8 @@
 require "prefabutil"
 
-local assets =
-{
-    Asset("ANIM", "anim/quagmire_mealingstone.zip"),
-}
+local assets = {Asset("ANIM", "anim/quagmire_mealingstone.zip")}
 
-local prefabs =
-{
-    "collapse_small",
-}
+local prefabs = {"collapse_small"}
 
 local function onhammered(inst, worker)
     if inst.components.burnable ~= nil and inst.components.burnable:IsBurning() then
@@ -30,7 +24,6 @@ local function onturnon(inst)
     inst.SoundEmitter:PlaySound("dontstarve/quagmire/common/mealing_stone/proximity_LP", "loop")
 end
 
-
 local function onturnoff(inst)
     inst.SoundEmitter:KillSound("loop")
     inst.AnimState:PushAnimation("idle", false)
@@ -42,7 +35,7 @@ local function onactivate(inst)
     else
         inst.AnimState:PushAnimation("idle", false)
     end
-    --inst.SoundEmitter:PlaySound("dontstarve/quagmire/common/mealing_stone/proximity_LP")
+    -- inst.SoundEmitter:PlaySound("dontstarve/quagmire/common/mealing_stone/proximity_LP")
 end
 
 local function onbuilt(inst)

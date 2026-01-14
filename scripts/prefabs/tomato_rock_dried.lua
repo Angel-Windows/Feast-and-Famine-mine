@@ -1,7 +1,4 @@
-local assets =
-{
-    Asset("ANIM", "anim/meat_rack_food_faf.zip"),
-}
+local assets = {Asset("ANIM", "anim/meat_rack_food_faf.zip")}
 
 local function fn()
     local inst = CreateEntity()
@@ -9,7 +6,7 @@ local function fn()
     inst.entity:AddTransform()
     inst.entity:AddAnimState()
     inst.entity:AddNetwork()
-    
+
     MakeInventoryPhysics(inst)
 
     inst.AnimState:SetBank("meat_rack_food_faf")
@@ -35,7 +32,7 @@ local function fn()
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
-    inst.components.inventoryitem.imagename = "tomato_rock_dried"   
+    inst.components.inventoryitem.imagename = "tomato_rock_dried"
 
     inst:AddComponent("stackable")
     inst.components.stackable.maxsize = TUNING.STACK_SIZE_SMALLITEM

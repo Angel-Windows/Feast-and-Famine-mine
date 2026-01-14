@@ -1,14 +1,7 @@
-local assets =
-{
-    Asset("ANIM", "anim/rooster_house.zip"),
-    Asset("SOUNDPACKAGE", "sound/chickenfamily.fev"),
-    Asset("SOUND", "sound/chickenfamily.fsb"), 
-}
+local assets = {Asset("ANIM", "anim/rooster_house.zip"), Asset("SOUNDPACKAGE", "sound/chickenfamily.fev"),
+                Asset("SOUND", "sound/chickenfamily.fsb")}
 
-local prefabs =
-{
-    "chicken_trader",
-}
+local prefabs = {"chicken_trader"}
 
 local function OnUpdateWindow(window, inst, snow)
     if inst:HasTag("burnt") then
@@ -17,7 +10,7 @@ local function OnUpdateWindow(window, inst, snow)
     elseif inst.Light:IsEnabled() then
         if not window._shown then
             window._shown = true
-            
+
             window:Show()
         end
     elseif window._shown then
@@ -63,16 +56,14 @@ local function onnear(inst)
 end
 
 local function getstatus(inst)
-    return (inst.components.spawner ~= nil and
-        inst.components.spawner:IsOccupied() and
-            (inst.lightson and "FULL" or "LIGHTSOUT"))
-    or nil
+    return (inst.components.spawner ~= nil and inst.components.spawner:IsOccupied() and
+               (inst.lightson and "FULL" or "LIGHTSOUT")) or nil
 end
 
 local function onnormal(child)
     if child.parent ~= nil then
         child.parent.SoundEmitter:KillSound("roostersound")
-        child.parent.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostersleephouse", "roostersound",  0.1)
+        child.parent.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostersleephouse", "roostersound", 0.1)
     end
 end
 
@@ -84,7 +75,7 @@ local function onoccupieddoortask(inst)
 end
 
 local function onoccupied(inst, child)
-    inst.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostersleephouse", "roostersound",  0.1)
+    inst.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostersleephouse", "roostersound", 0.1)
     inst.SoundEmitter:PlaySound("dontstarve/common/pighouse_door")
 
     if inst.doortask ~= nil then
@@ -115,7 +106,7 @@ local function onstartdaydoortask(inst)
 end
 
 local function onstartdaylighttask(inst)
-    if inst.LightWatcher:GetLightValue() > 0.8 then 
+    if inst.LightWatcher:GetLightValue() > 0.8 then
         inst.doortask = inst:DoTaskInTime(1 + math.random() * 2, onstartdaydoortask)
     elseif TheWorld.state.iscaveday then
         inst.doortask = inst:DoTaskInTime(1 + math.random() * 2, onstartdaylighttask)
@@ -150,10 +141,8 @@ end
 
 local function oninit(inst)
     inst.inittask = inst:DoTaskInTime(math.random(), spawncheckday)
-    if inst.components.spawner ~= nil and
-        inst.components.spawner.child == nil and
-        inst.components.spawner.childname ~= nil and
-        not inst.components.spawner:IsSpawnPending() then
+    if inst.components.spawner ~= nil and inst.components.spawner.child == nil and inst.components.spawner.childname ~=
+        nil and not inst.components.spawner:IsSpawnPending() then
         local child = SpawnPrefab(inst.components.spawner.childname)
         if child ~= nil then
             inst.components.spawner:TakeOwnership(child)
@@ -204,13 +193,13 @@ local function fn()
     inst.Light:SetIntensity(.5)
     inst.Light:SetRadius(1)
     inst.Light:Enable(false)
-    inst.Light:SetColour(180/255, 195/255, 50/255)
+    inst.Light:SetColour(180 / 255, 195 / 255, 50 / 255)
 
     inst.AnimState:SetBank("rooster_house")
     inst.AnimState:SetBuild("rooster_house")
     inst.AnimState:PlayAnimation("idle", true)
 
-    --inst.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostersleephouse", "roostersound",  0.1)
+    -- inst.SoundEmitter:PlaySound("chickenfamily/chickenfamily/roostersleephouse", "roostersound",  0.1)
 
     inst:AddTag("structure")
     inst:AddTag("chickenhouse")
@@ -224,7 +213,6 @@ local function fn()
             inst._window:DoPeriodicTask(FRAMES, OnUpdateWindow, nil, inst)
         end
     end
-
 
     inst.entity:SetPristine()
 

@@ -1,26 +1,16 @@
 require "prefabutil"
 
-local assets =
-{
-    Asset("ANIM", "anim/grass.zip"),
-    Asset("ANIM", "anim/wheat_wild_build.zip"),
-    Asset("ANIM", "anim/wheat_dug.zip"),
-    Asset("ANIM", "anim/grass1.zip"),
-    Asset("SOUND", "sound/common.fsb"),
-}
+local assets = {Asset("ANIM", "anim/grass.zip"), Asset("ANIM", "anim/wheat_wild_build.zip"),
+                Asset("ANIM", "anim/wheat_dug.zip"), Asset("ANIM", "anim/grass1.zip"),
+                Asset("SOUND", "sound/common.fsb")}
 
-local prefabs =
-{
-    "wheat",
-    "cutgrass",
-    "dug_wheatgrass",
-}
+local prefabs = {"wheat", "cutgrass", "dug_wheatgrass"}
 
 local function onpickedfn(inst)
     inst.SoundEmitter:PlaySound("dontstarve/wilson/pickup_reeds")
     inst.AnimState:PlayAnimation("picking")
     inst.AnimState:PushAnimation("picked")
---[[
+    --[[
     if inst.components.lootdropper ~= nil then
         --if math.random() <= 0.1 then 
             --inst.components.lootdropper:SpawnLootPrefab("wheat_seeds")
@@ -51,10 +41,7 @@ local function makeemptyfn(inst)
 end
 
 local function makebarrenfn(inst, wasempty)
-    if not POPULATING and
-        (   inst.components.witherable ~= nil and
-            inst.components.witherable:IsWithered()
-        ) then
+    if not POPULATING and (inst.components.witherable ~= nil and inst.components.witherable:IsWithered()) then
         inst.AnimState:PlayAnimation(wasempty and "empty_to_dead" or "full_to_dead")
         inst.AnimState:PushAnimation("idle_dead", false)
     else
@@ -66,7 +53,6 @@ local function ontransplantfn(inst)
     inst.components.pickable:MakeBarren()
 end
 
-
 local function ondeploy(inst, pt, deployer)
     local tree = SpawnPrefab("wheatgrass")
     if tree ~= nil then
@@ -76,7 +62,7 @@ local function ondeploy(inst, pt, deployer)
             tree.components.pickable:OnTransplant()
         end
         if deployer ~= nil and deployer.SoundEmitter ~= nil then
-            --V2C: WHY?!! because many of the plantables don't
+            -- V2C: WHY?!! because many of the plantables don't
             --     have SoundEmitter, and we don't want to add
             --     one just for this sound!
             deployer.SoundEmitter:PlaySound("dontstarve/common/plant")
@@ -89,7 +75,7 @@ local function dugfn()
 
     inst.entity:AddTransform()
     inst.entity:AddAnimState()
-    --inst.entity:AddSoundEmitter()
+    -- inst.entity:AddSoundEmitter()
     inst.entity:AddNetwork()
 
     MakeInventoryPhysics(inst)
@@ -124,7 +110,7 @@ local function dugfn()
     MakeHauntableLaunchAndIgnite(inst)
 
     inst:AddComponent("deployable")
-    --inst.components.deployable:SetDeployMode(DEPLOYMODE.ANYWHERE)
+    -- inst.components.deployable:SetDeployMode(DEPLOYMODE.ANYWHERE)
     inst.components.deployable.ondeploy = ondeploy
     inst.components.deployable:SetDeployMode(DEPLOYMODE.PLANT)
     inst.components.deployable:SetDeploySpacing(DEPLOYSPACING.MEDIUM)
@@ -132,7 +118,6 @@ local function dugfn()
     ---------------------
     return inst
 end
-
 
 local function fn()
     local inst = CreateEntity()
@@ -147,12 +132,12 @@ local function fn()
 
     inst:AddTag("plant")
     inst:AddTag("silviculture") -- for silviculture book
-    --inst:AddTag("renewable")
-    inst:AddTag("wheatgrass") 
+    -- inst:AddTag("renewable")
+    inst:AddTag("wheatgrass")
     inst:AddTag("witherable")
 
     inst.AnimState:SetBank("grass")
-    inst.AnimState:SetBuild("wheat_wild_build") 
+    inst.AnimState:SetBuild("wheat_wild_build")
     inst.AnimState:PlayAnimation("idle", true)
 
     inst.entity:SetPristine()
@@ -167,7 +152,7 @@ local function fn()
 
     inst:AddComponent("pickable")
     inst.components.pickable.picksound = "dontstarve/wilson/pickup_reeds"
-    --inst.components.pickable:SetUp("wheat", TUNING.REEDS_REGROW_TIME) -- We handle this with the lootdropper instead to allow for multiple products
+    -- inst.components.pickable:SetUp("wheat", TUNING.REEDS_REGROW_TIME) -- We handle this with the lootdropper instead to allow for multiple products
     inst.components.pickable:SetUp(nil, TUNING.REEDS_REGROW_TIME)
     inst.components.pickable.use_lootdropper_for_product = true
     inst.components.pickable.onregenfn = onregenfn
@@ -206,6 +191,5 @@ local function fn()
     return inst
 end
 
-return Prefab("wheatgrass", fn, assets, prefabs),
-    Prefab("dug_wheatgrass", dugfn, assets, prefabs),
+return Prefab("wheatgrass", fn, assets, prefabs), Prefab("dug_wheatgrass", dugfn, assets, prefabs),
     MakePlacer("dug_wheatgrass_placer", "grass", "wheat_wild_build", "idle")

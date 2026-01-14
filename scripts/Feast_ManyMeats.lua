@@ -1,17 +1,23 @@
 GLOBAL.AddRecipePostInitAny(function(recipe)
     local ingredient = recipe:FindAndConvertIngredient("meat")
     if ingredient then
-        if GetModConfigData("config_FAF_BEAR") then ingredient:AddDictionaryPrefab("bear_meat") end
-        if GetModConfigData("config_FAF_DEER") then 
-            --ingredient:AddDictionaryPrefab("deer_meat_autumn")
-            ingredient:AddDictionaryPrefab("deer_meat", nil, "deer_meat_autumn") 
+        if GetModConfigData("config_FAF_BEAR") then
+            ingredient:AddDictionaryPrefab("bear_meat")
         end
-        if GetModConfigData("config_FAF_DRAGON") then ingredient:AddDictionaryPrefab("dragon_meat") end
-        if GetModConfigData("config_FAF_TOAD") then ingredient:AddDictionaryPrefab("toad_meat") end
+        if GetModConfigData("config_FAF_DEER") then
+            -- ingredient:AddDictionaryPrefab("deer_meat_autumn")
+            ingredient:AddDictionaryPrefab("deer_meat", nil, "deer_meat_autumn")
+        end
+        if GetModConfigData("config_FAF_DRAGON") then
+            ingredient:AddDictionaryPrefab("dragon_meat")
+        end
+        if GetModConfigData("config_FAF_TOAD") then
+            ingredient:AddDictionaryPrefab("toad_meat")
+        end
         ingredient:AddDictionaryPrefab("plantmeat")
-        --ingredient:AddDictionaryPrefab("monstermeat")
-        --ingredient:AddDictionaryPrefab("fishmeat")
-        --ingredient.allowmultipleprefabtypes = false
+        -- ingredient:AddDictionaryPrefab("monstermeat")
+        -- ingredient:AddDictionaryPrefab("fishmeat")
+        -- ingredient.allowmultipleprefabtypes = false
     end
 end)
 
@@ -28,14 +34,14 @@ GLOBAL.TUNING.FAFDROPSWAP = {
 }]]
 
 AddComponentPostInit("lootdropper", function(self)
-    local _SpawnLootPrefab = self.SpawnLootPrefab    
+    local _SpawnLootPrefab = self.SpawnLootPrefab
     function self:SpawnLootPrefab(lootprefab, ...)
         local _lootprefab = lootprefab
         if GLOBAL.TUNING.FAFDROPSWAPUNI[_lootprefab] ~= nil then -- universal cases
             lootprefab = GLOBAL.TUNING.FAFDROPSWAPUNI[_lootprefab]
         end
         if GLOBAL.TUNING.FAFDROPSWAP[_lootprefab] ~= nil then -- source-specific cases
-            if GLOBAL.TUNING.FAFDROPSWAP[_lootprefab][self.inst.prefab] ~= nil then 
+            if GLOBAL.TUNING.FAFDROPSWAP[_lootprefab][self.inst.prefab] ~= nil then
                 lootprefab = GLOBAL.TUNING.FAFDROPSWAP[_lootprefab][self.inst.prefab]
             end
         end
@@ -134,9 +140,9 @@ if GetModConfigData("config_FAF_BIGBIRD") then
     GLOBAL.TUNING.FAFDROPSWAP["drumstick"]["moose"] = "bigbird_meat"
     GLOBAL.TUNING.FAFDROPSWAP["drumstick_cooked"]["moose"] = "bigbird_meat_cooked"
 
-    local teenbirdloot = { "drumstick", "drumstick"}
+    local teenbirdloot = {"drumstick", "drumstick"}
 
-    AddPrefabPostInit("teenbird", function(inst)  
+    AddPrefabPostInit("teenbird", function(inst)
         if inst.components.lootdropper then
             inst.components.lootdropper:SetLoot(teenbirdloot)
         end

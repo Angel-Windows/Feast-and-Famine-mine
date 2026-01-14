@@ -1,20 +1,17 @@
-local lovelylandthings = {
-    --"tree_oasispalm", 
-    --"date_oasispalm",
-    "faf_resourceswaps"
-}
+local lovelylandthings = { -- "tree_oasispalm", 
+-- "date_oasispalm",
+"faf_resourceswaps"}
 
-for k,v in pairs(lovelylandthings) do
+for k, v in pairs(lovelylandthings) do
     table.insert(PrefabFiles, v)
 end
 
-GLOBAL.TUNING.FAFDROPSWAP["log"]["deciduoustree"] = "log_birch" 
-GLOBAL.TUNING.FAFDROPSWAP["log"]["moon_tree"] = "log_lunar" 
-GLOBAL.TUNING.FAFDROPSWAP["log"]["marsh_tree"] = "log_spiky" 
-GLOBAL.TUNING.FAFDROPSWAP["log"]["twiggytree"] = "log_twiggy" 
+GLOBAL.TUNING.FAFDROPSWAP["log"]["deciduoustree"] = "log_birch"
+GLOBAL.TUNING.FAFDROPSWAP["log"]["moon_tree"] = "log_lunar"
+GLOBAL.TUNING.FAFDROPSWAP["log"]["marsh_tree"] = "log_spiky"
+GLOBAL.TUNING.FAFDROPSWAP["log"]["twiggytree"] = "log_twiggy"
 
-GLOBAL.TUNING.FAFDROPSWAP["livinglog"]["deciduoustree"] = "log_livingbirch" 
-
+GLOBAL.TUNING.FAFDROPSWAP["livinglog"]["deciduoustree"] = "log_livingbirch"
 
 local function CheckForPrefab(prefab)
     for _, entity in pairs(GLOBAL.Ents) do
@@ -23,7 +20,7 @@ local function CheckForPrefab(prefab)
         end
     end
     return false
-end      
+end
 
 AddPrefabPostInit("forest", function(inst)
     inst:DoTaskInTime(0, function()
@@ -55,7 +52,7 @@ AddPrefabPostInit("forest", function(inst)
                         end
                     end
                 end
-                print("[Feast and Famine] Finished Generating Wheat with "..new_wheats.." as the final result")
+                print("[Feast and Famine] Finished Generating Wheat with " .. new_wheats .. " as the final result")
             else
                 print("[Feast and Famine] Wheat found, no need to retrofit")
             end
@@ -98,31 +95,24 @@ end)
 
 local SpawnPrefab = GLOBAL.SpawnPrefab
 
-local to_sapling =
-{
-    "acorn_sapling",
-    "twiggy_nut_sapling",
-    "marblebean_sapling",
-    "pinecone_sapling",
-    "lumpy_sapling",
-    "moonbutterfly_sapling",
-}
+local to_sapling = {"acorn_sapling", "twiggy_nut_sapling", "marblebean_sapling", "pinecone_sapling", "lumpy_sapling",
+                    "moonbutterfly_sapling"}
 
 local function onSaplingload(inst)
     local ground_tile = GLOBAL.TheWorld.Map:GetTileAtPoint(inst.Transform:GetWorldPosition())
-    local pt = inst:GetPosition()    
+    local pt = inst:GetPosition()
     local ents = #GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
     if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
-	    inst.AnimState:OverrideSymbol("sand", "planted_hills", "dirt") 
-	    if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            inst.AnimState:OverrideSymbol("sand", "planted_hills", "tropical") 
-        end 
+        inst.AnimState:OverrideSymbol("sand", "planted_hills", "dirt")
+        if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
+            inst.AnimState:OverrideSymbol("sand", "planted_hills", "tropical")
+        end
     end
 end
 
 for _, v in pairs(to_sapling) do
     AddPrefabPostInit(v, function(inst)
-		inst.AnimState:SetBank("sapling")
+        inst.AnimState:SetBank("sapling")
         inst.AnimState:SetBuild("planted_hills")
         inst.AnimState:PlayAnimation("sand")
         inst.AnimState:OverrideSymbol("swap_sapling", "sapling_overrides", v)
@@ -136,15 +126,15 @@ local function OnDeployMoon(inst, pt, deployer)
     if moontree then
         moontree.Transform:SetPosition(pt:Get())
 
-	    local ground_tile = GLOBAL.TheWorld.Map:GetTileAtPoint(pt:Get())
-	    --local pt = inst:GetPosition()    
-	    local ents = #GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
-	    if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
-	        moontree.AnimState:OverrideSymbol("sand", "planted_hills", "dirt")
-	        if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            	moontree.AnimState:OverrideSymbol("sand", "planted_hills", "tropical") 
-        	end  
-	    end
+        local ground_tile = GLOBAL.TheWorld.Map:GetTileAtPoint(pt:Get())
+        -- local pt = inst:GetPosition()    
+        local ents = #GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
+        if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
+            moontree.AnimState:OverrideSymbol("sand", "planted_hills", "dirt")
+            if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
+                moontree.AnimState:OverrideSymbol("sand", "planted_hills", "tropical")
+            end
+        end
 
         inst.components.stackable:Get():Remove()
     end
@@ -157,13 +147,13 @@ local function OnDeployMarble(inst, pt, deployer)
     sapling.SoundEmitter:PlaySound("dontstarve/wilson/plant_tree")
 
     local ground_tile = GLOBAL.TheWorld.Map:GetTileAtPoint(pt:Get())
-    --local pt = inst:GetPosition()    
+    -- local pt = inst:GetPosition()    
     local ents = #GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
     if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
-        sapling.AnimState:OverrideSymbol("sand", "planted_hills", "dirt") 
-       	if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            sapling.AnimState:OverrideSymbol("sand", "planted_hills", "tropical") 
-        end 
+        sapling.AnimState:OverrideSymbol("sand", "planted_hills", "dirt")
+        if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
+            sapling.AnimState:OverrideSymbol("sand", "planted_hills", "tropical")
+        end
     end
 
     inst:Remove()
@@ -176,13 +166,13 @@ local function plantacorn(inst, growtime)
     sapling.SoundEmitter:PlaySound("dontstarve/wilson/plant_tree")
 
     local ground_tile = GLOBAL.TheWorld.Map:GetTileAtPoint(inst.Transform:GetWorldPosition())
-    local pt = inst:GetPosition()    
+    local pt = inst:GetPosition()
     local ents = #GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
     if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
         sapling.AnimState:OverrideSymbol("sand", "planted_hills", "dirt")
         if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            sapling.AnimState:OverrideSymbol("sand", "planted_hills", "tropical") 
-        end  
+            sapling.AnimState:OverrideSymbol("sand", "planted_hills", "tropical")
+        end
     end
 
     inst:Remove()
@@ -200,14 +190,14 @@ local function OnDeployAcorn(inst, pt)
     plantacorn(inst, timeToGrow)
 
     -- Pacify a nearby monster tree
-    local ent = GLOBAL.FindEntity(inst, TUNING.DECID_MONSTER_ACORN_CHILL_RADIUS, nil, {"birchnut", "monster"}, {"stump", "burnt", "FX", "NOCLICK","DECOR","INLIMBO"})
+    local ent = GLOBAL.FindEntity(inst, TUNING.DECID_MONSTER_ACORN_CHILL_RADIUS, nil, {"birchnut", "monster"},
+        {"stump", "burnt", "FX", "NOCLICK", "DECOR", "INLIMBO"})
     if ent ~= nil then
         if ent.monster_start_task ~= nil then
             ent.monster_start_task:Cancel()
             ent.monster_start_task = nil
         end
-        if ent.monster and
-            ent.monster_stop_task == nil and
+        if ent.monster and ent.monster_stop_task == nil and
             not (ent.components.burnable ~= nil and ent.components.burnable:IsBurning()) and
             not (ent:HasTag("stump") or ent:HasTag("burnt")) then
             ent.monster_stop_task = ent:DoTaskInTime(math.random(0, 3), domonsterstop)
@@ -222,13 +212,13 @@ local function plantpinecone(inst, growtime)
     sapling.SoundEmitter:PlaySound("dontstarve/wilson/plant_tree")
 
     local ground_tile = GLOBAL.TheWorld.Map:GetTileAtPoint(inst.Transform:GetWorldPosition())
-    local pt = inst:GetPosition()    
+    local pt = inst:GetPosition()
     local ents = #GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
     if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
         sapling.AnimState:OverrideSymbol("sand", "planted_hills", "dirt")
         if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            sapling.AnimState:OverrideSymbol("sand", "planted_hills", "tropical") 
-        end  
+            sapling.AnimState:OverrideSymbol("sand", "planted_hills", "tropical")
+        end
     end
 
     inst:Remove()
@@ -240,20 +230,19 @@ local function OnDeployPinecone(inst, pt, deployer)
     local timeToGrow = GLOBAL.GetRandomWithVariance(TUNING.PINECONE_GROWTIME.base, TUNING.PINECONE_GROWTIME.random)
     plantpinecone(inst, timeToGrow)
 
-    --tell any nearby leifs to chill out
-    local ents = GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, TUNING.LEIF_PINECONE_CHILL_RADIUS, { "leif" })
+    -- tell any nearby leifs to chill out
+    local ents = GLOBAL.TheSim:FindEntities(pt.x, pt.y, pt.z, TUNING.LEIF_PINECONE_CHILL_RADIUS, {"leif"})
 
     local played_sound = false
     for i, v in ipairs(ents) do
-        local chill_chance =
-            v:GetDistanceSqToPoint(pt:Get()) < TUNING.LEIF_PINECONE_CHILL_CLOSE_RADIUS * TUNING.LEIF_PINECONE_CHILL_CLOSE_RADIUS and
-            TUNING.LEIF_PINECONE_CHILL_CHANCE_CLOSE or
-            TUNING.LEIF_PINECONE_CHILL_CHANCE_FAR
+        local chill_chance = v:GetDistanceSqToPoint(pt:Get()) < TUNING.LEIF_PINECONE_CHILL_CLOSE_RADIUS *
+                                 TUNING.LEIF_PINECONE_CHILL_CLOSE_RADIUS and TUNING.LEIF_PINECONE_CHILL_CHANCE_CLOSE or
+                                 TUNING.LEIF_PINECONE_CHILL_CHANCE_FAR
 
         if math.random() < chill_chance then
             if v.components.sleeper ~= nil then
                 v.components.sleeper:GoToSleep(1000)
-                --AwardPlayerAchievement( "pacify_forest", deployer ) -- 2+ years of broken mod, whoops
+                -- AwardPlayerAchievement( "pacify_forest", deployer ) -- 2+ years of broken mod, whoops
             end
         elseif not played_sound then
             v.SoundEmitter:PlaySound("dontstarve/creatures/leif/taunt_VO")
@@ -262,8 +251,28 @@ local function OnDeployPinecone(inst, pt, deployer)
     end
 end
 
-AddPrefabPostInit("acorn", function(inst) if inst.components.deployable then inst.components.deployable.ondeploy = OnDeployAcorn end end)
-AddPrefabPostInit("twiggy_nut", function(inst) if inst.components.deployable then inst.components.deployable.ondeploy = OnDeployPinecone end end)
-AddPrefabPostInit("marblebean", function(inst) if inst.components.deployable then inst.components.deployable.ondeploy = OnDeployMarble end end)
-AddPrefabPostInit("pinecone", function(inst) if inst.components.deployable then inst.components.deployable.ondeploy = OnDeployPinecone end end)
-AddPrefabPostInit("moonbutterfly", function(inst) if inst.components.deployable then inst.components.deployable.ondeploy = OnDeployMoon end end)
+AddPrefabPostInit("acorn", function(inst)
+    if inst.components.deployable then
+        inst.components.deployable.ondeploy = OnDeployAcorn
+    end
+end)
+AddPrefabPostInit("twiggy_nut", function(inst)
+    if inst.components.deployable then
+        inst.components.deployable.ondeploy = OnDeployPinecone
+    end
+end)
+AddPrefabPostInit("marblebean", function(inst)
+    if inst.components.deployable then
+        inst.components.deployable.ondeploy = OnDeployMarble
+    end
+end)
+AddPrefabPostInit("pinecone", function(inst)
+    if inst.components.deployable then
+        inst.components.deployable.ondeploy = OnDeployPinecone
+    end
+end)
+AddPrefabPostInit("moonbutterfly", function(inst)
+    if inst.components.deployable then
+        inst.components.deployable.ondeploy = OnDeployMoon
+    end
+end)

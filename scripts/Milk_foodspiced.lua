@@ -4,34 +4,39 @@ local Milk_foodspiced = {}
 
 local function oneaten_garlic(inst, eater)
     if eater.components.debuffable ~= nil and eater.components.debuffable:IsEnabled() and
-        not (eater.components.health ~= nil and eater.components.health:IsDead()) and
-        not eater:HasTag("playerghost") then
+        not (eater.components.health ~= nil and eater.components.health:IsDead()) and not eater:HasTag("playerghost") then
         eater.components.debuffable:AddDebuff("buff_playerabsorption", "buff_playerabsorption")
     end
 end
 
 local function oneaten_sugar(inst, eater)
     if eater.components.debuffable ~= nil and eater.components.debuffable:IsEnabled() and
-        not (eater.components.health ~= nil and eater.components.health:IsDead()) and
-        not eater:HasTag("playerghost") then
+        not (eater.components.health ~= nil and eater.components.health:IsDead()) and not eater:HasTag("playerghost") then
         eater.components.debuffable:AddDebuff("buff_workeffectiveness", "buff_workeffectiveness")
     end
 end
 
 local function oneaten_chili(inst, eater)
     if eater.components.debuffable ~= nil and eater.components.debuffable:IsEnabled() and
-        not (eater.components.health ~= nil and eater.components.health:IsDead()) and
-        not eater:HasTag("playerghost") then
+        not (eater.components.health ~= nil and eater.components.health:IsDead()) and not eater:HasTag("playerghost") then
         eater.components.debuffable:AddDebuff("buff_attack", "buff_attack")
     end
 end
 
-local SPICES =
-{
-    SPICE_GARLIC = { oneatenfn = oneaten_garlic, prefabs = { "buff_playerabsorption" } },
-    SPICE_SUGAR  = { oneatenfn = oneaten_sugar, prefabs = { "buff_workeffectiveness" } },
-    SPICE_CHILI  = { oneatenfn = oneaten_chili, prefabs = { "buff_attack" } },
-    SPICE_SALT   = {},
+local SPICES = {
+    SPICE_GARLIC = {
+        oneatenfn = oneaten_garlic,
+        prefabs = {"buff_playerabsorption"}
+    },
+    SPICE_SUGAR = {
+        oneatenfn = oneaten_sugar,
+        prefabs = {"buff_workeffectiveness"}
+    },
+    SPICE_CHILI = {
+        oneatenfn = oneaten_chili,
+        prefabs = {"buff_attack"}
+    },
+    SPICE_SALT = {}
 }
 
 local function GenerateSpicedFoods(foods)
@@ -40,20 +45,24 @@ local function GenerateSpicedFoods(foods)
             local newdata = shallowcopy(fooddata)
             local spicename = string.lower(spicenameupper)
             if foodname == "wetgoop" then
-                newdata.test = function(cooker, names, tags) return names[spicename] end
+                newdata.test = function(cooker, names, tags)
+                    return names[spicename]
+                end
                 newdata.priority = -10
             else
-                newdata.test = function(cooker, names, tags) return names[foodname] and names[spicename] end
+                newdata.test = function(cooker, names, tags)
+                    return names[foodname] and names[spicename]
+                end
                 newdata.priority = 100
             end
             newdata.cooktime = .12
             newdata.stacksize = nil
             newdata.spice = spicenameupper
             newdata.basename = foodname
-            newdata.name = foodname.."_"..spicename
+            newdata.name = foodname .. "_" .. spicename
 
             ------------
-            if newdata.float ~= nil then 
+            if newdata.float ~= nil then
                 newdata.float = {nil, "med", 0.05, {0.8, 0.7, 0.8}}
             end
             Milk_foodspiced[newdata.name] = newdata ------------------From Legion
@@ -61,20 +70,21 @@ local function GenerateSpicedFoods(foods)
 
             if spicename == "spice_chili" then
                 if newdata.temperature == nil then
-                    --Add permanent "heat" to regular food
+                    -- Add permanent "heat" to regular food
                     newdata.temperature = TUNING.HOT_FOOD_BONUS_TEMP
                     newdata.temperatureduration = TUNING.FOOD_TEMP_LONG
                     newdata.nochill = true
                 elseif newdata.temperature > 0 then
-                    --Upgarde "hot" food to permanent heat
+                    -- Upgarde "hot" food to permanent heat
                     newdata.temperatureduration = math.max(newdata.temperatureduration, TUNING.FOOD_TEMP_LONG)
                     newdata.nochill = true
                 end
             end
 
             if spicedata.prefabs ~= nil then
-                --make a copy (via ArrayUnion) if there are dependencies from the original food
-                newdata.prefabs = newdata.prefabs ~= nil and ArrayUnion(newdata.prefabs, spicedata.prefabs) or spicedata.prefabs
+                -- make a copy (via ArrayUnion) if there are dependencies from the original food
+                newdata.prefabs = newdata.prefabs ~= nil and ArrayUnion(newdata.prefabs, spicedata.prefabs) or
+                                      spicedata.prefabs
             end
 
             if spicedata.oneatenfn ~= nil then

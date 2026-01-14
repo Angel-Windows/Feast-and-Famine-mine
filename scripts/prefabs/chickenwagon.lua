@@ -1,17 +1,10 @@
-local assets =
-{
-    Asset("ANIM", "anim/quagmire_mermcart.zip"),
-}
+local assets = {Asset("ANIM", "anim/quagmire_mermcart.zip")}
 
-local prefabs =
-{
-    "chicken",
-}
+local prefabs = {"chicken"}
 
 local function StartSpawning(inst)
-    if not TheWorld.state.iswinter and
-    inst.components.childspawner ~= nil then
-    inst.components.childspawner:StartSpawning()
+    if not TheWorld.state.iswinter and inst.components.childspawner ~= nil then
+        inst.components.childspawner:StartSpawning()
     end
 end
 
@@ -23,10 +16,8 @@ end
 
 local function OnSpawned(inst, child)
     inst.SoundEmitter:PlaySound("dontstarve/wilson/pickup_reeds")
-    if TheWorld.state.isday and
-        inst.components.childspawner ~= nil and
-        inst.components.childspawner:CountChildrenOutside() >= 1 and
-        child.components.combat.target == nil then
+    if TheWorld.state.isday and inst.components.childspawner ~= nil and
+        inst.components.childspawner:CountChildrenOutside() >= 1 and child.components.combat.target == nil then
         StopSpawning(inst)
     end
 end

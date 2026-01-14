@@ -2,16 +2,9 @@ require "prefabutil"
 
 -- SAPLING --
 
-local date_sapling_assets =
-{
-    Asset("ANIM", "anim/date_fruit.zip"),
-    Asset("ANIM", "anim/planted_hills.zip"),  
-}
+local date_sapling_assets = {Asset("ANIM", "anim/date_fruit.zip"), Asset("ANIM", "anim/planted_hills.zip")}
 
-local date_sapling_prefabs =
-{
-    "date_tree_short",
-}
+local date_sapling_prefabs = {"date_tree_short"}
 
 local function growtree(inst)
     local tree = SpawnPrefab(inst.growprefab)
@@ -26,7 +19,7 @@ local function stopgrowing(inst)
     inst.components.timer:StopTimer("grow")
 end
 
-startgrowing = function(inst) 
+startgrowing = function(inst)
     if not inst.components.timer:TimerExists("grow") then
         local growtime = GetRandomWithVariance(TUNING.PINECONE_GROWTIME.base, TUNING.PINECONE_GROWTIME.random)
         inst.components.timer:StartTimer("grow", growtime)
@@ -46,13 +39,13 @@ end
 
 local function onSaplingload(inst)
     local ground_tile = TheWorld.Map:GetTileAtPoint(inst.Transform:GetWorldPosition())
-    local pt = inst:GetPosition()    
+    local pt = inst:GetPosition()
     local ents = #TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
     if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
         inst.AnimState:PlayAnimation("dirt")
         inst.AnimState:OverrideSymbol("swap_sapling", "date_fruit", "swap_sapling")
         if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            inst.AnimState:OverrideSymbol("dirt", "planted_hills", "tropical") 
+            inst.AnimState:OverrideSymbol("dirt", "planted_hills", "tropical")
         end
     end
 end
@@ -113,27 +106,13 @@ end
 
 -- DATES --
 
-local date_assets =
-{
-    Asset("ANIM", "anim/date_fruit.zip"),
-} 
+local date_assets = {Asset("ANIM", "anim/date_fruit.zip")}
 
-local date_prefabs =
-{
-    "date_cooked",
-    "date_pit",
-    "spoiled_food",
-}
+local date_prefabs = {"date_cooked", "date_pit", "spoiled_food"}
 
-local cooked_date_prefabs =
-{
-    "spoiled_food",
-}
+local cooked_date_prefabs = {"spoiled_food"}
 
-local pitted_date_prefabs =
-{
-    "date_sapling",
-}
+local pitted_date_prefabs = {"date_sapling"}
 
 local function pitchance(inst, eater, pos)
     if math.random() <= 0.20 then
@@ -152,16 +131,16 @@ local function plant(inst, growtime)
     sapling.SoundEmitter:PlaySound("dontstarve/wilson/plant_tree")
 
     local ground_tile = TheWorld.Map:GetTileAtPoint(inst.Transform:GetWorldPosition())
-    local pt = inst:GetPosition()    
+    local pt = inst:GetPosition()
     local ents = #TheSim:FindEntities(pt.x, pt.y, pt.z, 30, {"oasislake"})
     if (ground_tile ~= GROUND.DESERT_DIRT) and (ground_tile ~= GROUND.DIRT) and ents < 1 then
         sapling.AnimState:PlayAnimation("dirt")
         sapling.AnimState:OverrideSymbol("swap_sapling", "date_fruit", "swap_sapling")
         if (ground_tile == GROUND.PEBBLEBEACH) or (ground_tile == GROUND.BEACH) then
-            sapling.AnimState:OverrideSymbol("dirt", "planted_hills", "tropical") 
-        end 
+            sapling.AnimState:OverrideSymbol("dirt", "planted_hills", "tropical")
+        end
     end
-    
+
     inst:Remove()
 end
 
@@ -193,7 +172,7 @@ local function commondatefn(anim, cookable, pit)
     inst.Transform:SetScale(.7, .7, .7)
 
     if cookable then
-        --cookable (from cookable component) added to pristine state for optimization
+        -- cookable (from cookable component) added to pristine state for optimization
         inst:AddTag("cookable")
     end
 
@@ -247,7 +226,7 @@ local function defaultdatefn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "dates"   
+    inst.components.inventoryitem.imagename = "dates"
 
     inst.components.edible:SetOnEatenFn(pitchance)
 
@@ -269,7 +248,7 @@ local function cookeddatefn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "dates_cooked"   
+    inst.components.inventoryitem.imagename = "dates_cooked"
 
     inst.components.edible.healthvalue = -TUNING.HEALING_TINY
     inst.components.edible.sanityvalue = -TUNING.SANITY_SMALL
@@ -289,7 +268,7 @@ local function pitteddatefn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "dates"   
+    inst.components.inventoryitem.imagename = "dates"
 
     inst.components.tradable.rocktribute = 1
 
@@ -309,4 +288,6 @@ return Prefab("date_sapling", sapling_fn(), date_sapling_assets, date_sapling_pr
     Prefab("date", defaultdatefn, date_assets, date_prefabs),
     Prefab("date_cooked", cookeddatefn, date_assets, cooked_date_prefabs),
     Prefab("date_pit", pitteddatefn, date_assets, pitted_date_prefabs),
-    MakePlacer("date_pit_placer", "sapling", "planted_hills", "sand", nil, nil, nil, nil, nil, nil, function(inst) inst.AnimState:OverrideSymbol("swap_sapling", "date_fruit", "swap_sapling") end)
+    MakePlacer("date_pit_placer", "sapling", "planted_hills", "sand", nil, nil, nil, nil, nil, nil, function(inst)
+        inst.AnimState:OverrideSymbol("swap_sapling", "date_fruit", "swap_sapling")
+    end)

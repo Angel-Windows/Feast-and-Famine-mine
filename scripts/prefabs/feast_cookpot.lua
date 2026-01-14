@@ -1,20 +1,14 @@
-local prefabs =
-{
-    "spoiled_food",
-}
+local prefabs = {"spoiled_food"}
 
 local function MakePreparedFood(data)
     local realname = data.basename or data.name
-    local assets =
-    {
-        Asset("ANIM", "anim/"..realname..".zip"),
-    }
-    
+    local assets = {Asset("ANIM", "anim/" .. realname .. ".zip")}
+
     local spicename = data.spice ~= nil and string.lower(data.spice) or nil
     if spicename ~= nil then
         table.insert(assets, Asset("ANIM", "anim/spices.zip"))
         table.insert(assets, Asset("ANIM", "anim/plate_food.zip"))
-        table.insert(assets, Asset("INV_IMAGE", spicename.."_over"))
+        table.insert(assets, Asset("INV_IMAGE", spicename .. "_over"))
     end
 
     local foodprefabs = prefabs
@@ -28,7 +22,9 @@ local function MakePreparedFood(data)
     end
 
     local function DisplayNameFn(inst)
-        return subfmt(STRINGS.NAMES[data.spice.."_FOOD"], { food = STRINGS.NAMES[string.upper(data.basename)] })
+        return subfmt(STRINGS.NAMES[data.spice .. "_FOOD"], {
+            food = STRINGS.NAMES[string.upper(data.basename)]
+        })
     end
 
     local function fn()
@@ -47,11 +43,13 @@ local function MakePreparedFood(data)
 
             inst:AddTag("spicedfood")
 
-            inst.inv_image_bg = {image = realname..".tex"}
+            inst.inv_image_bg = {
+                image = realname .. ".tex"
+            }
             inst.inv_image_bg.atlas = GetInventoryItemAtlas(inst.inv_image_bg.image)
             MakeInventoryFloatable(inst, "med", nil, 0.78)
         else
-            inst.AnimState:SetBuild(realname)   
+            inst.AnimState:SetBuild(realname)
             inst.AnimState:SetBank(realname)
 
             MakeInventoryFloatable(inst)
@@ -61,7 +59,7 @@ local function MakePreparedFood(data)
 
         inst:AddTag("preparedfood")
         if data.tags then
-            for i,v in pairs(data.tags) do
+            for i, v in pairs(data.tags) do
                 inst:AddTag(v)
             end
         end
@@ -91,29 +89,28 @@ local function MakePreparedFood(data)
         inst.components.edible:SetOnEatenFn(data.oneatenfn)
         inst.components.edible.naughtyvalue = data.naughtiness or 0
 
-
         inst:AddComponent("inspectable")
         inst.wet_prefix = data.wet_prefix
-        
+
         inst:AddComponent("inventoryitem")
         inst.components.inventoryitem.imagename = realname
-        if spicename ~= nil then 
-            inst.components.inventoryitem:ChangeImageName(spicename.."_over")
-        elseif data.basename ~= nil then 
+        if spicename ~= nil then
+            inst.components.inventoryitem:ChangeImageName(spicename .. "_over")
+        elseif data.basename ~= nil then
             inst.components.inventoryitem:ChangeImageName(data.basename)
         end
 
         inst:AddComponent("stackable")
         inst.components.stackable.maxsize = TUNING.STACK_SIZE_SMALLITEM
 
-		if data.perishtime ~= nil and data.perishtime > 0 then
-			inst:AddComponent("perishable")
-			inst.components.perishable:SetPerishTime(data.perishtime)
-			inst.components.perishable:StartPerishing()
-			inst.components.perishable.onperishreplacement = "spoiled_food"
-		end
-		
-        MakeSmallBurnable(inst) 
+        if data.perishtime ~= nil and data.perishtime > 0 then
+            inst:AddComponent("perishable")
+            inst.components.perishable:SetPerishTime(data.perishtime)
+            inst.components.perishable:StartPerishing()
+            inst.components.perishable.onperishreplacement = "spoiled_food"
+        end
+
+        MakeSmallBurnable(inst)
 
         MakeSmallPropagator(inst)
 
@@ -121,7 +118,7 @@ local function MakePreparedFood(data)
 
         inst:AddComponent("bait")
 
-        inst:AddComponent("tradable") 
+        inst:AddComponent("tradable")
 
         return inst
     end
@@ -133,16 +130,13 @@ end
 
 local function MakeMilkFood(data)
     local realname = data.basename or data.name
-    local assets =
-    {
-        Asset("ANIM", "anim/"..realname..".zip"),
-    }
-    
+    local assets = {Asset("ANIM", "anim/" .. realname .. ".zip")}
+
     local spicename = data.spice ~= nil and string.lower(data.spice) or nil
     if spicename ~= nil then
         table.insert(assets, Asset("ANIM", "anim/spices.zip"))
         table.insert(assets, Asset("ANIM", "anim/plate_food.zip"))
-        table.insert(assets, Asset("INV_IMAGE", spicename.."_over"))
+        table.insert(assets, Asset("INV_IMAGE", spicename .. "_over"))
     end
 
     local foodprefabs = prefabs
@@ -156,7 +150,9 @@ local function MakeMilkFood(data)
     end
 
     local function DisplayNameFn(inst)
-        return subfmt(STRINGS.NAMES[data.spice.."_FOOD"], { food = STRINGS.NAMES[string.upper(data.basename)] })
+        return subfmt(STRINGS.NAMES[data.spice .. "_FOOD"], {
+            food = STRINGS.NAMES[string.upper(data.basename)]
+        })
     end
 
     local function fn()
@@ -175,18 +171,20 @@ local function MakeMilkFood(data)
 
             inst:AddTag("spicedfood")
 
-            inst.inv_image_bg = { image = (data.basename or data.name)..".tex" }
+            inst.inv_image_bg = {
+                image = (data.basename or data.name) .. ".tex"
+            }
             inst.inv_image_bg.atlas = GetInventoryItemAtlas(inst.inv_image_bg.image)
         else
-        inst.AnimState:SetBuild(realname)
-        inst.AnimState:SetBank(realname)
+            inst.AnimState:SetBuild(realname)
+            inst.AnimState:SetBank(realname)
         end
         inst.AnimState:PlayAnimation("idle")
         inst.AnimState:OverrideSymbol("swap_food", realname, realname)
 
         inst:AddTag("preparedfood")
         if data.tags ~= nil then
-            for i,v in pairs(data.tags) do
+            for i, v in pairs(data.tags) do
                 inst:AddTag(v)
             end
         end
@@ -222,13 +220,12 @@ local function MakeMilkFood(data)
         inst.components.edible:SetOnEatenFn(data.oneatenfn)
         inst.components.edible.naughtyvalue = data.naughtiness or 0
 
-
         inst:AddComponent("inspectable")
         inst.wet_prefix = data.wet_prefix
-        
+
         inst:AddComponent("inventoryitem")
         if spicename ~= nil then
-            inst.components.inventoryitem:ChangeImageName(spicename.."_over")
+            inst.components.inventoryitem:ChangeImageName(spicename .. "_over")
         elseif data.basename ~= nil then
             inst.components.inventoryitem:ChangeImageName(data.basename)
         end
@@ -242,8 +239,8 @@ local function MakeMilkFood(data)
             inst.components.perishable:StartPerishing()
             inst.components.perishable.onperishreplacement = "spoiled_food"
         end
-        
-        MakeSmallBurnable(inst) 
+
+        MakeSmallBurnable(inst)
 
         MakeSmallPropagator(inst)
 
@@ -251,7 +248,7 @@ local function MakeMilkFood(data)
 
         inst:AddComponent("bait")
 
-        inst:AddComponent("tradable") 
+        inst:AddComponent("tradable")
 
         return inst
     end

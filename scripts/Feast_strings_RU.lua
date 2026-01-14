@@ -144,9 +144,11 @@ STRINGS.CHICK_GIVEUP = {"Хмф...", "Возвращаюсь к работе."}
 STRINGS.CHICK_BATTLECRY = {"Ко-ко-ко!", "Монстр!", "Убирайся с моей территории!"}
 STRINGS.CHICK_EGG_BATTLECRY = {"Вор! Вор!", "Верни!", "Моё дитя!"}
 STRINGS.CHICK_PANIC = {"Ко-ко!", "Ко-ко!"}
-STRINGS.CHICK_GO_HOME = {"Рано ложиться — рано вставать.", "Ко! Солнце садится.", "Ко! Темно."}
-STRINGS.FAKE_TRADER_TALK = {"Семена! Отличные семена!", "Добрый день! Купишь семена?", "Приветствую тебя.", "Огромная благодарность.",
-                            "Я продаю только лучшее."}
+STRINGS.CHICK_GO_HOME = {"Рано ложиться — рано вставать.",
+                         "Ко! Солнце садится.", "Ко! Темно."}
+STRINGS.FAKE_TRADER_TALK = {"Семена! Отличные семена!",
+                            "Добрый день! Купишь семена?", "Приветствую тебя.",
+                            "Огромная благодарность.", "Я продаю только лучшее."}
 
 STRINGS.NAMES.FAKE_TRADER = "Странствующий торговец"
 
@@ -155,7 +157,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.FAKE_TRADER = "Скоро он снова о�
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FAKE_TRADER = "Торговец семенами."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.FAKE_TRADER = "Он совсем не привязан к этому миру."
 STRINGS.CHARACTERS.WX78.DESCRIBE.FAKE_TRADER = "ПРОЦЕСС ВЫПОЛНЯЕТСЯ: ОБМЕН"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FAKE_TRADER = "Полагаю, он задержится у нас надолго."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FAKE_TRADER =
+    "Полагаю, он задержится у нас надолго."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.FAKE_TRADER = "В его глазах видно дорогу."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FAKE_TRADER = "Ха! Бродяга без дела."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FAKE_TRADER = "Он — никто без имени."
@@ -205,7 +208,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHICKENWAGON = "Там столько все�
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHICKENWAGON = "Вольфганг может поднять это."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.CHICKENWAGON = "Я тоже толкаю свой багаж."
 STRINGS.CHARACTERS.WX78.DESCRIBE.CHICKENWAGON = "СТАЛЬНОЙ ГРУЗОВОЙ КОНТЕЙНЕР"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHICKENWAGON = "Напоминает мне о моих «передвижных книжных днях»."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CHICKENWAGON =
+    "Напоминает мне о моих «передвижных книжных днях»."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHICKENWAGON = "Что сегодня по скидке?"
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHICKENWAGON = "Домашняя птица или чудовище."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHICKENWAGON = "Доверху набита товарами."
@@ -214,7 +218,8 @@ STRINGS.CHARACTERS.WINONA.DESCRIBE.CHICKENWAGON = "Там есть что-ниб
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHICKENWAGON = "Там есть что-нибудь интересное?"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHICKENWAGON = "Шур-шур, ко-ко-ко!"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.CHICKENWAGON = "Надеюсь, там есть достойные продукты."
-STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKENWAGON = "Книжная-леди называет это \"ва-гон\", florp."
+STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKENWAGON =
+    "Книжная-леди называет это \"ва-гон\", florp."
 
 STRINGS.NAMES.CHICKENHOUSE = "Курятник"
 
@@ -237,7 +242,8 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.CHICKENHOUSE = "Хм… запаха свино
 -- WARLY & GRINDING --
 
 STRINGS.TABS.FOODPROCESSING = "Измельчение"
-STRINGS.RECIPE_DESC.PORTABLEBLENDER_ITEM = "Измельчает ингредиенты в аппетитный порошок."
+STRINGS.RECIPE_DESC.PORTABLEBLENDER_ITEM =
+    "Измельчает ингредиенты в аппетитный порошок."
 STRINGS.NAMES.MEALINGSTONE = "Жернов"
 STRINGS.RECIPE_DESC.MEALINGSTONE = "Простой камень для помола."
 
@@ -246,13 +252,15 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.MEALINGSTONE = "Я могу крушить э
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.MEALINGSTONE = "Надо молоть зёрна для хлеба!"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.MEALINGSTONE = "Меня перемалывает сама жизнь."
 STRINGS.CHARACTERS.WX78.DESCRIBE.MEALINGSTONE = "Я ЭФФЕКТИВЕН В РАЗДАВЛИВАНИИ"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.MEALINGSTONE = "Механическое измельчение наших ингредиентов."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.MEALINGSTONE =
+    "Механическое измельчение наших ингредиентов."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.MEALINGSTONE = "Надо терпеть."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.MEALINGSTONE = "Похоже на тяжёлый ручной труд."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.MEALINGSTONE = "Оружие против пшеницы!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.MEALINGSTONE = "Мы хотим молоть!"
 STRINGS.CHARACTERS.WINONA.DESCRIBE.MEALINGSTONE = "Ох! Тут нужно попотеть!"
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.MEALINGSTONE = "Мне даже нравится эта обыденная работа."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.MEALINGSTONE =
+    "Мне даже нравится эта обыденная работа."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.MEALINGSTONE = "Каменная машина."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.MEALINGSTONE = "Вот так!"
 STRINGS.CHARACTERS.WURT.DESCRIBE.MEALINGSTONE = "Делает еду кашей."
@@ -283,7 +291,8 @@ STRINGS.RECIPE_DESC.FLOUR = "Пшеница, смолотая до соверш�
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.FLOUR = "Готово к выпечке."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.FLOUR = "А можно есть просто муку?"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FLOUR = "Для теста и вкусной лапши?"
-STRINGS.CHARACTERS.WENDY.DESCRIBE.FLOUR = "Как ни назови, мука пахнет одинаково сладко."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.FLOUR =
+    "Как ни назови, мука пахнет одинаково сладко."
 STRINGS.CHARACTERS.WX78.DESCRIBE.FLOUR = "ХА-ХА, ПШЕНИЦА РАЗДАВЛЕНА"
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FLOUR = "Обычная пшеничная мука."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.FLOUR = "По мне так ты как цветок без лепестков."
@@ -329,7 +338,8 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TURNIP_COOKED = "Мы приготовили 
 STRINGS.CHARACTERS.WINONA.DESCRIBE.TURNIP_COOKED = "Не хочу есть всё это сама."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.TURNIP_COOKED = "Лучше не тратить репу зря!"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TURNIP_COOKED = "Хорошо утоляет голод."
-STRINGS.CHARACTERS.WARLY.DESCRIBE.TURNIP_COOKED = "При необходимости сойдёт, но я могу лучше."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.TURNIP_COOKED =
+    "При необходимости сойдёт, но я могу лучше."
 STRINGS.CHARACTERS.WURT.DESCRIBE.TURNIP_COOKED = "Вкусно!"
 
 STRINGS.NAMES.HONEY_CRYSTALS = "Медовые кристаллы"
@@ -347,7 +357,8 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.HONEY_CRYSTALS = "Эх… теперь бес
 STRINGS.CHARACTERS.WINONA.DESCRIBE.HONEY_CRYSTALS = "Теперь это никуда не годится."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.HONEY_CRYSTALS = "Упс-а-дупс!"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.HONEY_CRYSTALS = "Нет-нет-нет!"
-STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_CRYSTALS = "Тонко выдержанный мёд, готовый к переработке."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.HONEY_CRYSTALS =
+    "Тонко выдержанный мёд, готовый к переработке."
 STRINGS.CHARACTERS.WURT.DESCRIBE.HONEY_CRYSTALS = "Больше не вкусно, florp."
 
 STRINGS.NAMES.SYRUP = "Сироп"
@@ -357,7 +368,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.SYRUP = "Ммм..."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.SYRUP = "Вкусная липкая сладость!"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.SYRUP = "Не слаще Абигейл."
 STRINGS.CHARACTERS.WX78.DESCRIBE.SYRUP = "ВЫСОКИЙ УРОВЕНЬ ЛИПКОСТИ"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SYRUP = "Подсластитель с высоким содержанием фруктозы."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SYRUP =
+    "Подсластитель с высоким содержанием фруктозы."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.SYRUP = "Это не кленовый сироп."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SYRUP = "Кулинарный сироп. Разумеется."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SYRUP = "Нектар богов."
@@ -375,7 +387,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_MONSTER = "Бедная птичка..."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_MONSTER = "Очень страшное яичко."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_MONSTER = "Оно наполняет меня страхом."
 STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_MONSTER = "МЁРТВОЕ ЯЙЦО"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_MONSTER = "Будем надеяться, что оно останется неоплодотворённым..."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_MONSTER =
+    "Будем надеяться, что оно останется неоплодотворённым..."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_MONSTER = "Птицы и так достаточно плохи..."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_MONSTER = "Внутри движется нечто зловещее."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_MONSTER = "Яйцо тьмы."
@@ -393,12 +406,15 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_MONSTER_COOKED = "Пахнет ещё х�
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_MONSTER_COOKED = "Слишком много желтка."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_MONSTER_COOKED = "Ещё одна отвратительная вещь..."
 STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_MONSTER_COOKED = "МЁРТВОЕ ЯЙЦО"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_MONSTER_COOKED = "К счастью, мы никогда не узнаем, что могло бы вылупиться."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_MONSTER_COOKED =
+    "К счастью, мы никогда не узнаем, что могло бы вылупиться."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_MONSTER_COOKED = "Мне... правда нужно это есть?"
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_MONSTER_COOKED = "Я предпочитаю яйца... без осквернения."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_MONSTER_COOKED =
+    "Я предпочитаю яйца... без осквернения."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_MONSTER_COOKED = "Это не шутка!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_MONSTER_COOKED = "Липкая штука."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_MONSTER_COOKED = "Разве в нём должно быть столько желтка?"
+STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_MONSTER_COOKED =
+    "Разве в нём должно быть столько желтка?"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_MONSTER_COOKED = "Я бы предпочёл душу."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.EGG_MONSTER_COOKED = "Эх"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.EGG_MONSTER_COOKED = "До чего докатилась моя жизнь..."
@@ -436,19 +452,28 @@ STRINGS.NAMES.SEEDS = "Дикие семена"
 
 -- CHARACTER SEED QUOTES --
 
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SEEDS = "Теория фенотипического доминирования Менделя."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.POMEGRANATE_SEEDS = "Семена граната, включая ариллус."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SEEDS =
+    "Теория фенотипического доминирования Менделя."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.POMEGRANATE_SEEDS =
+    "Семена граната, включая ариллус."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGGPLANT_SEEDS = "Семена овального баклажана."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.WHEAT_SEEDS = "Высокопигментированные зерна пшеницы."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.WHEAT_SEEDS =
+    "Высокопигментированные зерна пшеницы."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TURNIP_SEEDS = "Семена разновидности рапса."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ONION_SEEDS = "Заострённые семена рода луковых."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GARLIC_SEEDS = "Стручки рода луковых источают приятный аромат."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ASPARAGUS_SEEDS = "Искривлённые семена семейства спаржевых."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Оболочка потенциальных сельскохозяйственных культур."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.GARLIC_SEEDS =
+    "Стручки рода луковых источают приятный аромат."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ASPARAGUS_SEEDS =
+    "Искривлённые семена семейства спаржевых."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_COMMON =
+    "Оболочка потенциальных сельскохозяйственных культур."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Будущее овощное ассорти."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Здесь достаточно семян, чтобы занять меня надолго."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Здесь большое разнообразие."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Мне стоит разузнать его торговые маршруты."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_AROMATIC =
+    "Здесь достаточно семян, чтобы занять меня надолго."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "Здесь большое разнообразие."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BARRENSEEDSPACKET_LUNAR =
+    "Мне стоит разузнать его торговые маршруты."
 
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SEEDS = "Таинственные малыши"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TURNIP_SEEDS = "Малыш любит холод"
@@ -464,21 +489,25 @@ STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Острые 
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Острые малыши!"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Лунные малыши!"
 
-STRINGS.CHARACTERS.WENDY.DESCRIBE.CARROT_SEEDS = "Это овощ, который ждёт, чтобы его съели."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.CARROT_SEEDS =
+    "Это овощ, который ждёт, чтобы его съели."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.TURNIP_SEEDS = "Холодные, как сама почва."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.GARLIC_SEEDS = "У них слабый запах."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.ONION_SEEDS = "Жизнь, скрытая в них, — загадка."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.POTATO_SEEDS = "Глубоко зарытые."
-STRINGS.CHARACTERS.WENDY.DESCRIBE.TOMATO_SEEDS = "Если они уколют мне палец, пойдёт ли кровь?"
+STRINGS.CHARACTERS.WENDY.DESCRIBE.TOMATO_SEEDS =
+    "Если они уколют мне палец, пойдёт ли кровь?"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.WHEAT_SEEDS = "Скучный синий цвет."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.PEPPER_SEEDS = "Перемены — приправа жизни… наверное."
-STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Посев требует оптимизма, которого у меня нет."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_COMMON =
+    "Посев требует оптимизма, которого у меня нет."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Есть некая доля надежды."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Думаю, они все испортятся."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Столько потенциальной гнили."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Даже луна может пасть."
 
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGGPLANT_SEEDS = "Из этих семян вырастет растение или птичка?"
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGGPLANT_SEEDS =
+    "Из этих семян вырастет растение или птичка?"
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.TURNIP_SEEDS = "Похоже, они любят холод. Я — нет."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.GARLIC_SEEDS = "Ароматные стручки."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.ONION_SEEDS = "Просто кучка семян."
@@ -491,7 +520,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_COMMON =
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Здесь разные виды семян."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Внутри много семян."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Внутри много семян."
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Эти семена, должно быть, особенные."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BARRENSEEDSPACKET_LUNAR =
+    "Эти семена, должно быть, особенные."
 
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.TURNIP_SEEDS = "Спящие семена."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.GARLIC_SEEDS = "Эти семена странно пахнут."
@@ -504,7 +534,8 @@ STRINGS.CHARACTERS.WOODIE.DESCRIBE.ASPARAGUS_SEEDS = "Весенние семе�
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Это новое начало."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Эй, у нас теперь целый сад."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Ну, тут есть немного семян."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Это займёт нас на какое-то время."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "Это займёт нас на какое-то время."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Я чувствую, как оно шевелится."
 
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SEEDS = "Битва за преимущество ростков."
@@ -516,11 +547,16 @@ STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TOMATO_SEEDS = "Низкая эколог
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.WHEAT_SEEDS = "Низкая экологическая ниша."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PEPPER_SEEDS = "Низкая экологическая ниша."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ASPARAGUS_SEEDS = "Низкая экологическая ниша."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Маленький мешочек немясного детского питания."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Маленький мешочек немясного детского питания."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Пёстрая порция немясного детского питания."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Целая куча немясного детского питания."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Лунное детское питание без мяса."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_COMMON =
+    "Маленький мешочек немясного детского питания."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Маленький мешочек немясного детского питания."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_AROMATIC =
+    "Пёстрая порция немясного детского питания."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "Целая куча немясного детского питания."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BARRENSEEDSPACKET_LUNAR =
+    "Лунное детское питание без мяса."
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.TURNIP_SEEDS = "Это семена репы."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.GARLIC_SEEDS = "Это семена чеснока."
@@ -541,13 +577,16 @@ STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.GARLIC_SEEDS = "Хорошо пахнут."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ONION_SEEDS = "Маленькие семена — для захоронения?"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.POTATO_SEEDS = "Маленькие копчёные шарики."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOMATO_SEEDS = "Ай! Такие острые."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.WHEAT_SEEDS = "Почему вы такие синие, маленькие семена?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.WHEAT_SEEDS =
+    "Почему вы такие синие, маленькие семена?"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PEPPER_SEEDS = "Морщинистые ягодки."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ASPARAGUS_SEEDS = "Вырастет — станет едой."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Тонкая бумага."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Маленькая бумажка, полная природы."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Маленькая бумажка, полная природы."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Маленькая вонючая бумажка."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Отдайте свои семена Вольфгангу!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "Отдайте свои семена Вольфгангу!"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Полно тяжёлых семян."
 
 STRINGS.CHARACTERS.WX78.DESCRIBE.TURNIP_SEEDS = "Исходный код репы"
@@ -559,37 +598,61 @@ STRINGS.CHARACTERS.WX78.DESCRIBE.WHEAT_SEEDS = "Исходный код пшен
 STRINGS.CHARACTERS.WX78.DESCRIBE.PEPPER_SEEDS = "Исходный код перца"
 STRINGS.CHARACTERS.WX78.DESCRIBE.ASPARAGUS_SEEDS = "Исходный код спаржи"
 STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Неизвестная форма жизни"
-STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Выращивание нескольких бобовых неэффективно"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Выращивание нескольких бобовых неэффективно"
 STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Большое количество стручков"
-STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Формы жизни различаются по внешнему виду"
+STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "Формы жизни различаются по внешнему виду"
 STRINGS.CHARACTERS.WX78.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Лунная форма жизни"
 
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WATERMELON_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TURNIP_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GARLIC_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ONION_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.POTATO_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOMATO_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WHEAT_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PEPPER_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ASPARAGUS_SEEDS = "Подобный труд заставляет меня чувствовать себя ничтожеством."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Утомительный труд инструмента."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Это вносит некоторое разнообразие в сад."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Небольшое вложение в будущее."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WATERMELON_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TURNIP_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.GARLIC_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ONION_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.POTATO_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOMATO_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.WHEAT_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PEPPER_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ASPARAGUS_SEEDS =
+    "Подобный труд заставляет меня чувствовать себя ничтожеством."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_COMMON =
+    "Утомительный труд инструмента."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Это вносит некоторое разнообразие в сад."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_AROMATIC =
+    "Небольшое вложение в будущее."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Рог изобилия."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Наполнено экзотической магией."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BARRENSEEDSPACKET_LUNAR =
+    "Наполнено экзотической магией."
 
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.TURNIP_SEEDS = "Мы можем с их помощью что-нибудь вырастить."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.GARLIC_SEEDS = "Мы можем с их помощью что-нибудь вырастить."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.ONION_SEEDS = "Мы можем с их помощью что-нибудь вырастить."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.POTATO_SEEDS = "Мы можем с их помощью что-нибудь вырастить."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_SEEDS = "Мы можем с их помощью что-нибудь вырастить."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.WHEAT_SEEDS = "Мы можем с их помощью что-нибудь вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TURNIP_SEEDS =
+    "Мы можем с их помощью что-нибудь вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.GARLIC_SEEDS =
+    "Мы можем с их помощью что-нибудь вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.ONION_SEEDS =
+    "Мы можем с их помощью что-нибудь вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.POTATO_SEEDS =
+    "Мы можем с их помощью что-нибудь вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_SEEDS =
+    "Мы можем с их помощью что-нибудь вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.WHEAT_SEEDS =
+    "Мы можем с их помощью что-нибудь вырастить."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Эти семена — хорошее начало."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Ого. Здесь есть разные семена."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Ого. Сколько всего еды можно вырастить."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Мы можем вырастить из них много всего."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_AROMATIC =
+    "Ого. Сколько всего еды можно вырастить."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "Мы можем вырастить из них много всего."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Я хочу вырастить лунное дерево!"
 
 STRINGS.CHARACTERS.WINONA.DESCRIBE.TURNIP_SEEDS = "Немного семян брюквы."
@@ -601,21 +664,29 @@ STRINGS.CHARACTERS.WINONA.DESCRIBE.WHEAT_SEEDS = "Немного семян пш
 STRINGS.CHARACTERS.WINONA.DESCRIBE.PEPPER_SEEDS = "Немного семян перца."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.ASPARAGUS_SEEDS = "Немного семян спаржи."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Хорошее начало."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Можно разбить небольшой огород."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Можно разбить небольшой огород."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Лучше, чем на рынке."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Тут много разных видов."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Лучше, чем на рынке."
 
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.TURNIP_SEEDS = "Странные маленькие семена, правда-правда."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.GARLIC_SEEDS = "Странные маленькие семена, правда-правда."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.ONION_SEEDS = "Странные маленькие семена, правда-правда."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TURNIP_SEEDS =
+    "Странные маленькие семена, правда-правда."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.GARLIC_SEEDS =
+    "Странные маленькие семена, правда-правда."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.ONION_SEEDS =
+    "Странные маленькие семена, правда-правда."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.POTATO_SEEDS = "Посади семечко — получишь еду!"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOMATO_SEEDS = "Посади семечко — получишь еду!"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.WHEAT_SEEDS = "Посади семечко — получишь еду!"
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.PEPPER_SEEDS = "Странные маленькие семена, правда-правда."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.ASPARAGUS_SEEDS = "Странные маленькие семена, правда-правда."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Посадите их на небольшом клочке земли."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Закопайте поглубже, иначе конец."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PEPPER_SEEDS =
+    "Странные маленькие семена, правда-правда."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.ASPARAGUS_SEEDS =
+    "Странные маленькие семена, правда-правда."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_COMMON =
+    "Посадите их на небольшом клочке земли."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Закопайте поглубже, иначе конец."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Земля и труд, посев и рост."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "Ложитесь, ложитесь."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "О? Всё это новенькое."
@@ -630,9 +701,11 @@ STRINGS.CHARACTERS.WARLY.DESCRIBE.WHEAT_SEEDS = "Ожидание того ст�
 STRINGS.CHARACTERS.WARLY.DESCRIBE.PEPPER_SEEDS = "Смесь перцев."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.ASPARAGUS_SEEDS = "Свежая зелень."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_COMMON = "Какие свежие ингредиенты?"
-STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_SEASONAL = "Свежие сезонные продукты ждут!"
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_SEASONAL =
+    "Свежие сезонные продукты ждут!"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_AROMATIC = "Что-то многообещающее."
-STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_EXOTIC = "У меня есть парочка фруктовых рецептов."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_EXOTIC =
+    "У меня есть парочка фруктовых рецептов."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.BARRENSEEDSPACKET_LUNAR = "Простое изменение."
 
 STRINGS.CHARACTERS.WURT.DESCRIBE.TURNIP_SEEDS = "Больше репы!"
@@ -653,12 +726,14 @@ STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TRUNK_POTROAST = "Большое мясо! 
 STRINGS.CHARACTERS.WENDY.DESCRIBE.TRUNK_POTROAST = "Животное погибло ради этой еды."
 STRINGS.CHARACTERS.WX78.DESCRIBE.TRUNK_POTROAST = "Плотно упакованная мясная энергия"
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TRUNK_POTROAST = "Богато белками."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.TRUNK_POTROAST = "Нет ничего лучше большого куска сочного мяса."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TRUNK_POTROAST =
+    "Нет ничего лучше большого куска сочного мяса."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TRUNK_POTROAST = "Удачная охота."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TRUNK_POTROAST = "Мясо! Приготовься быть съеденным!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.TRUNK_POTROAST = "Мне нужен рот побольше!"
 STRINGS.CHARACTERS.WINONA.DESCRIBE.TRUNK_POTROAST = "Сытно поем."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.TRUNK_POTROAST = "Я не вижу в этом ничего привлекательного."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TRUNK_POTROAST =
+    "Я не вижу в этом ничего привлекательного."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TRUNK_POTROAST = "Сытно"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.TRUNK_POTROAST = "Полить собственным соком."
 STRINGS.CHARACTERS.WURT.DESCRIBE.TRUNK_POTROAST = "Не-а."
@@ -688,7 +763,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.CAKE_CARROT = "Зато у нас много 
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CAKE_CARROT = "Вкусная морковная закуска."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.CAKE_CARROT = "Он такой же тяжёлый, как моё сердце."
 STRINGS.CHARACTERS.WX78.DESCRIBE.CAKE_CARROT = "ОРАНЖЕВЫЙ ОСТРЫЙ ТОРТ"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CAKE_CARROT = "Восхитительный эмульгированный торт."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.CAKE_CARROT =
+    "Восхитительный эмульгированный торт."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.CAKE_CARROT = "Чистый морковный вкус."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CAKE_CARROT = "Когда-то это был мой любимый."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CAKE_CARROT = "Слишком сладко!"
@@ -712,10 +788,12 @@ STRINGS.CHARACTERS.WX78.DESCRIBE.BREADBOX = "ОБЕСПЕЧИВАЕТ СТАБИ
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREADBOX =
     "Ах да, наконец-то стерильное место для хранения хлеба. Спасибо тебе, Тони."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREADBOX = "Дерево — не лучший выбор, а?"
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREADBOX = "Какая-то грязная магия не даёт ему портиться."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREADBOX =
+    "Какая-то грязная магия не даёт ему портиться."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREADBOX = "Моё мясо туда не влезет!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREADBOX = "Пусть тосты будут вкусными!"
-STRINGS.CHARACTERS.WINONA.DESCRIBE.BREADBOX = "Напоминает мне одну девушку. Кажется, её звали Тони."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.BREADBOX =
+    "Напоминает мне одну девушку. Кажется, её звали Тони."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREADBOX = "...зачем?"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREADBOX = "Коробка для хлеба?"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.BREADBOX = "Небольшая хлебница."
@@ -726,7 +804,8 @@ STRINGS.NAMES.BREAD = "Буханка хлеба"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD = "Он такой бледный."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD = "Вот на что идёт вся пшеница."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD = "Пусть Вольфганг продолжает."
-STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD = "Продлевает мою жизнь, чтобы я могла страдать дальше."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD =
+    "Продлевает мою жизнь, чтобы я могла страдать дальше."
 STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD = "БАЗОВЫЙ ИСТОЧНИК ЭНЕРГИИ ГЛЮТЕНА"
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD = "Крахмалистая, глютенсодержащая пища."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD = "Старая добрая еда."
@@ -754,26 +833,31 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_GARLIC = "Вкусно! Вонючий 
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_GARLIC = "Держу пари, вкус такой же, как и запах."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_GARLIC = "Шшш!"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_GARLIC = "Вонючий хлеб"
-STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_GARLIC = "Моя дорогая аллицин, как же я по тебе скучал."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_GARLIC =
+    "Моя дорогая аллицин, как же я по тебе скучал."
 STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_GARLIC = "Почему так вкусно пахнет?"
 
 STRINGS.NAMES.BREAD_CHEESE = "Сырный хлеб"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_CHEESE = "Кто бы мог подумать, что хлеб и сыр так сочетаются?"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BREAD_CHEESE =
+    "Кто бы мог подумать, что хлеб и сыр так сочетаются?"
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.BREAD_CHEESE = "С огнём и сыр лучше."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BREAD_CHEESE = "Сыр не делает хлеб твёрдым."
-STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD_CHEESE = "Даже углеводы не заполнят эту пустоту."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.BREAD_CHEESE =
+    "Даже углеводы не заполнят эту пустоту."
 STRINGS.CHARACTERS.WX78.DESCRIBE.BREAD_CHEESE = "ЛАКТОЗА, ОГРАНИЧЕННАЯ ГЛЮТЕНОМ"
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BREAD_CHEESE = "Какой восхитительный сэндвич!"
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BREAD_CHEESE = "Мог бы есть бесконечно."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BREAD_CHEESE = "Простая радость."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BREAD_CHEESE = "Наконец-то! Сэндвич по мне."
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_CHEESE = "Мама готовила это, когда мы вели себя хорошо."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_CHEESE =
+    "Мама готовила это, когда мы вели себя хорошо."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_CHEESE = "С жареным сыром не прогадаешь."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_CHEESE = "Пустяки."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_CHEESE = "Ммм… сырно"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_CHEESE = "С лёгкой ноткой мускатного ореха."
-STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_CHEESE = "Ммм, надо показать «сыр» народу мерфов."
+STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_CHEESE =
+    "Ммм, надо показать «сыр» народу мерфов."
 
 STRINGS.NAMES.BREAD_JAM = "Сэндвич с вареньем"
 
@@ -804,10 +888,12 @@ STRINGS.CHARACTERS.WENDY.DESCRIBE.SOUP_CARROT = "Ха-ха. Ещё больше 
 STRINGS.CHARACTERS.WX78.DESCRIBE.SOUP_CARROT = "ПРИЕМЛЕМО"
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.SOUP_CARROT = "Смесь из моркови."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.SOUP_CARROT = "С супом не ошибёшься."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SOUP_CARROT = "Если спросить меня — весьма посредственно."
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.SOUP_CARROT =
+    "Если спросить меня — весьма посредственно."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.SOUP_CARROT = "Где моё мясо?"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.SOUP_CARROT = "Мама говорила, что надо есть овощи."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.SOUP_CARROT = "Никогда не воротите нос от бесплатной еды!"
+STRINGS.CHARACTERS.WINONA.DESCRIBE.SOUP_CARROT =
+    "Никогда не воротите нос от бесплатной еды!"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.SOUP_CARROT = "Ненамного лучше воды."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.SOUP_CARROT = "Суп для живота"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.SOUP_CARROT = "Я бы добавил кинзы."
@@ -851,13 +937,16 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.SOUP_STONE = "Каменный суп из ск
 
 STRINGS.NAMES.STEWED_MEAT = "Варёное мясо"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEWED_MEAT = "Это должно помочь мне пережить трудности."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.STEWED_MEAT =
+    "Это должно помочь мне пережить трудности."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.STEWED_MEAT = "То, что ты сделал из льда."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.STEWED_MEAT = "В тушёном блюде полно печали."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.STEWED_MEAT = "Просто суп. Он не питает мою душу."
 STRINGS.CHARACTERS.WX78.DESCRIBE.STEWED_MEAT = "Содержит энергию жидкости, мой враг."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.STEWED_MEAT = "Мясной бульон полезен для пищеварения."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.STEWED_MEAT = "Лёгкий мясной суп позволит мне выжить."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.STEWED_MEAT =
+    "Мясной бульон полезен для пищеварения."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.STEWED_MEAT =
+    "Лёгкий мясной суп позволит мне выжить."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.STEWED_MEAT = "Ах… просто суп."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.STEWED_MEAT = "Всего лишь суп."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.STEWED_MEAT = "Вкус как остатки еды."
@@ -870,11 +959,13 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.STEWED_MEAT = "Пригорело."
 STRINGS.NAMES.BERRY_CUTLET = "Сочный кусок мяса"
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.BERRY_CUTLET = "В основном соус."
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.BERRY_CUTLET = "Это позволит мне продержаться немного дольше."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.BERRY_CUTLET =
+    "Это позволит мне продержаться немного дольше."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.BERRY_CUTLET = "Разочарование."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.BERRY_CUTLET = "Это позволит мне жить чуть дольше."
 STRINGS.CHARACTERS.WX78.DESCRIBE.BERRY_CUTLET = "Бедный кусок мяса."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BERRY_CUTLET = "Танины в ягодах делают мясо особенно нежным."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.BERRY_CUTLET =
+    "Танины в ягодах делают мясо особенно нежным."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.BERRY_CUTLET = "Мяса-то почти нет, да?"
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.BERRY_CUTLET = "Милый маленький перекус."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.BERRY_CUTLET = "Мне нужно больше!"
@@ -885,23 +976,24 @@ STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BERRY_CUTLET = "Что-то, чтобы з�
 STRINGS.CHARACTERS.WARLY.DESCRIBE.BERRY_CUTLET = "Лучше всего есть с свежими ягодами."
 STRINGS.CHARACTERS.WURT.DESCRIBE.BERRY_CUTLET = "Зачем тратить ягоды?"
 
-
-
 -- JELLIES --
 
 STRINGS.NAMES.JELLY_CROWN = "Желейная корона"
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_CROWN = "Эту корону можно есть?"
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.JELLY_CROWN = "Объеденье!"
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.JELLY_CROWN = "Сделает Вольфганга большим и сильным!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.JELLY_CROWN =
+    "Сделает Вольфганга большим и сильным!"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.JELLY_CROWN = "Она не сделает жизнь слаще."
 STRINGS.CHARACTERS.WX78.DESCRIBE.JELLY_CROWN = "Содержит много фруктозы"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.JELLY_CROWN = "Королевское лакомство с желатином."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.JELLY_CROWN =
+    "Королевское лакомство с желатином."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.JELLY_CROWN = "Лучше, чем «Crow Jello», да?"
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.JELLY_CROWN = "Подходит для короля."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.JELLY_CROWN = "Я сражаюсь за корону!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.JELLY_CROWN = "Спорим, это будет вкусно."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.JELLY_CROWN = "Для сладкоежек это хорошо. Как для меня!"
+STRINGS.CHARACTERS.WINONA.DESCRIBE.JELLY_CROWN =
+    "Для сладкоежек это хорошо. Как для меня!"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.JELLY_CROWN = "На этот раз я поддался..."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.JELLY_CROWN = "Что-то для желудка"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.JELLY_CROWN = "Лакомство для королевы."
@@ -909,9 +1001,11 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.JELLY_CROWN = "Королевский желе�
 
 STRINGS.NAMES.JELLY_TURKISH = "Турецкая пастила"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_TURKISH = "Они заставляют меня чувствовать себя опытным."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JELLY_TURKISH =
+    "Они заставляют меня чувствовать себя опытным."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.JELLY_TURKISH = "В приюте нам это запрещали."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.JELLY_TURKISH = "Вольфганг оставляет место для десерта."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.JELLY_TURKISH =
+    "Вольфганг оставляет место для десерта."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.JELLY_TURKISH = "Это любимое лакомство Абигейл."
 STRINGS.CHARACTERS.WX78.DESCRIBE.JELLY_TURKISH = "Содержит высокий уровень радости"
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.JELLY_TURKISH = "Особый десерт в дождливый день."
@@ -942,7 +1036,8 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.RAWMILK = "Все ещё пахнет пуши�
 STRINGS.CHARACTERS.WINONA.DESCRIBE.COOKEDMILK = "Полезно для организма."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.COOKEDMILK = "В бутылке будет лучше?"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.COOKEDMILK = "Мммм... пушистый сок"
-STRINGS.CHARACTERS.WARLY.DESCRIBE.COOKEDMILK = "С немного больше любви это могло бы стать сыром."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.COOKEDMILK =
+    "С немного больше любви это могло бы стать сыром."
 STRINGS.CHARACTERS.WURT.DESCRIBE.COOKEDMILK = "Мммм... тёплое."
 
 STRINGS.CHARACTERS.WINONA.DESCRIBE.CHEESE = "Я могла бы жить только на сыре."
@@ -988,7 +1083,8 @@ STRINGS.CHARACTERS.WARLY.DESCRIBE.GOLDENVEIN_WHITE_CHEESE = "Какое восх
 STRINGS.CHARACTERS.WURT.DESCRIBE.GOLDENVEIN_WHITE_CHEESE = "(Нюх) О, блестящее..."
 
 STRINGS.CHARACTERS.WINONA.DESCRIBE.FISHYOGURT = "Пахнет рыбой."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISHYOGURT = "Примерно так же безопасно, как и любая человеческая еда."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.FISHYOGURT =
+    "Примерно так же безопасно, как и любая человеческая еда."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.FISHYOGURT = "Глуб-глуб сок?"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.FISHYOGURT = "Интересная техника ферментации."
 STRINGS.CHARACTERS.WURT.DESCRIBE.FISHYOGURT = "..."
@@ -1014,7 +1110,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.FISHBITE_DRIED = "Солнце забрало
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.FISHBITE_DRIED = "Пахнет как рыба, вкус как рыба."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.FISHBITE_DRIED = "Рыба стала сухой и вонючей."
 STRINGS.CHARACTERS.WX78.DESCRIBE.FISHBITE_DRIED = "Хахаха"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISHBITE_DRIED = "Неожиданно съедобная солёная рыба."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.FISHBITE_DRIED =
+    "Неожиданно съедобная солёная рыба."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.FISHBITE_DRIED = "Это должно меня прокормить."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.FISHBITE_DRIED = "Не могу сказать, что пахнет лучше."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.FISHBITE_DRIED = "Маленькая порция морепродуктов."
@@ -1047,16 +1144,20 @@ STRINGS.NAMES.TOMATO_ROCK_DRIED = "Сушёный томат"
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.TOMATO_ROCK_DRIED = "Наука сконцентрировала этот вкус."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.TOMATO_ROCK_DRIED = "Приготовлено другим огнём."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOMATO_ROCK_DRIED = "Как красная кожаная овощная шкура."
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TOMATO_ROCK_DRIED =
+    "Как красная кожаная овощная шкура."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.TOMATO_ROCK_DRIED = "Когда кровь высохла, она почернела."
 STRINGS.CHARACTERS.WX78.DESCRIBE.TOMATO_ROCK_DRIED = "Обезвоженный растительный шар"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TOMATO_ROCK_DRIED = "Высушенные паслёновые, питательно."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.TOMATO_ROCK_DRIED = "Сушёные томаты для использования при необходимости."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TOMATO_ROCK_DRIED =
+    "Высушенные паслёновые, питательно."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TOMATO_ROCK_DRIED =
+    "Сушёные томаты для использования при необходимости."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TOMATO_ROCK_DRIED = "Это красный сушёный томат."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TOMATO_ROCK_DRIED = "Запасы пищи на исходе!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_ROCK_DRIED = "Вкусно! Мама кладёт их в кладовую."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.TOMATO_ROCK_DRIED = "Это должно помочь сделать запасы."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOMATO_ROCK_DRIED = "Твёрдый как камень, отлично для метания!"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.TOMATO_ROCK_DRIED =
+    "Твёрдый как камень, отлично для метания!"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TOMATO_ROCK_DRIED = "Сушёный, красный и мягкий"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.TOMATO_ROCK_DRIED = "Когда нужно, неплохо."
 STRINGS.CHARACTERS.WURT.DESCRIBE.TOMATO_ROCK_DRIED = "Дольше сохраняет вкус?"
@@ -1130,7 +1231,8 @@ STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_FETUCCINI = "Безвкусно."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_FETUCCINI = "Эти макароны меня не обманут!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_FETUCCINI = "Ммм... паста-мазня..."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_FETUCCINI = "Ничего страшного."
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_FETUCCINI = "Где заканчивается одна лапша и начинается следующая?"
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_FETUCCINI =
+    "Где заканчивается одна лапша и начинается следующая?"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_FETUCCINI = "Вкусно"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_FETUCCINI = "Удовлетворяющая широкая лапша."
 STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_FETUCCINI = "Ммм… очень вкусно."
@@ -1141,7 +1243,8 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MAC = "Здесь много сыра.
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MAC = "Можно мне добавки?"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MAC = "Сытные сырные макароны."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MAC = "Идеальная еда для утешения."
-STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MAC = "Производительность сыра достигла максимума."
+STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MAC =
+    "Производительность сыра достигла максимума."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_MAC = "Лично я предпочитаю газировку."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_MAC = "Раньше я готовил это из коробки."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MAC = "Сытный обед для старых костей."
@@ -1157,14 +1260,16 @@ STRINGS.NAMES.PASTA_MEATBALL = "Макароны с фрикадельками"
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MEATBALL = "Все вкусы в соусе."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MEATBALL = "После этого мне нужен короткий сон."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MEATBALL = "Макароны делают Вольфганга сильнее!"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MEATBALL =
+    "Макароны делают Вольфганга сильнее!"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MEATBALL = "Фрикадельки с макаронами."
 STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MEATBALL = "Питательные шарики с макаронами."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_MEATBALL = "Нестабильное блюдо с балансом."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_MEATBALL = "Все мясо и еще больше!"
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MEATBALL = "Невероятно сытно."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_MEATBALL = "Мясо на макаронах!"
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_MEATBALL = "Дед готовил это, когда нам было грустно."
+STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_MEATBALL =
+    "Дед готовил это, когда нам было грустно."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_MEATBALL = "Давай копать!"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_MEATBALL = "Даже не стоит жонглировать."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_MEATBALL = "Большой животный шар."
@@ -1174,16 +1279,20 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.PASTA_MEATBALL = "Глрр… вкусно."
 STRINGS.NAMES.PASTA_MANICOTTI = "Маникотти с томатным соусом"
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.PASTA_MANICOTTI = "Внутри сыра всегда вкуснее."
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MANICOTTI = "Надеюсь, это так же вкусно, как выглядит."
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.PASTA_MANICOTTI =
+    "Надеюсь, это так же вкусно, как выглядит."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.PASTA_MANICOTTI = "Элегантные трубки с сыром вкусны."
-STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MANICOTTI = "Я тоже люблю заполнить пустоту сыром."
+STRINGS.CHARACTERS.WENDY.DESCRIBE.PASTA_MANICOTTI =
+    "Я тоже люблю заполнить пустоту сыром."
 STRINGS.CHARACTERS.WX78.DESCRIBE.PASTA_MANICOTTI = "Трубки, наполненные сыром."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.PASTA_MANICOTTI = "Быстрое удовольствие."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.PASTA_MANICOTTI = "Довольно интересно, Луся?"
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MANICOTTI = "Этот шеф-повар нуждается в улучшении!"
+STRINGS.CHARACTERS.WAXWELL.DESCRIBE.PASTA_MANICOTTI =
+    "Этот шеф-повар нуждается в улучшении!"
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.PASTA_MANICOTTI = "Бьюсь об заклад, там есть мясо."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.PASTA_MANICOTTI = "Интересно, что внутри?"
-STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_MANICOTTI = "Лучше не пачкать мою рабочую одежду."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.PASTA_MANICOTTI =
+    "Лучше не пачкать мою рабочую одежду."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.PASTA_MANICOTTI = "Вкусно, действительно…"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.PASTA_MANICOTTI = "Радость."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.PASTA_MANICOTTI = "Какой красивый вид."
@@ -1203,7 +1312,8 @@ STRINGS.CHARACTERS.WOODIE.DESCRIBE.STICK_PRETZELS = "Думаю, Луся пон
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.STICK_PRETZELS = "Не важный источник питания."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.STICK_PRETZELS = "Забыл мясо?!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.STICK_PRETZELS = "Мы думаем, они выглядят красиво."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.STICK_PRETZELS = "Не самые невкусные крендели, что я ела."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.STICK_PRETZELS =
+    "Не самые невкусные крендели, что я ела."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.STICK_PRETZELS = "Для меня это как любая еда."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.STICK_PRETZELS = "Друг…?"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.STICK_PRETZELS = "Неприятная кулинария."
@@ -1211,7 +1321,8 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.STICK_PRETZELS = "Не только есть? �
 
 STRINGS.NAMES.CHEESE_GOAT = "Козий сыр"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHEESE_GOAT = "Свернулся от статического электричества."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.CHEESE_GOAT =
+    "Свернулся от статического электричества."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.CHEESE_GOAT = "Вонючий и мягкий."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.CHEESE_GOAT = "Вкусная сырная закуска."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.CHEESE_GOAT = "Полностью свернувшийся."
@@ -1221,7 +1332,8 @@ STRINGS.CHARACTERS.WOODIE.DESCRIBE.CHEESE_GOAT = "Да, это сыр!"
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.CHEESE_GOAT = "Генератор питательной энергии."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.CHEESE_GOAT = "Молоко превращено в крепкий сыр."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.CHEESE_GOAT = "Дед нам мазал его на печенье."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.CHEESE_GOAT = "Я стараюсь поддерживать местных мастеров."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.CHEESE_GOAT =
+    "Я стараюсь поддерживать местных мастеров."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.CHEESE_GOAT = "Такое неприятное приготовление."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.CHEESE_GOAT = "Ммммм…"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.CHEESE_GOAT = "Поразительная пирамида Валенсы."
@@ -1229,7 +1341,8 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.CHEESE_GOAT = "Сыр от кудрявой г�
 
 STRINGS.NAMES.EGG_PLANT = "Баклажан"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT = "Вы будете выводить яйца на листьях или перьях?"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT =
+    "Вы будете выводить яйца на листьях или перьях?"
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_PLANT = "Даже огонь не поможет."
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_PLANT = "Яйца портят Вольфганга."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_PLANT = "Суждено исчезнуть."
@@ -1249,13 +1362,15 @@ STRINGS.NAMES.EGG_PLANT_COOKED = "Жареный баклажан"
 
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.EGG_PLANT_COOKED = "Пахнет немного дрожжами."
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.EGG_PLANT_COOKED = "Более липкое, чем яйцо."
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_PLANT_COOKED = "Липкий белок — это молочный коктейль?"
+STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.EGG_PLANT_COOKED =
+    "Липкий белок — это молочный коктейль?"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.EGG_PLANT_COOKED = "Лучше бы на этом закончить."
 STRINGS.CHARACTERS.WX78.DESCRIBE.EGG_PLANT_COOKED = "Жизнь остановилась."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.EGG_PLANT_COOKED = "Не опылилось, но есть можно."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.EGG_PLANT_COOKED = "Да, точно без птиц внутри."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.EGG_PLANT_COOKED = "Беспокоящий гелеподобный вид."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_PLANT_COOKED = "Возможно, это придало ему ускорение..."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.EGG_PLANT_COOKED =
+    "Возможно, это придало ему ускорение..."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.EGG_PLANT_COOKED = "Запах не слишком приятный."
 STRINGS.CHARACTERS.WINONA.DESCRIBE.EGG_PLANT_COOKED = "Скорлупа выглядит жевательной."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.EGG_PLANT_COOKED = "Дриблинг, подача, падение."
@@ -1271,9 +1386,11 @@ STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TRUNK_WINTER_COOKED = "Варёный си�
 STRINGS.CHARACTERS.WENDY.DESCRIBE.TRUNK_WINTER_COOKED = "Уныние?"
 STRINGS.CHARACTERS.WX78.DESCRIBE.TRUNK_WINTER_COOKED = "Мясная плита зимы."
 STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.TRUNK_WINTER_COOKED = "Сочный стейк из длинного носа."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.TRUNK_WINTER_COOKED = "Здесь есть дополнительный носной сыр..."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.TRUNK_WINTER_COOKED =
+    "Здесь есть дополнительный носной сыр..."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.TRUNK_WINTER_COOKED = "К сожалению, слишком много жира."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TRUNK_WINTER_COOKED = "Щедрая награда за сытный зимний обед."
+STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TRUNK_WINTER_COOKED =
+    "Щедрая награда за сытный зимний обед."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.TRUNK_WINTER_COOKED = "Съедим всё за один раз?"
 STRINGS.CHARACTERS.WINONA.DESCRIBE.TRUNK_WINTER_COOKED = "Сжег мои ноздри."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.TRUNK_WINTER_COOKED = "Не на моей бороде!"
@@ -1295,7 +1412,8 @@ STRINGS.CHARACTERS.WOODIE.DESCRIBE.ROCKY_MEAT = "Судя по меню, там 
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ROCKY_MEAT = "Ах, как изысканно."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ROCKY_MEAT = "Воин пал."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.ROCKY_MEAT = "Надеюсь, у нас нет аллергии."
-STRINGS.CHARACTERS.WINONA.DESCRIBE.ROCKY_MEAT = "Это действительно кусок сочного камня."
+STRINGS.CHARACTERS.WINONA.DESCRIBE.ROCKY_MEAT =
+    "Это действительно кусок сочного камня."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.ROCKY_MEAT = "Людям нравится, они любят, любят!"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.ROCKY_MEAT = "Что-то для щекотки живота."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.ROCKY_MEAT = "Сегодня вечером мы вкусно поедим!"
@@ -1308,7 +1426,8 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.ROCKY_MEAT_COOKED = "Бьюсь об закл
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.ROCKY_MEAT_COOKED = "Вкусно, вкусное каменное мясо."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.ROCKY_MEAT_COOKED = "Теперь готово к употреблению."
 STRINGS.CHARACTERS.WX78.DESCRIBE.ROCKY_MEAT_COOKED = "Вкусное каменное мясо."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ROCKY_MEAT_COOKED = "Уже не опасно из-за сальмонеллы."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.ROCKY_MEAT_COOKED =
+    "Уже не опасно из-за сальмонеллы."
 STRINGS.CHARACTERS.WOODIE.DESCRIBE.ROCKY_MEAT_COOKED = "Я не против попробовать."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.ROCKY_MEAT_COOKED = "С маслом будет идеально."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.ROCKY_MEAT_COOKED = "Это вкусно!"
@@ -1321,7 +1440,8 @@ STRINGS.CHARACTERS.WURT.DESCRIBE.ROCKY_MEAT_COOKED = "Глурф… невозм
 
 STRINGS.NAMES.LOBSTERDINNER = "Лобстерный ужин"
 
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.LOBSTERDINNER = "Если съем утром, не проголодаюсь до вечера?"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.LOBSTERDINNER =
+    "Если съем утром, не проголодаюсь до вечера?"
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.LOBSTERDINNER = "Так вкусно!"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.LOBSTERDINNER = "Вкусный ужин Вольфганга!"
 STRINGS.CHARACTERS.WENDY.DESCRIBE.LOBSTERDINNER = "Его смерть даст мне жизнь."
@@ -1332,10 +1452,12 @@ STRINGS.CHARACTERS.WAXWELL.DESCRIBE.LOBSTERDINNER = "Забыл фартук."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.LOBSTERDINNER = "Кулинарная победа!"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.LOBSTERDINNER = "Придется есть с закрытыми глазами!"
 STRINGS.CHARACTERS.WINONA.DESCRIBE.LOBSTERDINNER = "Это высококлассный ужин!"
-STRINGS.CHARACTERS.WORTOX.DESCRIBE.LOBSTERDINNER = "Красный как душа, но не так вкусно, как душа."
+STRINGS.CHARACTERS.WORTOX.DESCRIBE.LOBSTERDINNER =
+    "Красный как душа, но не так вкусно, как душа."
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.LOBSTERDINNER = "Хорошая вещь."
 STRINGS.CHARACTERS.WARLY.DESCRIBE.LOBSTERDINNER = "Зачем голодать из-за прилива?"
-STRINGS.CHARACTERS.WURT.DESCRIBE.LOBSTERDINNER = "Глёрп! Пригласили грубых друзей на ужин! Не кормить их!"
+STRINGS.CHARACTERS.WURT.DESCRIBE.LOBSTERDINNER =
+    "Глёрп! Пригласили грубых друзей на ужин! Не кормить их!"
 
 STRINGS.NAMES.LOBSTERBISQUE = "Лобстерный биск"
 
@@ -1344,8 +1466,10 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.LOBSTERBISQUE = "Съем всё!"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.LOBSTERBISQUE = "Выглядит слишком вкусно."
 STRINGS.CHARACTERS.WENDY.DESCRIBE.LOBSTERBISQUE = "Хочу ложку."
 STRINGS.CHARACTERS.WX78.DESCRIBE.LOBSTERBISQUE = "Топливо для тела."
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.LOBSTERBISQUE = "Почти забыла, как настоящий вкус еды."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.LOBSTERBISQUE = "Выглядит подходящим для холодного супа."
+STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.LOBSTERBISQUE =
+    "Почти забыла, как настоящий вкус еды."
+STRINGS.CHARACTERS.WOODIE.DESCRIBE.LOBSTERBISQUE =
+    "Выглядит подходящим для холодного супа."
 STRINGS.CHARACTERS.WAXWELL.DESCRIBE.LOBSTERBISQUE = "Ах, люблю хорошие вещи."
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.LOBSTERBISQUE = "Вот это по-настоящему."
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.LOBSTERBISQUE = "Хотим вылить это на язык!"
@@ -1370,7 +1494,8 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.BREAD_ROCKY = "Хотим есть его в�
 STRINGS.CHARACTERS.WINONA.DESCRIBE.BREAD_ROCKY = "Напоминает девочку из Мэна."
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.BREAD_ROCKY = "\"Дожди Мэна остаются на равнинах.\""
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.BREAD_ROCKY = "Ммммм..."
-STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_ROCKY = "Приправы каджуна действительно отличные."
+STRINGS.CHARACTERS.WARLY.DESCRIBE.BREAD_ROCKY =
+    "Приправы каджуна действительно отличные."
 STRINGS.CHARACTERS.WURT.DESCRIBE.BREAD_ROCKY = "Этот хлеб делает меня грустным, флорт."
 
 STRINGS.NAMES.PASTA_ROCKY = "Каменные равиоли"

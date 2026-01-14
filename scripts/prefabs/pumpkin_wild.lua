@@ -1,12 +1,6 @@
-local assets =
-{
-    Asset("ANIM", "anim/pumpkin_wild.zip"),
-}
+local assets = {Asset("ANIM", "anim/pumpkin_wild.zip")}
 
-local prefabs =
-{
-    "pumpkin",
-}
+local prefabs = {"pumpkin"}
 
 local function onpicked(inst)
     TheWorld:PushEvent("beginregrowth", inst) -- TO DO
@@ -47,8 +41,8 @@ local function fn()
     MakeSmallBurnable(inst)
     MakeSmallPropagator(inst)
 
-	inst:AddComponent("halloweenmoonmutable")
-	inst.components.halloweenmoonmutable:SetPrefabMutated("pumpkin_lantern")
+    inst:AddComponent("halloweenmoonmutable")
+    inst.components.halloweenmoonmutable:SetPrefabMutated("pumpkin_lantern")
 
     inst:AddComponent("hauntable")
     inst.components.hauntable:SetHauntValue(TUNING.HAUNT_TINY)

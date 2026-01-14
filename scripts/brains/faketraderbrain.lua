@@ -30,14 +30,10 @@ function FakeTraderBrain:OnInitializationComplete()
 end
 
 function FakeTraderBrain:OnStart()
-    local root =
-        PriorityNode(
-        {
-            ChattyNode(self.inst, "FAKE_TRADER_TALK",
-                FaceEntity(self.inst, GetTraderFn, KeepTraderFn)),
-            Leash(self.inst, function() return self.inst.components.knownlocations:GetLocation("home") end, MAX_LEASH_DIST, MAX_WANDER_DIST),
-			Wander(self.inst, nil, MAX_WANDER_DIST)
-        }, .5)
+    local root = PriorityNode({ChattyNode(self.inst, "FAKE_TRADER_TALK",
+        FaceEntity(self.inst, GetTraderFn, KeepTraderFn)), Leash(self.inst, function()
+        return self.inst.components.knownlocations:GetLocation("home")
+    end, MAX_LEASH_DIST, MAX_WANDER_DIST), Wander(self.inst, nil, MAX_WANDER_DIST)}, .5)
 
     self.bt = BT(self.inst, root)
 end

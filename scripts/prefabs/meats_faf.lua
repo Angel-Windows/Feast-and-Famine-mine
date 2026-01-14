@@ -1,25 +1,16 @@
-local assets =
-{
-    Asset("ANIM", "anim/meats_faf.zip"),
-    Asset("ANIM", "anim/meats_giant_faf.zip"),
-    Asset("ANIM", "anim/meats_alt_faf.zip"),
-    Asset("ANIM", "anim/meat_rack_food_giant_faf.zip"),
-}
+local assets = {Asset("ANIM", "anim/meats_faf.zip"), Asset("ANIM", "anim/meats_giant_faf.zip"),
+                Asset("ANIM", "anim/meats_alt_faf.zip"), Asset("ANIM", "anim/meat_rack_food_giant_faf.zip")}
 
-local prefabs =
-{
-    "rocky_meat_cooked",
-    "rocks",
-}
+local prefabs = {"rocky_meat_cooked", "rocks"}
 
-local cooked_prefabs =
-{
-    "spoiled_food",
-}
+local cooked_prefabs = {"spoiled_food"}
 
 local function sleepymeat(inst, eater)
     if eater:HasTag("player") then
-        eater:PushEvent("yawn", { grogginess = 4, knockoutduration = TUNING.BEARGER_YAWN_SLEEPTIME })
+        eater:PushEvent("yawn", {
+            grogginess = 4,
+            knockoutduration = TUNING.BEARGER_YAWN_SLEEPTIME
+        })
     elseif eater.components.sleeper ~= nil then
         eater.components.sleeper:AddSleepiness(7, TUNING.BEARGER_YAWN_SLEEPTIME)
     elseif eater.components.grogginess ~= nil then
@@ -46,7 +37,7 @@ local function commonfn(anim, cookable)
     inst:AddTag("meat")
 
     if cookable then
-        --cookable (from cookable component) added to pristine state for optimization
+        -- cookable (from cookable component) added to pristine state for optimization
         inst:AddTag("cookable")
     end
 
@@ -96,14 +87,17 @@ local function on_mine(inst, miner, workleft, workdone)
 
         if num_fruits_worked == TUNING.ROCK_FRUIT_LOOT.MAX_SPAWNS then
             -- If we got hit hard, also launch the remaining fruit stack.
-            LaunchAt(inst, inst, miner, TUNING.ROCK_FRUIT_LOOT.SPEED, TUNING.ROCK_FRUIT_LOOT.HEIGHT, nil, TUNING.ROCK_FRUIT_LOOT.ANGLE)
+            LaunchAt(inst, inst, miner, TUNING.ROCK_FRUIT_LOOT.SPEED, TUNING.ROCK_FRUIT_LOOT.HEIGHT, nil,
+                TUNING.ROCK_FRUIT_LOOT.ANGLE)
         end
     end
 
     for _ = 1, num_fruits_worked do
-        LaunchAt(SpawnPrefab("rocks"), inst, miner, TUNING.ROCK_FRUIT_LOOT.SPEED, TUNING.ROCK_FRUIT_LOOT.HEIGHT, nil, TUNING.ROCK_FRUIT_LOOT.ANGLE)
+        LaunchAt(SpawnPrefab("rocks"), inst, miner, TUNING.ROCK_FRUIT_LOOT.SPEED, TUNING.ROCK_FRUIT_LOOT.HEIGHT, nil,
+            TUNING.ROCK_FRUIT_LOOT.ANGLE)
         if math.random() < 0.25 then
-            LaunchAt(SpawnPrefab("rocks"), inst, miner, TUNING.ROCK_FRUIT_LOOT.SPEED, TUNING.ROCK_FRUIT_LOOT.HEIGHT, nil, TUNING.ROCK_FRUIT_LOOT.ANGLE)
+            LaunchAt(SpawnPrefab("rocks"), inst, miner, TUNING.ROCK_FRUIT_LOOT.SPEED, TUNING.ROCK_FRUIT_LOOT.HEIGHT,
+                nil, TUNING.ROCK_FRUIT_LOOT.ANGLE)
         end
     end
 
@@ -125,7 +119,7 @@ local function defaultfn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "rocky_meat"   
+    inst.components.inventoryitem.imagename = "rocky_meat"
 
     inst.components.edible.healthvalue = -TUNING.HEALING_MED
     inst.components.edible.sanityvalue = -TUNING.SANITY_MED
@@ -140,7 +134,7 @@ local function defaultfn()
     inst:AddComponent("workable")
     inst.components.workable:SetWorkAction(ACTIONS.MINE)
     inst.components.workable:SetWorkLeft(TUNING.ROCK_FRUIT_MINES * inst.components.stackable.stacksize)
-    --inst.components.workable:SetOnFinishCallback(on_mine)
+    -- inst.components.workable:SetOnFinishCallback(on_mine)
     inst.components.workable:SetOnWorkCallback(on_mine)
 
     inst:ListenForEvent("stacksizechange", stack_size_changed)
@@ -155,7 +149,7 @@ local function cookedfn()
         return inst
     end
 
-    inst.components.inventoryitem.imagename = "rocky_meat_cooked"   
+    inst.components.inventoryitem.imagename = "rocky_meat_cooked"
 
     inst.components.edible.healthvalue = TUNING.HEALING_MEDSMALL
     inst.components.edible.hungervalue = TUNING.CALORIES_MED
@@ -170,11 +164,7 @@ local function cookedfn()
     return inst
 end
 
-local trunkprefabs =
-{
-    "trunk_cooked",
-    "spoiled_food",
-}
+local trunkprefabs = {"trunk_cooked", "spoiled_food"}
 
 local function create_trunk()
     local inst = CreateEntity()
@@ -221,7 +211,6 @@ local function create_trunk()
     inst.components.perishable:StartPerishing()
     inst.components.perishable.onperishreplacement = "spoiled_food"
 
-
     MakeHauntableLaunchAndPerish(inst)
 
     return inst
@@ -238,7 +227,7 @@ local function create_giant(data)
 
     inst.AnimState:SetBank("meats_giant_faf")
     inst.AnimState:SetBuild("meats_giant_faf")
-    inst.AnimState:PlayAnimation(data.animname.."_idle")
+    inst.AnimState:PlayAnimation(data.animname .. "_idle")
 
     inst:AddTag("dryable")
     inst:AddTag("meat")
@@ -272,30 +261,25 @@ local function create_giant(data)
     inst.components.edible.sanityvalue = data.sanity
 
     inst:AddComponent("cookable")
-    inst.components.cookable.product = data.name.."_meat_cooked" 
+    inst.components.cookable.product = data.name .. "_meat_cooked"
 
     inst:AddComponent("dryable")
     inst.components.dryable:SetProduct(data.dryprod or "meat_dried")
     inst.components.dryable:SetDryTime(data.dryspeed or TUNING.DRY_MED)
     inst.components.dryable:SetBuildFile("meat_rack_food_giant_faf")
-    inst.components.dryable:SetDriedBuildFile("meat_rack_food") 
+    inst.components.dryable:SetDriedBuildFile("meat_rack_food")
 
     inst:AddComponent("perishable")
     inst.components.perishable:SetPerishTime(data.perish)
     inst.components.perishable:StartPerishing()
     inst.components.perishable.onperishreplacement = "spoiled_food"
 
-
     MakeHauntableLaunchAndPerish(inst)
 
     return inst
 end
 
-local deerprefabs =
-{
-    "deer_meat_cooked",
-    "spoiled_food",
-}
+local deerprefabs = {"deer_meat_cooked", "spoiled_food"}
 
 local function create_deer(anim)
     local function fn()
@@ -328,10 +312,10 @@ local function create_deer(anim)
         inst:AddComponent("inspectable")
 
         inst:AddComponent("inventoryitem")
-        --inst.components.inventoryitem.imagename = "rocky_meat_cooked"  
+        -- inst.components.inventoryitem.imagename = "rocky_meat_cooked"  
 
         inst:AddComponent("cookable")
-        inst.components.cookable.product = "deer_meat_cooked" 
+        inst.components.cookable.product = "deer_meat_cooked"
 
         inst:AddComponent("dryable")
         inst.components.dryable:SetProduct("meat_dried")
@@ -354,27 +338,26 @@ local function create_deer(anim)
         inst.components.perishable:StartPerishing()
         inst.components.perishable.onperishreplacement = "spoiled_food"
 
-
         MakeHauntableLaunchAndPerish(inst)
 
         inst.OnSave = function(inst, data)
             if inst.animoverride then
                 data.animoverride = inst.animoverride
-            end  
+            end
             if inst.imagenameoverride then
                 data.imagenameoverride = inst.imagenameoverride
             end
             if inst.nameoverride then
                 data.nameoverride = inst.nameoverride
-            end    
-        end        
-        
-        inst.OnLoad = function(inst, data)    
-            if data then                
+            end
+        end
+
+        inst.OnLoad = function(inst, data)
+            if data then
                 if data.animoverride then
                     inst.AnimState:PlayAnimation(data.animoverride)
                     inst.animoverride = data.animoverride
-                end  
+                end
                 if data.imagenameoverride then
                     inst.components.inventoryitem:ChangeImageName(data.imagenameoverride)
                     inst.imagenameoverride = data.imagenameoverride
@@ -383,7 +366,7 @@ local function create_deer(anim)
                     inst.name = data.nameoverride
                     inst.nameoverride = data.nameoverride
                 end
-            end        
+            end
         end
 
         return inst
@@ -394,9 +377,9 @@ end
 local function create_deer_autumn(anim)
     local function fn()
         local inst = CreateEntity()
-        
+
         local newinst = SpawnPrefab("deer_meat")
-        --newinst.name = STRINGS.NAMES.DEER_MEAT_AUTUMN
+        -- newinst.name = STRINGS.NAMES.DEER_MEAT_AUTUMN
         newinst.components.inventoryitem:ChangeImageName("deer_meat_autumn")
         newinst.AnimState:PlayAnimation("deer2_idle")
 
@@ -414,7 +397,7 @@ end
 local function create_deer_cooked(anim)
     local function fn()
         local inst = CreateEntity()
-        
+
         inst.entity:AddTransform()
         inst.entity:AddAnimState()
         inst.entity:AddNetwork()
@@ -475,7 +458,7 @@ local function create_giant_cooked(data)
 
     inst.AnimState:SetBank("meats_giant_faf")
     inst.AnimState:SetBuild("meats_giant_faf")
-    inst.AnimState:PlayAnimation(data.animname.."_cooked") 
+    inst.AnimState:PlayAnimation(data.animname .. "_cooked")
 
     MakeInventoryFloatable(inst)
 
@@ -517,23 +500,15 @@ local function create_giant_cooked(data)
     inst.components.perishable:StartPerishing()
     inst.components.perishable.onperishreplacement = "spoiled_food"
 
-
     MakeHauntableLaunchAndPerish(inst)
 
     return inst
 end
 
 local function MakeMeat(data)
-    local giantprefabs =
-    {
-        data.name.."_meat_cooked",
-        "spoiled_food",
-    }
+    local giantprefabs = {data.name .. "_meat_cooked", "spoiled_food"}
 
-    local giantcookprefabs =
-    {
-        "spoiled_food",
-    }
+    local giantcookprefabs = {"spoiled_food"}
 
     local function rawfn()
         return create_giant(data)
@@ -543,29 +518,24 @@ local function MakeMeat(data)
         return create_giant_cooked(data)
     end
 
-    return 
-        Prefab(data.name.."_meat", rawfn, assets, giantprefabs),
-        Prefab(data.name.."_meat_cooked", cookfn, assets, giantcookprefabs)
+    return Prefab(data.name .. "_meat", rawfn, assets, giantprefabs),
+        Prefab(data.name .. "_meat_cooked", cookfn, assets, giantcookprefabs)
 end
 
-local altprefabs =
-{
-    "cookedmeat",
-    "spoiled_food",
-}
+local altprefabs = {"cookedmeat", "spoiled_food"}
 
 local function create_meat_alt(meatname)
     local function fn()
         local inst = CreateEntity()
-        
+
         local newinst = SpawnPrefab("meat")
-        newinst.components.inventoryitem:ChangeImageName(meatname.."_meat")
+        newinst.components.inventoryitem:ChangeImageName(meatname .. "_meat")
         newinst.AnimState:SetBank("meats_alt_faf")
         newinst.AnimState:SetBuild("meats_alt_faf")
-        newinst.AnimState:PlayAnimation(meatname.."_idle")
+        newinst.AnimState:PlayAnimation(meatname .. "_idle")
 
-        newinst.imagenameoverride = meatname.."_meat"
-        newinst.animoverride = meatname.."_idle"
+        newinst.imagenameoverride = meatname .. "_meat"
+        newinst.animoverride = meatname .. "_idle"
         newinst.animbankoverride = "meats_alt_faf"
         newinst.animbuildoverride = "meats_alt_faf"
 
@@ -576,90 +546,82 @@ local function create_meat_alt(meatname)
     return fn
 end
 
-local data =
-{
-    {
-        name = "bear",
-        animname="bearger",
-        sanity = -TUNING.SANITY_SMALL,
-        health = -TUNING.HEALING_MED,
-        hunger = TUNING.CALORIES_MED,
-        perish = TUNING.PERISH_FAST,
-        cooksanity = 0,
-        cookhealth = TUNING.HEALING_MED,
-        cookhunger = TUNING.CALORIES_MED,
-        cookperish = TUNING.PERISH_MED,
-        cookoneaten = sleepymeat,
-    },
-    {
-        name = "toad",
-        animname="toadstool",
-        sanity = -TUNING.SANITY_SMALL,
-        health= TUNING.HEALING_TINY,
-        hunger = TUNING.CALORIES_MED,
-        perish = TUNING.PERISH_FAST,
-        cooksanity = 0,
-        cookhealth= TUNING.HEALING_SMALL,
-        cookhunger = TUNING.CALORIES_MED,
-        cookperish = TUNING.PERISH_MED,
-    },
-    {
-        name = "dragon",
-        animname="dragonfly",
-        sanity = -TUNING.SANITY_SMALL,
-        health= TUNING.HEALING_TINY,
-        hunger = TUNING.CALORIES_MED,
-        perish = TUNING.PERISH_FAST,
-        cooksanity = 0,
-        cookhealth= TUNING.HEALING_SMALL,
-        cookhunger = TUNING.CALORIES_MED,
-        cookperish = TUNING.PERISH_MED,
-        cookoneaten = nil,
-        temperature = TUNING.HOT_FOOD_BONUS_TEMP,
-        temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
-        nochill = true,
-    },
-    {
-        name = "squid",
-        animname="squid_tentacle",
-        sanity = -TUNING.SANITY_MED,
-        health= 0,
-        hunger = TUNING.CALORIES_SMALL,
-        perish = TUNING.PERISH_SUPERFAST,
-        cooksanity = TUNING.SANITY_SMALL,
-        cookhealth= TUNING.HEALING_SMALL,
-        cookhunger = TUNING.CALORIES_SMALL,
-        cookperish = TUNING.PERISH_FAST,
-        dryprod = "monstermeat_dried",
-        dryspeed = TUNING.DRY_FAST,
-        stacksize = TUNING.STACK_SIZE_SMALLITEM,
-        gold = TUNING.GOLD_VALUES.MEAT,
-        monster = true
-    },
-    {
-        name = "bigbird",
-        animname="giantbirds",
-        sanity = -TUNING.SANITY_SMALL,
-        health= TUNING.HEALING_TINY,
-        hunger = TUNING.CALORIES_MED,
-        perish = TUNING.PERISH_FAST,
-        cooksanity = 0,
-        cookhealth= TUNING.HEALING_SMALL,
-        cookhunger = TUNING.CALORIES_MED,
-        cookperish = TUNING.PERISH_MED,
-    },
-}
+local data = {{
+    name = "bear",
+    animname = "bearger",
+    sanity = -TUNING.SANITY_SMALL,
+    health = -TUNING.HEALING_MED,
+    hunger = TUNING.CALORIES_MED,
+    perish = TUNING.PERISH_FAST,
+    cooksanity = 0,
+    cookhealth = TUNING.HEALING_MED,
+    cookhunger = TUNING.CALORIES_MED,
+    cookperish = TUNING.PERISH_MED,
+    cookoneaten = sleepymeat
+}, {
+    name = "toad",
+    animname = "toadstool",
+    sanity = -TUNING.SANITY_SMALL,
+    health = TUNING.HEALING_TINY,
+    hunger = TUNING.CALORIES_MED,
+    perish = TUNING.PERISH_FAST,
+    cooksanity = 0,
+    cookhealth = TUNING.HEALING_SMALL,
+    cookhunger = TUNING.CALORIES_MED,
+    cookperish = TUNING.PERISH_MED
+}, {
+    name = "dragon",
+    animname = "dragonfly",
+    sanity = -TUNING.SANITY_SMALL,
+    health = TUNING.HEALING_TINY,
+    hunger = TUNING.CALORIES_MED,
+    perish = TUNING.PERISH_FAST,
+    cooksanity = 0,
+    cookhealth = TUNING.HEALING_SMALL,
+    cookhunger = TUNING.CALORIES_MED,
+    cookperish = TUNING.PERISH_MED,
+    cookoneaten = nil,
+    temperature = TUNING.HOT_FOOD_BONUS_TEMP,
+    temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
+    nochill = true
+}, {
+    name = "squid",
+    animname = "squid_tentacle",
+    sanity = -TUNING.SANITY_MED,
+    health = 0,
+    hunger = TUNING.CALORIES_SMALL,
+    perish = TUNING.PERISH_SUPERFAST,
+    cooksanity = TUNING.SANITY_SMALL,
+    cookhealth = TUNING.HEALING_SMALL,
+    cookhunger = TUNING.CALORIES_SMALL,
+    cookperish = TUNING.PERISH_FAST,
+    dryprod = "monstermeat_dried",
+    dryspeed = TUNING.DRY_FAST,
+    stacksize = TUNING.STACK_SIZE_SMALLITEM,
+    gold = TUNING.GOLD_VALUES.MEAT,
+    monster = true
+}, {
+    name = "bigbird",
+    animname = "giantbirds",
+    sanity = -TUNING.SANITY_SMALL,
+    health = TUNING.HEALING_TINY,
+    hunger = TUNING.CALORIES_MED,
+    perish = TUNING.PERISH_FAST,
+    cooksanity = 0,
+    cookhealth = TUNING.HEALING_SMALL,
+    cookhunger = TUNING.CALORIES_MED,
+    cookperish = TUNING.PERISH_MED
+}}
 
 local meatprefabs = {}
 
-for k,v in pairs(data) do
+for k, v in pairs(data) do
     local raw, cook = MakeMeat(v)
     table.insert(meatprefabs, raw)
     table.insert(meatprefabs, cook)
 end
 
-return Prefab("rocky_meat", defaultfn, assets, prefabs),
-    Prefab("rocky_meat_cooked", cookedfn, assets, cooked_prefabs),
+return Prefab("rocky_meat", defaultfn, assets, prefabs), Prefab("rocky_meat_cooked", cookedfn, assets, cooked_prefabs),
     Prefab("trunk_winter_cooked", create_trunk, assets, trunkprefabs),
     Prefab("deer_meat", create_deer("deer"), assets, deerprefabs),
     Prefab("deer_meat_autumn", create_deer_autumn("deer2"), assets, deerprefabs),
@@ -673,5 +635,4 @@ return Prefab("rocky_meat", defaultfn, assets, prefabs),
     Prefab("koala_summer_meat", create_meat_alt("koala_summer"), assets, altprefabs),
     Prefab("koala_winter_meat", create_meat_alt("koala_winter"), assets, altprefabs),
     Prefab("malbatross_meat", create_meat_alt("malbatross"), assets, altprefabs),
-    Prefab("moose_meat", create_meat_alt("moose"), assets, altprefabs),
-    unpack(meatprefabs)
+    Prefab("moose_meat", create_meat_alt("moose"), assets, altprefabs), unpack(meatprefabs)
