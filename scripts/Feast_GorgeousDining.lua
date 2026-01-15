@@ -538,34 +538,77 @@ end
 local function GetBird(inst)
     return (inst.components.occupiable and inst.components.occupiable:GetOccupant()) or nil
 end
+local function ShowFeedMessage(inst, giver, item, lootname)
+    if giver and giver.components.talker then
+        local foodname = item:GetDisplayName()
+        local loot = lootname or "something"
+        giver.components.talker:Say("Я дал " .. foodname .. ", получил " .. loot)
+    end
+end
+local function ShowFeedMessage(giver, lootname)
+    if giver and giver.components.talker then
+        giver.components.talker:Say("Птица получила: " .. lootname)
+    end
+end
+local function OnFeed(inst, giver, food)
+    giver.components.talker:Say("Я даю птице: " .. "Ху")
+    if giver and giver.components.talker then
+        local name = food.prefab or "unknown"
+        giver.components.talker:Say("Я даю птице: " .. name)
+    end
+end
 
-local function DigestFoodMonster(inst, food)
+local function DigestFoodMonster(inst, food, giver)
+    -- OnFeed(inst, giver, food)
     if food.components.edible.foodtype == GLOBAL.FOODTYPE.MEAT then
-        if GLOBAL.TUNING.FAFMONSTEREGGS ~= nil and food:HasTag("monstermeat") then
-            inst.components.lootdropper:SpawnLootPrefab("egg_monster")
-        else
-            if GLOBAL.TUNING.FAFLEAFYEGGS ~= nil and (food.prefab == "plantmeat_cooked" or food.prefab == "plantmeat") then
-                inst.components.lootdropper:SpawnLootPrefab("egg_plant")
+        local egg = nil
+
+        if food:HasTag("monstermeat") then
+            -- Мясо монстр: 20% шанс обычное яйцо, иначе монстр яйцо
+            if math.random() < 0.2 then
+                egg = inst.components.lootdropper:SpawnLootPrefab("bird_egg")
             else
-                inst.components.lootdropper:SpawnLootPrefab("bird_egg")
+                egg = inst.components.lootdropper:SpawnLootPrefab("egg_monster")
             end
+        else
+            -- Обычное мясо: 20% шанс монстр яйцо, иначе обычное яйцо
+            if math.random() < 0.2 then
+                egg = inst.components.lootdropper:SpawnLootPrefab("egg_monster")
+            else
+                egg = inst.components.lootdropper:SpawnLootPrefab("bird_egg")
+            end
+        end
+
+        if egg and giver and giver.components.talker then
+            ShowFeedMessage(inst, giver, food, egg.prefab)
+        end
+
+    elseif food.prefab == "wheat" then
+        if GetModConfigData("config_KitchenWheat") then
+            inst._wheatcount = (inst._wheatcount or 0) + 1
+            if inst._wheatcount >= 5 then
+                inst._wheatcount = 0
+                inst.components.lootdropper:SpawnLootPrefab("dug_wheatgrass")
+                return
+            end
+        end
+        local seed_name = "seeds"
+        if GLOBAL.Prefabs[seed_name] ~= nil then
+            inst.components.lootdropper:SpawnLootPrefab(seed_name)
+        end
+        if math.random() < 0.05 then
+            inst.components.lootdropper:SpawnLootPrefab("dug_grass")
         end
     else
         local seed_name = string.lower(food.prefab .. "_seeds")
-        print("Hey Tosh! Seed name -->", seed_name)
         if GLOBAL.Prefabs[seed_name] ~= nil then
-            local num_seeds = math.random(seedmin, (seedmin + seedplus))
-            for k = 1, num_seeds do
+            local num_seeds = math.random(seedmin, seedmin + seedplus)
+            for i = 1, num_seeds do
                 inst.components.lootdropper:SpawnLootPrefab(seed_name)
             end
-            -- if math.random() < 0.5 then -- removed to match vanilla game
-            -- inst.components.lootdropper:SpawnLootPrefab("seeds")
-            -- end
-        else
-            if math.random() < 0.33 then
-                local loot = inst.components.lootdropper:SpawnLootPrefab("guano")
-                loot.Transform:SetScale(.33, .33, .33)
-            end
+        elseif math.random() < 0.33 then
+            local loot = inst.components.lootdropper:SpawnLootPrefab("guano")
+            loot.Transform:SetScale(.33, .33, .33)
         end
     end
 
@@ -582,13 +625,16 @@ local function OnGetItemMonster(inst, giver, item)
 
     if item.components.edible ~= nil and
         (item.components.edible.foodtype == GLOBAL.FOODTYPE.MEAT or item.prefab == "seeds" or
-            string.match(item.prefab, "_seeds") or GLOBAL.Prefabs[string.lower(item.prefab .. "_seeds")] ~= nil) then
+            string.match(item.prefab, "_seeds") or GLOBAL.Prefabs[string.lower(item.prefab .. "_seeds")] ~= nil or
+            item.prefab == "wheat") then -- <- добавил явную проверку на пшеницу
         inst.AnimState:PlayAnimation("peck")
         inst.AnimState:PushAnimation("peck")
         inst.AnimState:PushAnimation("peck")
         inst.AnimState:PushAnimation("hop")
         PushStateAnim(inst, "idle", true)
-        inst:DoTaskInTime(60 * GLOBAL.FRAMES, DigestFoodMonster(inst, item), item)
+        inst:DoTaskInTime(60 * GLOBAL.FRAMES, function()
+            DigestFoodMonster(inst, item, giver)
+        end)
     end
 end
 
